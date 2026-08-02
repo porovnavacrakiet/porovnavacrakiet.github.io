@@ -202,7 +202,7 @@ const rubbers = [
   ,{id:'sriver',brand:'Butterfly',name:'Sriver · 2.1 mm',speed:63,control:83,spin:79,hardness:32}
   ,{id:'tackiness',brand:'Butterfly',name:'Tackiness Chop · 1.9 mm',speed:48,control:86,spin:86,hardness:32}
 ];
-const defaults={current:{blade:'viscaria',fh:'zyre03',bh:'zyre03'},target:{blade:'fzd-alc',fh:'d09c',bh:'d09c'}};
+const defaults={current:{blade:'viscaria',fh:'d09c',bh:'d09c'},target:{blade:'fzd-alc',fh:'d09c',bh:'d09c'}};
 const values={level:{beginner:1,club:2,league:3,advanced:4},training:{1:1,2:2,4:3},'fh-skill':{basic:1,regular:2,advanced:3},'bh-skill':{basic:1,regular:2,advanced:3},footwork:{basic:1,average:2,good:3,excellent:4}};
 const thicknessOptions=['1.9 mm','2.0 mm','2.1 mm','INÉ'];
 const $=id=>document.getElementById(id);
