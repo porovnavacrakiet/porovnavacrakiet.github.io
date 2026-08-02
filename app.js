@@ -116,6 +116,7 @@ const blades = [
   ,{id:'sk7',brand:'Butterfly',name:'SK7 Classic',speed:74,control:75,spin:80,feel:'pevný',type:'7-vrstvové drevo'}
   ,{id:'korbel-sk7',brand:'Butterfly',name:'Korbel SK7',speed:76,control:74,spin:81,feel:'pevný',type:'7-vrstvové drevo'}
   ,{id:'petr-korbel',brand:'Butterfly',name:'Petr Korbel',speed:72,control:78,spin:83,feel:'pružný',type:'5-vrstvové drevo'}
+  ,{id:'petr-korbel-japan',brand:'Butterfly',name:'Petr Korbel Japan',speed:72,control:78,spin:83,feel:'pružný',type:'5-vrstvové drevo'}
   ,{id:'maze-advance',brand:'Butterfly',name:'Maze Advance',speed:70,control:79,spin:82,feel:'stredný',type:'5-vrstvové drevo'}
   ,{id:'primorac',brand:'Butterfly',name:'Primorac',speed:68,control:81,spin:80,feel:'mäkký',type:'5-vrstvové drevo'}
   ,{id:'tb5alpha',brand:'Butterfly',name:'TB5α',speed:66,control:82,spin:79,feel:'mäkký',type:'5-vrstvové drevo'}
