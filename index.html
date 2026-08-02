@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Porovnajte dve stolnotenisové zostavy podľa vášho herného štýlu." />
+    <title>POROVNÁVAČ RAKIET — porovnanie stolnotenisových zostáv</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Porovnávač rakiet domov">
+        <span class="brand-mark"><i></i><i></i><i></i></span>
+        <span>POROVNAVAC RAKIET</span>
+      </a>
+      <p class="header-note">Lepšia voľba, menej nákupov naslepo.</p>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <button class="language-toggle hero-language" id="language-toggle" type="button" aria-label="Switch language">ENG</button>
+        <h1 class="hero-title">POROVNÁVAČ<br />RAKIET</h1>
+        <div class="hero-arrow" aria-hidden="true"><i class="arrow-left"></i><i class="arrow-right"></i></div>
+        <div class="hero-content">
+          <p class="eyebrow">VÝBAVA, KTORÁ SEDÍ TVOJEJ HRE</p>
+          <p class="hero-copy">Zisti, ako sa zmena dreva a poťahov prejaví v tvojej hre — nie iba v katalógu.</p>
+          <div class="hero-setups" aria-label="Ukážkové porovnanie"><span class="blue-dot"></span><b>Viscaria</b> + Zyre 03 <span class="hero-vs">↔</span><span class="red-dot"></span><b>Fan Zhendong ALC</b> + Dignics 09C</div>
+          <a class="scroll-cta" href="#comparator">Začať porovnanie <span>↓</span></a>
+        </div>
+      </section>
+
+      <section class="comparator-section" id="comparator">
+        <div class="setup-grid">
+          <article class="setup-card current">
+            <div class="card-title">
+              <span class="tag localized" data-sk="TERAZ" data-en="CURRENT">TERAZ</span>
+              <h3 class="localized" data-sk="Moja aktuálna zostava" data-en="My current setup">Moja aktuálna zostava</h3>
+            </div>
+            <div class="form-row">
+              <label for="current-blade"><b class="localized" data-sk="Drevo" data-en="Blade">Drevo</b> <span class="localized-secondary" data-sk="Blade" data-en="Drevo">Blade</span></label>
+              <div class="product-picker"><select id="current-blade-brand" data-setup="current" data-part="blade" data-picker="brand"></select><select id="current-blade" data-setup="current" data-part="blade" data-picker="model"></select></div><div class="other-product hidden" id="current-blade-other"><input id="current-blade-other-brand" placeholder="Iná značka dreva" /><input id="current-blade-other-model" placeholder="Model dreva" /><small>Neoverená značka — odošle sa na kontrolu.</small></div>
+            </div>
+            <div class="form-row">
+              <label for="current-fh"><b class="localized" data-sk="Forehand poťah" data-en="Forehand rubber">Forehand poťah</b> <span class="localized-secondary" data-sk="FH rubber" data-en="Forehand poťah">FH rubber</span></label>
+              <div class="product-picker rubber-picker"><select id="current-fh-brand" data-setup="current" data-part="fh" data-picker="brand" aria-label="Značka poťahu"></select><select id="current-fh" data-setup="current" data-part="fh" data-picker="model" aria-label="Model poťahu"></select><select id="current-fh-thickness" aria-label="Hrúbka poťahu"></select></div><div class="other-product hidden" id="current-fh-other"><input id="current-fh-other-brand" placeholder="Iná značka poťahu" /><input id="current-fh-other-model" placeholder="Model poťahu" /><small>Neoverená značka — odošle sa na kontrolu.</small></div>
+            </div>
+            <div class="form-row">
+              <label for="current-bh"><b class="localized" data-sk="Backhand poťah" data-en="Backhand rubber">Backhand poťah</b> <span class="localized-secondary" data-sk="BH rubber" data-en="Backhand poťah">BH rubber</span></label>
+              <div class="product-picker rubber-picker"><select id="current-bh-brand" data-setup="current" data-part="bh" data-picker="brand" aria-label="Značka poťahu"></select><select id="current-bh" data-setup="current" data-part="bh" data-picker="model" aria-label="Model poťahu"></select><select id="current-bh-thickness" aria-label="Hrúbka poťahu"></select></div><div class="other-product hidden" id="current-bh-other"><input id="current-bh-other-brand" placeholder="Iná značka poťahu" /><input id="current-bh-other-model" placeholder="Model poťahu" /><small>Neoverená značka — odošle sa na kontrolu.</small></div>
+            </div>
+            <div class="setup-stats" id="current-stats"></div>
+          </article>
+
+          <div class="vs-divider" aria-hidden="true"><span>VS</span></div>
+
+          <article class="setup-card target">
+            <div class="card-title">
+              <span class="tag orange localized" data-sk="ZVAŽUJEM" data-en="COMPARING">ZVAŽUJEM</span>
+              <h3 class="localized" data-sk="Porovnávaná zostava" data-en="Compared setup">Porovnávaná zostava</h3>
+            </div>
+            <div class="form-row">
+              <label for="target-blade"><b class="localized" data-sk="Drevo" data-en="Blade">Drevo</b> <span class="localized-secondary" data-sk="Blade" data-en="Drevo">Blade</span></label>
+              <div class="product-picker"><select id="target-blade-brand" data-setup="target" data-part="blade" data-picker="brand"></select><select id="target-blade" data-setup="target" data-part="blade" data-picker="model"></select></div><div class="other-product hidden" id="target-blade-other"><input id="target-blade-other-brand" placeholder="Iná značka dreva" /><input id="target-blade-other-model" placeholder="Model dreva" /><small>Neoverená značka — odošle sa na kontrolu.</small></div>
+            </div>
+            <div class="form-row">
+              <label for="target-fh"><b class="localized" data-sk="Forehand poťah" data-en="Forehand rubber">Forehand poťah</b> <span class="localized-secondary" data-sk="FH rubber" data-en="Forehand poťah">FH rubber</span></label>
+              <div class="product-picker rubber-picker"><select id="target-fh-brand" data-setup="target" data-part="fh" data-picker="brand" aria-label="Značka poťahu"></select><select id="target-fh" data-setup="target" data-part="fh" data-picker="model" aria-label="Model poťahu"></select><select id="target-fh-thickness" aria-label="Hrúbka poťahu"></select></div><div class="other-product hidden" id="target-fh-other"><input id="target-fh-other-brand" placeholder="Iná značka poťahu" /><input id="target-fh-other-model" placeholder="Model poťahu" /><small>Neoverená značka — odošle sa na kontrolu.</small></div>
+            </div>
+            <div class="form-row">
+              <label for="target-bh"><b class="localized" data-sk="Backhand poťah" data-en="Backhand rubber">Backhand poťah</b> <span class="localized-secondary" data-sk="BH rubber" data-en="Backhand poťah">BH rubber</span></label>
+              <div class="product-picker rubber-picker"><select id="target-bh-brand" data-setup="target" data-part="bh" data-picker="brand" aria-label="Značka poťahu"></select><select id="target-bh" data-setup="target" data-part="bh" data-picker="model" aria-label="Model poťahu"></select><select id="target-bh-thickness" aria-label="Hrúbka poťahu"></select></div><div class="other-product hidden" id="target-bh-other"><input id="target-bh-other-brand" placeholder="Iná značka poťahu" /><input id="target-bh-other-model" placeholder="Model poťahu" /><small>Neoverená značka — odošle sa na kontrolu.</small></div>
+            </div>
+            <div class="setup-stats" id="target-stats"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="profile-section">
+        <div class="section-heading compact">
+          <div>
+            <p class="eyebrow">02 / TVOJ PROFIL</p>
+            <h2>Ako reálne hráš?</h2>
+          </div>
+          <p>Čím presnejší profil, tým užitočnejšie odporúčanie.</p>
+        </div>
+        <div class="profile-form">
+          <label>Vek
+            <select id="age"><option value="under13">do 12 rokov</option><option value="13-17">13–17 rokov</option><option value="18-34" selected>18–34 rokov</option><option value="35-49">35–49 rokov</option><option value="50-64">50–64 rokov</option><option value="65plus">65+ rokov</option></select>
+          </label>
+          <label>Ako dlho hráš stolný tenis?
+            <select id="experience"><option value="under1">menej ako 1 rok</option><option value="1-3">1–3 roky</option><option value="4-7">4–7 rokov</option><option value="8-15">8–15 rokov</option><option value="15plus">15+ rokov</option></select>
+          </label>
+          <label>Typ hráča
+            <select id="player-status"><option value="unregistered" selected>Neregistrovaný hráč</option><option value="registered">Registrovaný hráč</option></select>
+          </label>
+          <label id="league-wrap" class="hidden">Slovenská liga
+            <select id="league-level"><option>Extra liga</option><option>1. liga</option><option>2. liga</option><option>3. liga</option><option>4. liga</option><option>5. liga</option><option>6. liga</option><option>7. liga</option><option>8. liga</option><option>9. liga</option><option>10. liga</option></select>
+          </label>
+          <label id="equivalent-wrap">Približná úroveň voči registrovaným
+            <select id="equivalent-level"><option>Pod úrovňou 10. ligy</option><option>Približne 10.–7. liga</option><option>Približne 6.–4. liga</option><option>Približne 3.–2. liga</option><option>Približne 1. liga</option><option>Približne Extra liga</option></select>
+          </label>
+          <label>Úroveň hry
+            <select id="level">
+              <option value="beginner">Začiatočník</option>
+              <option value="club" selected>Klubový hráč</option>
+              <option value="league">Ligový hráč</option>
+              <option value="advanced">Výkonnostný hráč</option>
+            </select>
+          </label>
+          <label>Tréningy za týždeň
+            <select id="training">
+              <option value="1">1× týždenne</option>
+              <option value="2" selected>2–3× týždenne</option>
+              <option value="4">4× a viac</option>
+            </select>
+          </label>
+          <label>Forehand topspin
+            <select id="fh-skill">
+              <option value="basic">Základný</option>
+              <option value="regular" selected>Pravidelný</option>
+              <option value="advanced">Pokročilý</option>
+            </select>
+          </label>
+          <label>Backhand topspin
+            <select id="bh-skill">
+              <option value="basic" selected>Základný</option>
+              <option value="regular">Pravidelný</option>
+              <option value="advanced">Pokročilý</option>
+            </select>
+          </label>
+          <label>Práca nôh
+            <select id="footwork">
+              <option value="basic">Základná</option>
+              <option value="average" selected>Priemerná</option>
+              <option value="good">Dobrá</option>
+              <option value="excellent">Veľmi dobrá</option>
+            </select>
+          </label>
+          <label>Vzdialenosť od stola
+            <select id="distance">
+              <option value="close" selected>Pri stole</option>
+              <option value="mid">Stredná vzdialenosť</option>
+              <option value="far">Ďalej od stola</option>
+            </select>
+          </label>
+        </div>
+        <button class="primary-button" id="compare-button">Porovnať moje zostavy <span>→</span></button>
+      </section>
+
+      <section class="results hidden" id="results" aria-live="polite">
+        <div class="result-intro">
+          <p class="eyebrow">03 / VÝSLEDOK POROVNANIA</p>
+          <h2 id="result-title">Tvoja analýza</h2>
+          <p id="result-summary"></p>
+        </div>
+        <div class="compatibility-card">
+          <div class="score-ring" id="score-ring"><span id="score-value">--</span><small>/100</small></div>
+          <div>
+            <p class="eyebrow">KOMPATIBILITA ZMENY</p>
+            <h3 id="compatibility-label"></h3>
+            <p id="compatibility-detail"></p>
+          </div>
+        </div>
+        <div class="comparison-details">
+          <article class="performance-card">
+            <h3>Čo sa zmení v hre</h3>
+            <div id="performance-list"></div>
+          </article>
+          <article class="advice-card">
+            <span class="advice-icon">↗</span>
+            <h3>Naše odporúčanie</h3>
+            <p id="recommendation"></p>
+            <p class="disclaimer">Predikcia vychádza z modelových vlastností vybavenia a zadaného profilu. Osobný pocit z rakety sa môže líšiť.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="feedback-section" id="feedback">
+        <div class="feedback-copy">
+          <p class="eyebrow">POMÔŽ NÁM ZLEPŠIŤ POROVNÁVAČ</p>
+          <h2>Chýba ti značka, model alebo funkcia?</h2>
+          <p>Pošli nám svoj návrh. Každú žiadosť o produkt overíme podľa dôveryhodných zdrojov pred zaradením do katalógu.</p>
+        </div>
+        <form class="feedback-form" id="feedback-form">
+          <label for="feedback-type">Téma
+            <select id="feedback-type"><option>Chýbajúce drevo alebo poťah</option><option>Návrh funkcie</option><option>Chyba v údajoch</option><option>Iné</option></select>
+          </label>
+          <label for="feedback-email">E-mail <span>(nepovinné)</span>
+            <input id="feedback-email" type="email" placeholder="tvoj@email.sk" />
+          </label>
+          <label for="feedback-message">Tvoj návrh
+            <textarea id="feedback-message" required maxlength="1000" placeholder="Napíš nám značku, presný model alebo nápad na zlepšenie…"></textarea>
+          </label>
+          <button class="feedback-button" type="submit">Odoslať návrh <span>→</span></button>
+          <p class="feedback-status" id="feedback-status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>POROVNAVAC RAKIET <span>•</span> Rozhoduj sa na základe svojej hry.</footer>
+    <script src="app.js"></script>
+  </body>
+</html>
