@@ -1068,7 +1068,10 @@ function toggleLeague(){const isRegistered=$('player-status').value==='registere
 function isEnglish(){return document.documentElement.lang==='en';}
 function submitFeedback(event){event.preventDefault();const message=$('feedback-message').value.trim();if(!message)return;const suggestions=JSON.parse(localStorage.getItem('racket-comparator-feedback')||'[]');suggestions.push({topic:$('feedback-type').value,email:$('feedback-email').value,message,createdAt:new Date().toISOString()});localStorage.setItem('racket-comparator-feedback',JSON.stringify(suggestions));$('feedback-status').textContent=isEnglish()?'Thank you — your suggestion is saved in this browser and ready for future submission.':'Ďakujeme — návrh je uložený v tomto prehliadači a pripravený na budúce odoslanie.';event.currentTarget.reset();}
 function toggleLanguage(){
-  const english=document.documentElement.lang!=='en';document.documentElement.lang=english?'en':'sk';$('language-toggle').textContent=english?'SVK':'ENG';
+  const english=document.documentElement.lang!=='en',languageToggle=$('language-toggle');document.documentElement.lang=english?'en':'sk';
+  languageToggle.innerHTML=`<span class="language-label">LANGUAGE</span><span class="language-flag" aria-hidden="true">${english?'🇸🇰':'🇬🇧'}</span>`;
+  languageToggle.setAttribute('aria-label',english?'Prepnúť stránku do slovenčiny':'Switch page to English');
+  languageToggle.title=english?'Slovenčina':'English';
   document.title=english?'RACKET COMPARATOR — compare table tennis setups':'POROVNÁVAČ RAKIET — porovnanie stolnotenisových zostáv';
   document.querySelector('meta[name="description"]').content=english?'Compare two table tennis setups based on your playing style.':'Porovnajte dve stolnotenisové zostavy podľa vášho herného štýlu.';
   document.querySelector('.brand span:last-child').textContent=english?'RACKET COMPARATOR':'POROVNÁVAČ RAKIET';
