@@ -1068,12 +1068,12 @@ function toggleLeague(){const isRegistered=$('player-status').value==='registere
 function isEnglish(){return document.documentElement.lang==='en';}
 function submitFeedback(event){event.preventDefault();const message=$('feedback-message').value.trim();if(!message)return;const suggestions=JSON.parse(localStorage.getItem('racket-comparator-feedback')||'[]');suggestions.push({topic:$('feedback-type').value,email:$('feedback-email').value,message,createdAt:new Date().toISOString()});localStorage.setItem('racket-comparator-feedback',JSON.stringify(suggestions));$('feedback-status').textContent=isEnglish()?'Thank you — your suggestion is saved in this browser and ready for future submission.':'Ďakujeme — návrh je uložený v tomto prehliadači a pripravený na budúce odoslanie.';event.currentTarget.reset();}
 function toggleLanguage(){
-  const english=document.documentElement.lang!=='en';document.documentElement.lang=english?'en':'sk';$('language-toggle').textContent=english?'SK':'ENG';
-  document.title=english?'BAT COMPARATOR — compare table tennis setups':'POROVNÁVAČ RAKIET — porovnanie stolnotenisových zostáv';
+  const english=document.documentElement.lang!=='en';document.documentElement.lang=english?'en':'sk';$('language-toggle').textContent=english?'SVK':'ENG';
+  document.title=english?'RACKET COMPARATOR — compare table tennis setups':'POROVNÁVAČ RAKIET — porovnanie stolnotenisových zostáv';
   document.querySelector('meta[name="description"]').content=english?'Compare two table tennis setups based on your playing style.':'Porovnajte dve stolnotenisové zostavy podľa vášho herného štýlu.';
-  document.querySelector('.brand span:last-child').textContent=english?'BAT COMPARATOR':'POROVNÁVAČ RAKIET';
+  document.querySelector('.brand span:last-child').textContent=english?'RACKET COMPARATOR':'POROVNÁVAČ RAKIET';
   document.querySelector('.header-note').textContent=english?'Choose better. Buy less blindly.':'Lepšia voľba, menej nákupov naslepo.';
-  document.querySelector('.hero-title').innerHTML=english?'BAT<br>COMPARATOR':'POROVNÁVAČ<br>RAKIET';
+  document.querySelector('.hero-title').innerHTML=english?'RACKET<br>COMPARATOR':'POROVNÁVAČ<br>RAKIET';
   document.querySelector('.hero .eyebrow').textContent=english?'EQUIPMENT THAT FITS YOUR GAME':'VÝBAVA, KTORÁ SEDÍ TVOJEJ HRE';
   document.querySelector('.hero-copy').textContent=english?'See how a blade and rubber change can affect your real game — not just a catalog rating.':'Zisti, ako sa zmena dreva a poťahov prejaví v tvojej hre — nie iba v katalógu.';
   document.querySelector('.scroll-cta').innerHTML=english?'Start comparing <span>↓</span>':'Začať porovnanie <span>↓</span>';
@@ -1181,4 +1181,4 @@ function compare(shouldScroll=true){
   document.querySelector('.comparison-details').innerHTML=briefResult(current,target,delta);
   const results=$('results');results.classList.remove('hidden');if(shouldScroll)results.scrollIntoView({behavior:'smooth',block:'start'});
 }
-$('compare-button').addEventListener('click',compare);$('feedback-form').addEventListener('submit',submitFeedback);initialize();
+$('compare-button').addEventListener('click',compare);$('feedback-form').addEventListener('submit',submitFeedback);initialize();toggleLanguage();
