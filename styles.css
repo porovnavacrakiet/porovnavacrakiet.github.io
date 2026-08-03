@@ -13,6 +13,7 @@ body { margin:0; color:var(--ink); background:var(--paper); font-family:Manrope,
 
 .product-picker{display:grid;grid-template-columns:.42fr 1fr;gap:8px}.product-picker select{min-width:0}
 .product-picker.rubber-picker{grid-template-columns:.30fr 1fr .28fr}
+.product-picker .thickness-input{display:block;width:100%;border:1px solid var(--line);border-radius:5px;margin-top:8px;padding:12px;color:var(--ink);font:500 13px Manrope;background:#fff}
 @media(max-width:700px){.brand{font-size:15px}.hero{min-height:620px;background-position:60% center}.hero:before{background:linear-gradient(90deg,rgba(3,11,19,.9),rgba(3,11,19,.35))}.product-picker{grid-template-columns:1fr}}
 
 .language-toggle{display:inline-flex;align-items:center;gap:7px;margin-left:16px;border:1px solid #aab5b4;border-radius:4px;background:transparent;color:var(--ink);padding:6px 9px;font:700 10px "DM Mono";cursor:pointer}.language-label{font-size:9px;letter-spacing:.08em}.language-flag{font-size:15px;line-height:1}.other-product{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:8px}.other-product input{min-width:0;width:100%;border:1px dashed #94a19f;border-radius:5px;padding:10px;background:#fbfcfa;color:var(--ink);font:500 12px Manrope}.other-product small{grid-column:1/-1;color:#a45b2b;font-size:10px}.hero{max-width:none}
