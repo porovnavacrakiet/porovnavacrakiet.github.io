@@ -586,9 +586,9 @@ function comparisonYearNotices(current,target,english=false){
     'Aj hodnotenie hry porovnáva aktuálne drevá a poťahy z roku 2026.',
     'Záverečný verdikt porovnáva aktuálne drevá a poťahy z roku 2026.'
   ]:[
-    `Vybrané verzie drevien sú z rokov ${current.year} a ${target.year}; poťahy používajú aktuálny katalóg 2026.`,
-    `Analýza rešpektuje roky drevien ${current.year} a ${target.year} a aktuálne údaje poťahov 2026.`,
-    `Záverečný verdikt používa vybrané roky drevien a aktuálne poťahy 2026.`
+    `Vybrané verzie driev sú z rokov ${current.year} a ${target.year}; poťahy používajú aktuálny katalóg 2026.`,
+    `Analýza rešpektuje roky driev ${current.year} a ${target.year} a aktuálne údaje poťahov 2026.`,
+    `Záverečný verdikt používa vybrané roky driev a aktuálne poťahy 2026.`
   ];
 }
 function briefResult(current,target,delta){
@@ -628,7 +628,7 @@ function compare(shouldScroll=true){
   let score=Math.max(42,Math.min(96,82-Math.max(0,demanded*3-readiness)*6+(delta.control>0?5:0)+(delta.spin>0?3:0)-(delta.speed>18?5:0)));score=Math.round(score);
   const english=isEnglish();
   const label=english?(score>=80?'A very promising change':score>=65?'A change with reasonable potential':'This change will require adaptation'):(score>=80?'Veľmi sľubná zmena':score>=65?'Zmena s rozumným potenciálom':'Zmena si vyžiada adaptáciu');
-  $('result-title').textContent=`${bladeName('current')} (${current.year}) vs. ${bladeName('target')} (${target.year})`;$('result-summary').textContent=english?`A quick comparison of blade versions from ${current.year} and ${target.year}, with rubbers and selected thickness.`:`Rýchle porovnanie verzií drevien z rokov ${current.year} a ${target.year}, poťahov a zvolenej hrúbky.`;$('score-value').textContent=score;$('score-ring').style.setProperty('--score',score);$('compatibility-label').textContent=label;$('compatibility-detail').textContent=english?(score>=80?'The change matches your technique and training frequency.':score>=65?'The setup makes sense, but it will require deliberate adaptation.':'The potential is high, but the setup may be less forgiving.'):(score>=80?'Zmena zodpovedá tvojej technike a frekvencii tréningov.':score>=65?'Zostava dáva zmysel, no bude vyžadovať vedomú adaptáciu.':'Potenciál je vysoký, ale zostava môže byť menej odpúšťajúca.');
+  $('result-title').textContent=`${bladeName('current')} (${current.year}) vs. ${bladeName('target')} (${target.year})`;$('result-summary').textContent=english?`A quick comparison of blade versions from ${current.year} and ${target.year}, with rubbers and selected thickness.`:`Rýchle porovnanie verzií driev z rokov ${current.year} a ${target.year}, poťahov a zvolenej hrúbky.`;$('score-value').textContent=score;$('score-ring').style.setProperty('--score',score);$('compatibility-label').textContent=label;$('compatibility-detail').textContent=english?(score>=80?'The change matches your technique and training frequency.':score>=65?'The setup makes sense, but it will require deliberate adaptation.':'The potential is high, but the setup may be less forgiving.'):(score>=80?'Zmena zodpovedá tvojej technike a frekvencii tréningov.':score>=65?'Zostava dáva zmysel, no bude vyžadovať vedomú adaptáciu.':'Potenciál je vysoký, ale zostava môže byť menej odpúšťajúca.');
   document.querySelector('.comparison-details').innerHTML=briefResult(current,target,delta);
   const results=$('results');results.classList.remove('hidden');if(shouldScroll)results.scrollIntoView({behavior:'smooth',block:'start'});
 }
