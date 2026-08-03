@@ -460,7 +460,42 @@ const blades = [
   ,{id:'gewo-zoom-balance-all-plus',brand:'Gewo',name:'Zoom Balance ALL+',speed:72,control:87,spin:81,feel:'stredný',type:'5-vrstvové drevo'}
   ,{id:'gewo-zoom-pro-light-off-minus',brand:'Gewo',name:'Zoom Pro Light OFF-',speed:78,control:79,spin:82,feel:'mäkký',type:'ľahké útočné drevo'}
   ,{id:'gewo-zoom-pro-off-minus',brand:'Gewo',name:'Zoom Pro OFF-',speed:80,control:77,spin:82,feel:'stredný',type:'útočné drevo'}
-  ,{id:'zx-gear',brand:'Victas',name:'ZX-Gear OUT',speed:85,control:67,spin:84,feel:'tvrdý',type:'Zexion carbon'}
+  ,{id:'victas-balsa-2-5',brand:'Victas',name:'BALSA 2.5',speed:48,control:95,spin:72,feel:'mäkký',type:'balsa DEF drevo'}
+  ,{id:'victas-balsa-3-5',brand:'Victas',name:'BALSA 3.5',speed:53,control:93,spin:74,feel:'mäkký',type:'balsa DEF drevo'}
+  ,{id:'victas-balsa-4-5',brand:'Victas',name:'BALSA 4.5',speed:66,control:90,spin:79,feel:'mäkký',type:'balsa ALL drevo'}
+  ,{id:'victas-balsa-5-5',brand:'Victas',name:'BALSA 5.5',speed:72,control:87,spin:81,feel:'mäkký',type:'balsa ALL+ drevo'}
+  ,{id:'victas-benedikt-duda-afc',brand:'Victas',name:'BENEDIKT DUDA AFC',speed:89,control:69,spin:87,feel:'stredne tvrdý',type:'aramid fleece carbon OFF+ drevo'}
+  ,{id:'victas-dyna-carbon',brand:'Victas',name:'DYNA CARBON',speed:78,control:81,spin:83,feel:'stredný',type:'carbon OFF- drevo'}
+  ,{id:'victas-dyna-five',brand:'Victas',name:'DYNA FIVE',speed:76,control:83,spin:83,feel:'pružný',type:'5-vrstvové OFF- drevo'}
+  ,{id:'victas-dyna-seven',brand:'Victas',name:'DYNA SEVEN',speed:83,control:77,spin:84,feel:'stredný',type:'7-vrstvové OFF drevo'}
+  ,{id:'victas-fire-fall-ac',brand:'Victas',name:'FIRE FALL AC',speed:88,control:69,spin:86,feel:'stredne tvrdý',type:'aramid carbon OFF+ drevo'}
+  ,{id:'victas-fire-fall-fc',brand:'Victas',name:'FIRE FALL FC',speed:82,control:77,spin:84,feel:'mäkký',type:'fleece carbon OFF drevo'}
+  ,{id:'victas-fire-fall-hc',brand:'Victas',name:'FIRE FALL HC',speed:91,control:65,spin:86,feel:'tvrdý',type:'hybrid carbon OFF+ drevo'}
+  ,{id:'victas-fire-fall-lc',brand:'Victas',name:'FIRE FALL LC',speed:87,control:71,spin:85,feel:'stredný',type:'light carbon OFF+ drevo'}
+  ,{id:'victas-fire-fall-sc',brand:'Victas',name:'FIRE FALL SC',speed:90,control:67,spin:85,feel:'tvrdý',type:'silver carbon OFF+ drevo'}
+  ,{id:'victas-fire-fall-vc',brand:'Victas',name:'FIRE FALL VC',speed:89,control:68,spin:86,feel:'stredne tvrdý',type:'Vectran carbon OFF+ drevo'}
+  ,{id:'victas-gladias-ar',brand:'Victas',name:'GLADIAS AR',speed:87,control:71,spin:86,feel:'pružný',type:'aramid carbon OFF+ drevo'}
+  ,{id:'victas-gladias-ex',brand:'Victas',name:'GLADIAS EX',speed:91,control:65,spin:85,feel:'tvrdý',type:'carbon OFF+ drevo'}
+  ,{id:'victas-gladias-ha',brand:'Victas',name:'GLADIAS HA',speed:89,control:68,spin:86,feel:'stredne tvrdý',type:'hybrid aramid carbon OFF+ drevo'}
+  ,{id:'victas-hino-carbon-power',brand:'Victas',name:'HINO-CARBON POWER',speed:85,control:73,spin:84,feel:'stredne tvrdý',type:'hinoki carbon OFF drevo'}
+  ,{id:'victas-koji-matsushita',brand:'Victas',name:'KOJI MATSUSHITA',speed:54,control:95,spin:75,feel:'mäkký',type:'5-vrstvové DEF drevo'}
+  ,{id:'victas-koji-matsushita-defensive',brand:'Victas',name:'KOJI MATSUSHITA DEFENSIVE',speed:48,control:97,spin:73,feel:'mäkký',type:'defenzívne drevo'}
+  ,{id:'victas-koji-matsushita-offensive',brand:'Victas',name:'KOJI MATSUSHITA OFFENSIVE',speed:75,control:85,spin:82,feel:'stredný',type:'OFF- moderné defenzívne drevo'}
+  ,{id:'victas-koji-matsushita-special',brand:'Victas',name:'KOJI MATSUSHITA SPECIAL',speed:67,control:91,spin:79,feel:'stredný',type:'fleece carbon ALL drevo'}
+  ,{id:'victas-koji-matsushita-zc',brand:'Victas',name:'KOJI MATSUSHITA ZC',speed:61,control:91,spin:78,feel:'stredne tvrdý',type:'Zexion carbon DEF drevo'}
+  ,{id:'victas-koki-niwa',brand:'Victas',name:'KOKI NIWA',speed:91,control:65,spin:87,feel:'tvrdý',type:'fleece carbon OFF+ drevo'}
+  ,{id:'victas-koki-niwa-blue-edge',brand:'Victas',name:'KOKI NIWA Blue Edge 10th Limited Edition',speed:91,control:65,spin:87,feel:'tvrdý',type:'fleece carbon OFF+ drevo'}
+  ,{id:'victas-koki-niwa-regias',brand:'Victas',name:'KOKI NIWA REGIAS',speed:72,control:87,spin:82,feel:'mäkký',type:'ALL+ drevo'}
+  ,{id:'victas-koki-niwa-wood',brand:'Victas',name:'KOKI NIWA WOOD',speed:87,control:71,spin:86,feel:'stredne tvrdý',type:'7-vrstvové OFF+ drevo'}
+  ,{id:'victas-koki-niwa-wood-blue-edge',brand:'Victas',name:'KOKI NIWA Wood Blue Edge 10th Limited Edition',speed:87,control:71,spin:86,feel:'stredne tvrdý',type:'7-vrstvové OFF+ drevo'}
+  ,{id:'victas-koki-niwa-zc',brand:'Victas',name:'KOKI NIWA ZC',speed:90,control:67,spin:87,feel:'tvrdý',type:'Zexion carbon OFF+ drevo'}
+  ,{id:'victas-koki-niwa-zc-blue-edge',brand:'Victas',name:'KOKI NIWA ZC Blue Edge 10th Limited Edition',speed:90,control:67,spin:87,feel:'tvrdý',type:'Zexion carbon OFF+ drevo'}
+  ,{id:'victas-koki-niwa-zc-inner',brand:'Victas',name:'KOKI NIWA ZC INNER',speed:87,control:72,spin:88,feel:'stredný',type:'inner Zexion carbon OFF+ drevo'}
+  ,{id:'victas-koki-niwa-zf-blue-edge',brand:'Victas',name:'KOKI NIWA ZF Blue Edge 10th Limited Edition',speed:89,control:69,spin:87,feel:'stredne tvrdý',type:'Zexion fleece carbon OFF+ drevo'}
+  ,{id:'victas-magnass',brand:'Victas',name:'MAGNASS',speed:92,control:64,spin:86,feel:'tvrdý',type:'kompozitné OFF+ drevo'}
+  ,{id:'victas-zx-gear-fiber',brand:'Victas',name:'ZX-GEAR FIBER',speed:83,control:76,spin:85,feel:'pružný',type:'Zexion fiber OFF drevo'}
+  ,{id:'victas-zx-gear-in',brand:'Victas',name:'ZX-GEAR IN',speed:87,control:71,spin:87,feel:'stredný',type:'inner Zexion carbon OFF+ drevo'}
+  ,{id:'victas-zx-gear-out',brand:'Victas',name:'ZX-GEAR OUT',speed:90,control:66,spin:86,feel:'tvrdý',type:'outer Zexion carbon OFF+ drevo'}
   ,{id:'729-black-carbon',brand:'Friendship 729',name:'Black Carbon',speed:85,control:69,spin:83,feel:'pevný',type:'carbon'}
   ,{id:'729-blue-arylate-carbon',brand:'Friendship 729',name:'Blue Arylate Carbon',speed:83,control:72,spin:85,feel:'pružný',type:'arylate carbon'}
   ,{id:'729-c3',brand:'Friendship 729',name:'C3',speed:72,control:79,spin:81,feel:'stredný',type:'5-vrstvové drevo'}
