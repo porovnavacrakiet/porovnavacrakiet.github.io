@@ -35,6 +35,40 @@ const blades = [
   {id:'samsonov',brand:'Tibhar',name:'Samsonov Force Pro Black',speed:74,control:75,spin:81,feel:'stredný',type:'7-vrstvové drevo'},
   {id:'rossi',brand:'Joola',name:'Rossi Emotion',speed:79,control:72,spin:82,feel:'stredný',type:'carbon'},
   {id:'treiber',brand:'andro',name:'Treiber FO OFF/S',speed:83,control:68,spin:83,feel:'pevný',type:'carbon'}
+  ,{id:'andro-achanta',brand:'andro',name:'andro Achanta',speed:83,control:71,spin:84,feel:'pevný',type:'carbon'}
+  ,{id:'andro-achanta-legacy-off',brand:'andro',name:'Achanta Legacy OFF',speed:75,control:76,spin:82,feel:'pružný',type:'5-vrstvové drevo'}
+  ,{id:'andro-eloi-legacy-offs',brand:'andro',name:'Eloi Legacy OFF/S',speed:72,control:78,spin:82,feel:'pružný',type:'5-vrstvové drevo'}
+  ,{id:'andro-heister-legacy-off',brand:'andro',name:'Heister Legacy OFF',speed:75,control:76,spin:81,feel:'stredný',type:'5-vrstvové drevo'}
+  ,{id:'andro-kanter-co-off',brand:'andro',name:'Kanter CO OFF',speed:85,control:69,spin:83,feel:'pevný',type:'balsa + outer carbon'}
+  ,{id:'andro-kanter-fo-alls',brand:'andro',name:'Kanter FO ALL/S',speed:74,control:78,spin:82,feel:'pružný',type:'balsa + outer fiber'}
+  ,{id:'andro-kanter-fo-off',brand:'andro',name:'Kanter FO OFF',speed:82,control:71,spin:83,feel:'pevný',type:'balsa + outer fiber'}
+  ,{id:'andro-novacell-alls',brand:'andro',name:'Novacell ALL/S',speed:68,control:82,spin:80,feel:'mäkký',type:'5-vrstvové drevo'}
+  ,{id:'andro-novacell-off',brand:'andro',name:'Novacell OFF',speed:76,control:75,spin:82,feel:'stredný',type:'5-vrstvové drevo'}
+  ,{id:'andro-novacell-offs',brand:'andro',name:'Novacell OFF/S',speed:73,control:77,spin:82,feel:'pružný',type:'5-vrstvové drevo'}
+  ,{id:'andro-synteliac-vci',brand:'andro',name:'Synteliac VCI',speed:82,control:72,spin:84,feel:'pružný',type:'inner Voltema-carbon'}
+  ,{id:'andro-synteliac-vci-gauzy',brand:'andro',name:'Synteliac VCI Gauzy Original',speed:83,control:72,spin:85,feel:'pružný',type:'inner Voltema-carbon'}
+  ,{id:'andro-synteliac-vco',brand:'andro',name:'Synteliac VCO',speed:85,control:69,spin:84,feel:'pevný',type:'outer Voltema-carbon'}
+  ,{id:'andro-synteliac-zci',brand:'andro',name:'Synteliac ZCI',speed:84,control:70,spin:84,feel:'pevný',type:'inner Zyreema-carbon'}
+  ,{id:'andro-synteliac-zco',brand:'andro',name:'Synteliac ZCO',speed:88,control:66,spin:84,feel:'tvrdý',type:'outer Zyreema-carbon'}
+  ,{id:'andro-timber-5-all',brand:'andro',name:'Timber 5 ALL',speed:64,control:85,spin:80,feel:'mäkký',type:'5-vrstvové drevo'}
+  ,{id:'andro-timber-5-alls',brand:'andro',name:'Timber 5 ALL/S',speed:68,control:81,spin:81,feel:'pružný',type:'5-vrstvové drevo'}
+  ,{id:'andro-timber-5-def',brand:'andro',name:'Timber 5 DEF',speed:56,control:90,spin:78,feel:'mäkký',type:'5-vrstvové drevo'}
+  ,{id:'andro-timber-5-off',brand:'andro',name:'Timber 5 OFF',speed:73,control:77,spin:82,feel:'stredný',type:'5-vrstvové drevo'}
+  ,{id:'andro-timber-7-off',brand:'andro',name:'Timber 7 OFF',speed:79,control:72,spin:82,feel:'pevný',type:'7-vrstvové drevo'}
+  ,{id:'andro-timber-7-offs',brand:'andro',name:'Timber 7 OFF/S',speed:76,control:74,spin:82,feel:'pevný',type:'7-vrstvové drevo'}
+  ,{id:'andro-tp-ligna-all',brand:'andro',name:'TP Ligna ALL',speed:68,control:82,spin:81,feel:'mäkký',type:'5-vrstvové drevo'}
+  ,{id:'andro-tp-ligna-basalt-inner',brand:'andro',name:'TP Ligna Basalt Inner',speed:80,control:73,spin:84,feel:'pružný',type:'inner basalt fiber'}
+  ,{id:'andro-tp-ligna-ci',brand:'andro',name:'TP Ligna CI',speed:83,control:70,spin:84,feel:'pružný',type:'inner carbon'}
+  ,{id:'andro-tp-ligna-co',brand:'andro',name:'TP Ligna CO',speed:85,control:68,spin:83,feel:'pevný',type:'outer carbon'}
+  ,{id:'andro-tp-ligna-def',brand:'andro',name:'TP Ligna DEF',speed:58,control:90,spin:79,feel:'mäkký',type:'5-vrstvové drevo'}
+  ,{id:'andro-treiber-ci-off',brand:'andro',name:'Treiber CI OFF',speed:82,control:72,spin:84,feel:'pružný',type:'inner carbon'}
+  ,{id:'andro-treiber-co-alls',brand:'andro',name:'Treiber CO ALL/S',speed:75,control:76,spin:82,feel:'pevný',type:'outer carbon'}
+  ,{id:'andro-treiber-co-offs',brand:'andro',name:'Treiber CO OFF/S',speed:84,control:69,spin:83,feel:'pevný',type:'outer carbon'}
+  ,{id:'andro-treiber-fi-off',brand:'andro',name:'Treiber FI OFF',speed:80,control:73,spin:84,feel:'pružný',type:'inner fiber'}
+  ,{id:'andro-unity-5-all',brand:'andro',name:'Unity 5 ALL',speed:65,control:84,spin:80,feel:'mäkký',type:'5-vrstvové drevo'}
+  ,{id:'andro-unity-5-off',brand:'andro',name:'Unity 5 OFF',speed:73,control:77,spin:81,feel:'stredný',type:'5-vrstvové drevo'}
+  ,{id:'andro-unity-7-off',brand:'andro',name:'Unity 7 OFF',speed:78,control:73,spin:82,feel:'pevný',type:'7-vrstvové drevo'}
+  ,{id:'andro-wosik-legacy-off',brand:'andro',name:'Wosik Legacy OFF',speed:75,control:76,spin:82,feel:'pružný',type:'5-vrstvové drevo'}
   ,{id:'barwell-fleet',brand:'Nittaku',name:'Barwell Fleet',speed:82,control:69,spin:84,feel:'tvrdý',type:'7+2 glass fiber'}
   ,{id:'hl5x',brand:'DHS',name:'Hurricane Long 5X',speed:89,control:66,spin:88,feel:'pevný',type:'5+2 arylate-carbon'}
   ,{id:'hl5h',brand:'DHS',name:'Hurricane Long 5H',speed:85,control:70,spin:89,feel:'pružný',type:'5+2 arylate-carbon'}
@@ -265,13 +299,15 @@ function initialize(){
     $( `${setup}-${part}` ).addEventListener('change',()=>{if(part!=='blade')renderThickness(setup,part);updateStats();});
     if(part!=='blade')$( `${setup}-${part}-thickness` ).addEventListener('change',updateStats);
     const clearCatalogChoice=()=>{
-      brand.value='';
-      $( `${setup}-${part}` ).value='';
-      if(part!=='blade')$( `${setup}-${part}-thickness` ).value='';
+      brand.selectedIndex=0;
+      $( `${setup}-${part}` ).selectedIndex=-1;
+      if(part!=='blade')$( `${setup}-${part}-thickness` ).selectedIndex=-1;
     };
     [$( `${setup}-${part}-other-brand` ),$( `${setup}-${part}-other-model` )].forEach(input=>{
+      input.addEventListener('pointerdown',clearCatalogChoice);
       input.addEventListener('focus',clearCatalogChoice);
-      input.addEventListener('input',updateStats);
+      input.addEventListener('keydown',clearCatalogChoice);
+      input.addEventListener('input',()=>{clearCatalogChoice();updateStats();});
     });
   }));
   $('player-status').addEventListener('change',toggleLeague);
