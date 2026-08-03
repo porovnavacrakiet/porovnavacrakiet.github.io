@@ -461,7 +461,6 @@ const blades = [
   ,{id:'gewo-zoom-pro-light-off-minus',brand:'Gewo',name:'Zoom Pro Light OFF-',speed:78,control:79,spin:82,feel:'mäkký',type:'ľahké útočné drevo'}
   ,{id:'gewo-zoom-pro-off-minus',brand:'Gewo',name:'Zoom Pro OFF-',speed:80,control:77,spin:82,feel:'stredný',type:'útočné drevo'}
   ,{id:'zx-gear',brand:'Victas',name:'ZX-Gear OUT',speed:85,control:67,spin:84,feel:'tvrdý',type:'Zexion carbon'}
-  ,{id:'swat',brand:'TSP',name:'Swat',speed:70,control:80,spin:81,feel:'mäkký',type:'5-vrstvové drevo'}
   ,{id:'729-black-carbon',brand:'Friendship 729',name:'Black Carbon',speed:85,control:69,spin:83,feel:'pevný',type:'carbon'}
   ,{id:'729-blue-arylate-carbon',brand:'Friendship 729',name:'Blue Arylate Carbon',speed:83,control:72,spin:85,feel:'pružný',type:'arylate carbon'}
   ,{id:'729-c3',brand:'Friendship 729',name:'C3',speed:72,control:79,spin:81,feel:'stredný',type:'5-vrstvové drevo'}
