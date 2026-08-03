@@ -24,7 +24,7 @@
             "url": "https://racketcomparator.com/",
             "name": "Table Tennis Racket Comparator",
             "description": "Compare two table tennis setups based on your playing style.",
-            "inLanguage": ["en", "sk"]
+            "inLanguage": ["en", "sk", "cs"]
           },
           {
             "@type": "WebApplication",
@@ -34,7 +34,7 @@
             "description": "A table tennis blade and rubber comparison tool based on playing style.",
             "applicationCategory": "SportsApplication",
             "operatingSystem": "Web",
-            "inLanguage": ["en", "sk"],
+            "inLanguage": ["en", "sk", "cs"],
             "isPartOf": { "@id": "https://racketcomparator.com/#website" }
           }
         ]
@@ -56,7 +56,7 @@
 
     <main id="top">
       <section class="hero">
-        <button class="language-toggle hero-language" id="language-toggle" type="button" aria-label="Switch page to English"><span class="language-label">LANGUAGE</span><span class="language-flag" aria-hidden="true">🇬🇧</span></button>
+        <div class="language-switcher hero-language" id="language-toggle" role="group" aria-label="Language"><span class="language-label">LANGUAGE</span><button type="button" class="language-flag" data-language="en" aria-label="English" title="English">🇬🇧</button><button type="button" class="language-flag" data-language="sk" aria-label="Slovenčina" title="Slovenčina">🇸🇰</button><button type="button" class="language-flag" data-language="cs" aria-label="Čeština" title="Čeština">🇨🇿</button></div>
         <h1 class="hero-title">POROVNÁVAČ<br />RAKIET</h1>
         <div class="hero-arrow" aria-hidden="true"><i class="arrow-left"></i><i class="arrow-right"></i></div>
         <p class="hero-sport">TABLE TENNIS</p>
@@ -240,6 +240,6 @@
     </main>
 
     <footer data-sk="POROVNAVAC RAKIET • Údaje v katalógu overujeme podľa oficiálnych stránok výrobcov, databáz ITTF a porovnávacích dát Revspin. • 2026" data-en="RACKET COMPARATOR • Catalogue data is verified against official manufacturer websites, ITTF databases and Revspin comparison data. • 2026">POROVNAVAC RAKIET <span>•</span> Údaje v katalógu overujeme podľa oficiálnych stránok výrobcov, databáz ITTF a porovnávacích dát Revspin. <span>•</span> 2026</footer>
-    <script src="app.js?v=20260803-yinhe-12-ittf-rubbers"></script>
+    <script src="app.js?v=20260803-czech-language"></script>
   </body>
 </html>
