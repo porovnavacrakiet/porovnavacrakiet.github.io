@@ -1185,7 +1185,22 @@ const thicknessFrom=item=>{const match=item.name.match(/·\s*([0-9.]+\s*mm|OX|MA
 const thicknessNumber=value=>value==='OX'?0:value==='MAX'?2.4:parseFloat(value)||2;
 const clamp=value=>Math.max(1,Math.min(99,Math.round(value)));
 
-function renderThickness(setup,part,modelId){const modelIdToUse=modelId||$( `${setup}-${part}` ).value;const item=collection(part).find(product=>product.id===modelIdToUse);const nominal=item?thicknessFrom(item):'2.0 mm',chosen=thicknessOptions.includes(nominal)?nominal:'INÉ';$( `${setup}-${part}-thickness` ).innerHTML=thicknessOptions.map(value=>option(value,isEnglish()&&value==='INÉ'?'OTHER':value,value===chosen)).join('');}
+function customThicknessPlaceholder(){return isEnglish()?'Other thickness (mm)':'Iná hrúbka (mm)';}
+function activateCustomThickness(setup,part){
+  const field=$( `${setup}-${part}-thickness` );
+  if(field.tagName==='INPUT'){field.value='';field.focus();return;}
+  const input=document.createElement('input');
+  input.id=field.id;input.type='number';input.min='0';input.max='4';input.step='0.1';input.inputMode='decimal';input.className='thickness-input';input.placeholder=customThicknessPlaceholder();input.setAttribute('aria-label',customThicknessPlaceholder());input.dataset.customThickness='true';
+  input.addEventListener('input',updateStats);input.addEventListener('change',updateStats);
+  field.replaceWith(input);input.focus();
+}
+function renderThickness(setup,part,modelId){
+  const modelIdToUse=modelId||$( `${setup}-${part}` ).value;const item=collection(part).find(product=>product.id===modelIdToUse);const nominal=item?thicknessFrom(item):'2.0 mm',chosen=thicknessOptions.includes(nominal)?nominal:'INÉ',id=`${setup}-${part}-thickness`;
+  let field=$(id);
+  if(field.tagName!=='SELECT'){const select=document.createElement('select');select.id=id;select.setAttribute('aria-label',isEnglish()?'Rubber thickness':'Hrúbka poťahu');field.replaceWith(select);field=select;}
+  field.innerHTML=thicknessOptions.map(value=>option(value,isEnglish()&&value==='INÉ'?'OTHER':value,value===chosen)).join('');
+  field.onchange=()=>{if(field.value==='INÉ')activateCustomThickness(setup,part);else updateStats();};
+}
 
 function renderModels(setup,part,modelId){
   const items=collection(part), brand=$( `${setup}-${part}-brand` ).value;
@@ -1225,7 +1240,6 @@ function initialize(){
     renderModels(setup,part,chosen.id);
     brand.addEventListener('change',()=>{renderModels(setup,part);updateStats();});
     $( `${setup}-${part}` ).addEventListener('change',()=>{if(part!=='blade')renderThickness(setup,part);updateStats();});
-    if(part!=='blade')$( `${setup}-${part}-thickness` ).addEventListener('change',updateStats);
     const clearCatalogChoice=()=>{
       brand.selectedIndex=0;
       $( `${setup}-${part}` ).selectedIndex=-1;
@@ -1249,7 +1263,7 @@ function selected(setup,part){
   const custom=selectedBrand==='__other__'||(!selectedBrand&&Boolean(otherBrand||otherModel));
   const item=custom?{brand:otherBrand||(isEnglish()?'OTHER':'INÉ'),name:otherModel||(isEnglish()?'Custom model':'Vlastný model'),speed:70,control:70,spin:70,hardness:45}:collection(part).find(item=>item.id===$( `${setup}-${part}` ).value)||{brand:'',name:isEnglish()?'Custom model':'Vlastný model',speed:70,control:70,spin:70,hardness:45};
   if(!isRubber)return item;
-  const thickness=$( `${setup}-${part}-thickness` ).value||'2.0 mm',displayThickness=thickness==='INÉ'?thicknessFrom(item):thickness,difference=thicknessNumber(displayThickness)-thicknessNumber(custom?'2.0 mm':thicknessFrom(item));
+  const thicknessField=$( `${setup}-${part}-thickness` ),customThickness=thicknessField.dataset.customThickness==='true',rawThickness=thicknessField.value||(customThickness?'2.0':'2.0 mm'),thickness=customThickness?`${rawThickness} mm`:rawThickness,displayThickness=thickness==='INÉ'?thicknessFrom(item):thickness,difference=thicknessNumber(displayThickness)-thicknessNumber(custom?'2.0 mm':thicknessFrom(item));
   return {...item,name:`${modelLabel(item)} · ${displayThickness}`,speed:clamp(item.speed+difference*13),control:clamp(item.control-difference*9),spin:clamp(item.spin+difference*5),thickness};
 }
 function toggleLeague(){const isRegistered=$('player-status').value==='registered',leagueWrap=$('league-wrap'),equivalentWrap=$('equivalent-wrap'),leagueSelect=$('league-level'),equivalentSelect=$('equivalent-level');leagueWrap.hidden=!isRegistered;equivalentWrap.hidden=isRegistered;leagueWrap.classList.toggle('hidden',!isRegistered);equivalentWrap.classList.toggle('hidden',isRegistered);leagueWrap.style.display=isRegistered?'block':'none';equivalentWrap.style.display=isRegistered?'none':'block';leagueSelect.disabled=!isRegistered;equivalentSelect.disabled=isRegistered;if(isRegistered)equivalentSelect.selectedIndex=-1;}
