@@ -241,6 +241,11 @@ function renderModels(setup,part,modelId){
   const allowed=items.filter(item=>item.brand===brand).sort((a,b)=>a.name.localeCompare(b.name,'en'));
   const model=$( `${setup}-${part}` );
   const other=$( `${setup}-${part}-other` );
+  if(!brand){
+    model.innerHTML=option('','',true); model.disabled=true;
+    if(part!=='blade')$( `${setup}-${part}-thickness` ).innerHTML=option('','',true);
+    other.classList.remove('hidden'); return;
+  }
   if(brand==='__other__'){
     model.innerHTML=option('__custom__',document.documentElement.lang==='en'?'Custom model / Vlastný model':'Vlastný model / Custom model',true); model.disabled=true;
     other.classList.remove('hidden'); return;
@@ -254,12 +259,20 @@ function initialize(){
   ['current','target'].forEach(setup=>['blade','fh','bh'].forEach(part=>{
     const chosen=collection(part).find(item=>item.id===defaults[setup][part]);
     const brand=$( `${setup}-${part}-brand` );
-    brand.innerHTML=[...new Set(collection(part).map(item=>item.brand))].map(item=>option(item,item,item===chosen.brand)).join('')+option('__other__','INÉ / OTHER');
+    brand.innerHTML=option('','')+[...new Set(collection(part).map(item=>item.brand))].map(item=>option(item,item,item===chosen.brand)).join('')+option('__other__','INÉ / OTHER');
     renderModels(setup,part,chosen.id);
     brand.addEventListener('change',()=>{renderModels(setup,part);updateStats();});
     $( `${setup}-${part}` ).addEventListener('change',()=>{if(part!=='blade')renderThickness(setup,part);updateStats();});
     if(part!=='blade')$( `${setup}-${part}-thickness` ).addEventListener('change',updateStats);
-    [$( `${setup}-${part}-other-brand` ),$( `${setup}-${part}-other-model` )].forEach(input=>input.addEventListener('input',updateStats));
+    const clearCatalogChoice=()=>{
+      brand.value='';
+      $( `${setup}-${part}` ).value='';
+      if(part!=='blade')$( `${setup}-${part}-thickness` ).value='';
+    };
+    [$( `${setup}-${part}-other-brand` ),$( `${setup}-${part}-other-model` )].forEach(input=>{
+      input.addEventListener('focus',clearCatalogChoice);
+      input.addEventListener('input',updateStats);
+    });
   }));
   $('player-status').addEventListener('change',toggleLeague);
   $('language-toggle').addEventListener('click',toggleLanguage);
@@ -268,8 +281,9 @@ function initialize(){
 }
 function selected(setup,part){
   const isRubber=part!=='blade';
-  const custom=$( `${setup}-${part}-brand` ).value==='__other__';
-  const item=custom?{brand:$( `${setup}-${part}-other-brand` ).value||'INÉ',name:$( `${setup}-${part}-other-model` ).value||'Vlastný model',speed:70,control:70,spin:70,hardness:45}:collection(part).find(item=>item.id===$( `${setup}-${part}` ).value);
+  const selectedBrand=$( `${setup}-${part}-brand` ).value,otherBrand=$( `${setup}-${part}-other-brand` ).value.trim(),otherModel=$( `${setup}-${part}-other-model` ).value.trim();
+  const custom=selectedBrand==='__other__'||(!selectedBrand&&Boolean(otherBrand||otherModel));
+  const item=custom?{brand:otherBrand||'INÉ',name:otherModel||'Vlastný model',speed:70,control:70,spin:70,hardness:45}:collection(part).find(item=>item.id===$( `${setup}-${part}` ).value)||{brand:'',name:'Vlastný model',speed:70,control:70,spin:70,hardness:45};
   if(!isRubber)return item;
   const thickness=$( `${setup}-${part}-thickness` ).value||'2.0 mm',displayThickness=thickness==='INÉ'?thicknessFrom(item):thickness,difference=thicknessNumber(displayThickness)-thicknessNumber(custom?'2.0 mm':thicknessFrom(item));
   return {...item,name:`${modelLabel(item)} · ${displayThickness}`,speed:clamp(item.speed+difference*13),control:clamp(item.control-difference*9),spin:clamp(item.spin+difference*5),thickness};
