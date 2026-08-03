@@ -261,7 +261,49 @@ const blades = [
   ,{id:'diode-v',brand:'Butterfly',name:'Diode V',speed:60,control:87,spin:76,feel:'mäkký',type:'defenzívne drevo'}
   ,{id:'yinhe-pro01',brand:'Yinhe',name:'Pro-01',speed:81,control:72,spin:86,feel:'pružný',type:'inner carbon'}
   ,{id:'fextra7',brand:'Sanwei',name:'Fextra 7',speed:75,control:75,spin:80,feel:'pevný',type:'7-vrstvové drevo'}
-  ,{id:'aruna-carbon',brand:'Gewo',name:'Aruna Carbon',speed:82,control:69,spin:83,feel:'pevný',type:'carbon'}
+  ,{id:'gewo-allround-basic',brand:'Gewo',name:'ALLround Basic',speed:65,control:87,spin:78,feel:'mäkký',type:'5-vrstvové drevo'}
+  ,{id:'gewo-allround-classic',brand:'Gewo',name:'Allround Classic',speed:68,control:86,spin:80,feel:'mäkký',type:'5-vrstvové drevo'}
+  ,{id:'gewo-an-jaehyun-carbon-basic',brand:'Gewo',name:'An Jaehyun Carbon Basic',speed:88,control:72,spin:85,feel:'kombinovaný',type:'asymetrické ARC carbon'}
+  ,{id:'gewo-aruna-carbon-all-plus',brand:'Gewo',name:'Aruna Carbon ALL+',speed:74,control:82,spin:82,feel:'pružný',type:'carbon'}
+  ,{id:'gewo-aruna-carbon-basic',brand:'Gewo',name:'Aruna Carbon Basic',speed:82,control:74,spin:83,feel:'pevný',type:'carbon'}
+  ,{id:'gewo-aruna-energy-arc-off',brand:'Gewo',name:'Aruna Energy ARC OFF',speed:86,control:70,spin:85,feel:'pružný',type:'aramid carbon'}
+  ,{id:'gewo-aruna-hinoki-carbon-off',brand:'Gewo',name:'Aruna Hinoki Carbon OFF',speed:85,control:71,spin:84,feel:'pevný',type:'hinoki carbon'}
+  ,{id:'gewo-aruna-kids',brand:'Gewo',name:'Aruna Kids',speed:64,control:88,spin:77,feel:'mäkký',type:'juniorské drevo'}
+  ,{id:'gewo-aruna-off',brand:'Gewo',name:'Aruna OFF',speed:81,control:74,spin:82,feel:'pevný',type:'útočné drevo'}
+  ,{id:'gewo-balsa-carbon-375',brand:'Gewo',name:'Balsa Carbon 375',speed:71,control:84,spin:79,feel:'mäkký',type:'balsa carbon'}
+  ,{id:'gewo-balsa-carbon-575',brand:'Gewo',name:'Balsa Carbon 575',speed:80,control:76,spin:81,feel:'stredný',type:'balsa carbon'}
+  ,{id:'gewo-balsa-carbon-775',brand:'Gewo',name:'Balsa Carbon 775',speed:89,control:64,spin:80,feel:'tvrdý',type:'balsa carbon'}
+  ,{id:'gewo-celexxis-allround-classic',brand:'Gewo',name:'Celexxis Allround Classic',speed:69,control:85,spin:80,feel:'mäkký',type:'allround drevo'}
+  ,{id:'gewo-celexxis-fortissimo-carbon-off',brand:'Gewo',name:'Celexxis Fortissimo Carbon OFF',speed:88,control:66,spin:83,feel:'tvrdý',type:'carbon'}
+  ,{id:'gewo-celexxis-hinoki-ex-carbon-off',brand:'Gewo',name:'Celexxis Hinoki Ex-Carbon OFF',speed:86,control:69,spin:84,feel:'pevný',type:'hinoki carbon'}
+  ,{id:'gewo-celexxis-offensive-classic',brand:'Gewo',name:'Celexxis Offensive Classic',speed:79,control:76,spin:82,feel:'stredný',type:'útočné drevo'}
+  ,{id:'gewo-ex-force-pbo-pc-off',brand:'Gewo',name:'Ex-Force PBO-PC OFF',speed:90,control:63,spin:86,feel:'tvrdý',type:'PBO power carbon'}
+  ,{id:'gewo-force-arc-off',brand:'Gewo',name:'Force ARC OFF',speed:85,control:70,spin:85,feel:'pevný',type:'aramid carbon'}
+  ,{id:'gewo-hybrid-carbon-a-speed-all-plus',brand:'Gewo',name:'Hybrid Carbon A/Speed ALL+',speed:74,control:83,spin:82,feel:'pružný',type:'hybrid carbon'}
+  ,{id:'gewo-hybrid-carbon-m-speed-off-minus',brand:'Gewo',name:'Hybrid Carbon M/Speed OFF-',speed:82,control:75,spin:84,feel:'stredný',type:'hybrid carbon'}
+  ,{id:'gewo-hybrid-carbon-x-speed-off',brand:'Gewo',name:'Hybrid Carbon X/Speed OFF',speed:89,control:68,spin:84,feel:'pevný',type:'hybrid carbon'}
+  ,{id:'gewo-in-force-arc-off-minus',brand:'Gewo',name:'In-Force ARC OFF-',speed:80,control:78,spin:86,feel:'pružný',type:'inner aramid carbon'}
+  ,{id:'gewo-in-force-pbo-pc-off',brand:'Gewo',name:'In-Force PBO-PC OFF',speed:87,control:69,spin:87,feel:'pružný',type:'inner PBO power carbon'}
+  ,{id:'gewo-in-force-s-hac-off',brand:'Gewo',name:'In-Force S-HAC OFF',speed:86,control:70,spin:86,feel:'pružný',type:'inner S-HAC fiber'}
+  ,{id:'gewo-matrixx-arc-off',brand:'Gewo',name:'Matrixx ARC OFF',speed:86,control:70,spin:85,feel:'pevný',type:'aramid carbon'}
+  ,{id:'gewo-matrixx-hybrid-arc-inner-off-minus',brand:'Gewo',name:'Matrixx Hybrid ARC Inner OFF-',speed:81,control:77,spin:86,feel:'pružný',type:'inner hybrid aramid carbon'}
+  ,{id:'gewo-matrixx-magic-off',brand:'Gewo',name:'Matrixx Magic OFF',speed:84,control:72,spin:85,feel:'stredný',type:'útočné drevo'}
+  ,{id:'gewo-offense-basic',brand:'Gewo',name:'OFFense Basic',speed:78,control:77,spin:81,feel:'stredný',type:'útočné drevo'}
+  ,{id:'gewo-power-control',brand:'Gewo',name:'Power Control',speed:72,control:84,spin:81,feel:'mäkký',type:'allround drevo'}
+  ,{id:'gewo-prithika-pavade-arc-off',brand:'Gewo',name:'Prithika Pavade ARC OFF',speed:86,control:70,spin:86,feel:'pevný',type:'aramid carbon'}
+  ,{id:'gewo-prithika-pavade-blaze-off-minus',brand:'Gewo',name:'Prithika Pavade Blaze OFF-',speed:80,control:77,spin:84,feel:'pružný',type:'útočné drevo'}
+  ,{id:'gewo-prithika-pavade-carbon-basic',brand:'Gewo',name:'Prithika Pavade Carbon Basic',speed:83,control:74,spin:84,feel:'pevný',type:'carbon'}
+  ,{id:'gewo-prithika-pavade-sense-all-plus',brand:'Gewo',name:'Prithika Pavade Sense ALL+',speed:73,control:84,spin:82,feel:'mäkký',type:'allround drevo'}
+  ,{id:'gewo-talent-all',brand:'Gewo',name:'Talent ALL',speed:65,control:88,spin:78,feel:'mäkký',type:'juniorské allround drevo'}
+  ,{id:'gewo-talent-off-minus',brand:'Gewo',name:'Talent OFF-',speed:76,control:80,spin:81,feel:'stredný',type:'juniorské útočné drevo'}
+  ,{id:'gewo-velox-alpha-def',brand:'Gewo',name:'Velox Alpha DEF',speed:56,control:93,spin:72,feel:'pevný',type:'defenzívne drevo'}
+  ,{id:'gewo-xolo-allround',brand:'Gewo',name:'Xolo ALLround',speed:68,control:86,spin:80,feel:'mäkký',type:'allround drevo'}
+  ,{id:'gewo-xolo-offensive',brand:'Gewo',name:'Xolo Offensive',speed:79,control:76,spin:82,feel:'stredný',type:'útočné drevo'}
+  ,{id:'gewo-xolo-offensive-carbon',brand:'Gewo',name:'Xolo Offensive Carbon',speed:84,control:71,spin:83,feel:'pevný',type:'carbon'}
+  ,{id:'gewo-youngster',brand:'Gewo',name:'Youngster',speed:64,control:89,spin:77,feel:'mäkký',type:'juniorské allround drevo'}
+  ,{id:'gewo-zoom-balance-all-plus',brand:'Gewo',name:'Zoom Balance ALL+',speed:72,control:87,spin:81,feel:'stredný',type:'5-vrstvové drevo'}
+  ,{id:'gewo-zoom-pro-light-off-minus',brand:'Gewo',name:'Zoom Pro Light OFF-',speed:78,control:79,spin:82,feel:'mäkký',type:'ľahké útočné drevo'}
+  ,{id:'gewo-zoom-pro-off-minus',brand:'Gewo',name:'Zoom Pro OFF-',speed:80,control:77,spin:82,feel:'stredný',type:'útočné drevo'}
   ,{id:'zx-gear',brand:'Victas',name:'ZX-Gear OUT',speed:85,control:67,spin:84,feel:'tvrdý',type:'Zexion carbon'}
   ,{id:'swat',brand:'TSP',name:'Swat',speed:70,control:80,spin:81,feel:'mäkký',type:'5-vrstvové drevo'}
   ,{id:'729-black-carbon',brand:'Friendship 729',name:'Black Carbon',speed:85,control:69,spin:83,feel:'pevný',type:'carbon'}
