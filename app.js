@@ -265,7 +265,33 @@ const blades = [
   ,{id:'zx-gear',brand:'Victas',name:'ZX-Gear OUT',speed:85,control:67,spin:84,feel:'tvrdý',type:'Zexion carbon'}
   ,{id:'swat',brand:'TSP',name:'Swat',speed:70,control:80,spin:81,feel:'mäkký',type:'5-vrstvové drevo'}
   ,{id:'729-2080',brand:'Friendship 729',name:'729 2080',speed:72,control:77,spin:82,feel:'stredný',type:'5-vrstvové drevo'}
-  ,{id:'matador',brand:'Dr. Neubauer',name:'Matador TEXA',speed:66,control:85,spin:71,feel:'pevný',type:'kombinačné drevo'}
+  ,{id:'dn-barricade-def',brand:'Dr. Neubauer',name:'Barricade DEF',speed:52,control:93,spin:70,feel:'mäkký',type:'defenzívne drevo'}
+  ,{id:'dn-bloodhound',brand:'Dr. Neubauer',name:'Bloodhound',speed:60,control:89,spin:70,feel:'pevný',type:'ALL- kombinačné drevo'}
+  ,{id:'dn-bloodhound-all-plus',brand:'Dr. Neubauer',name:'Bloodhound ALL+',speed:72,control:83,spin:75,feel:'pevný',type:'kombinačné drevo'}
+  ,{id:'dn-bulldog',brand:'Dr. Neubauer',name:'Bulldog',speed:70,control:85,spin:73,feel:'stredný',type:'allround kombinačné drevo'}
+  ,{id:'dn-colossus',brand:'Dr. Neubauer',name:'Colossus',speed:66,control:92,spin:70,feel:'kombinovaný',type:'asymetrické kombinačné drevo'}
+  ,{id:'dn-combination-effect',brand:'Dr. Neubauer',name:'Combination Effect',speed:64,control:88,spin:70,feel:'kombinovaný',type:'kombinačné drevo'}
+  ,{id:'dn-firewall-plus',brand:'Dr. Neubauer',name:'Firewall Plus',speed:69,control:86,spin:76,feel:'mäkký',type:'allround drevo'}
+  ,{id:'dn-gladiator',brand:'Dr. Neubauer',name:'Gladiator',speed:75,control:81,spin:77,feel:'pevný',type:'kombinačné drevo'}
+  ,{id:'dn-grand-master',brand:'Dr. Neubauer',name:'Grand Master',speed:62,control:90,spin:72,feel:'mäkký',type:'kombinačné drevo'}
+  ,{id:'dn-grand-master-plus',brand:'Dr. Neubauer',name:'Grand Master+',speed:68,control:87,spin:74,feel:'stredný',type:'kombinačné drevo'}
+  ,{id:'dn-hercules',brand:'Dr. Neubauer',name:'Hercules',speed:72,control:85,spin:76,feel:'pevný',type:'Kiso Hinoki fiber kombinačné drevo'}
+  ,{id:'dn-high-tech-cypress-carbon',brand:'Dr. Neubauer',name:'High Tech Cypress Carbon',speed:86,control:69,spin:82,feel:'pevný',type:'cypress carbon'}
+  ,{id:'dn-high-technology-plus',brand:'Dr. Neubauer',name:'High Technology Plus',speed:82,control:74,spin:80,feel:'pevný',type:'útočné drevo'}
+  ,{id:'dn-jackpot',brand:'Dr. Neubauer',name:'Jackpot',speed:76,control:80,spin:78,feel:'stredný',type:'kombinačné drevo'}
+  ,{id:'dn-kung-fu',brand:'Dr. Neubauer',name:'Kung Fu',speed:71,control:84,spin:75,feel:'pevný',type:'kombinačné drevo'}
+  ,{id:'dn-magical-touch',brand:'Dr. Neubauer',name:'Magical Touch',speed:79,control:79,spin:83,feel:'pružný',type:'Kiso Hinoki drevo'}
+  ,{id:'dn-matador',brand:'Dr. Neubauer',name:'Matador',speed:78,control:79,spin:76,feel:'pevný',type:'OFF- kombinačné drevo'}
+  ,{id:'dn-matador-hybrid-carbon',brand:'Dr. Neubauer',name:'Matador Hybrid Carbon',speed:90,control:64,spin:83,feel:'pevný',type:'OFF+ hybrid carbon'}
+  ,{id:'dn-matador-texa',brand:'Dr. Neubauer',name:'Matador Texa',speed:84,control:72,spin:80,feel:'tvrdý',type:'OFF kombinačné drevo'}
+  ,{id:'dn-matador-texa-balsa',brand:'Dr. Neubauer',name:'Matador Texa Balsa',speed:81,control:76,spin:79,feel:'stredný',type:'OFF- balsa fiber'}
+  ,{id:'dn-matador-texa-carbon',brand:'Dr. Neubauer',name:'Matador Texa Carbon',speed:89,control:66,spin:82,feel:'tvrdý',type:'OFF carbon'}
+  ,{id:'dn-matador-titan',brand:'Dr. Neubauer',name:'Matador Titan',speed:92,control:61,spin:82,feel:'tvrdý',type:'OFF+ kombinačné drevo'}
+  ,{id:'dn-phenomenon',brand:'Dr. Neubauer',name:'Phenomenon',speed:68,control:88,spin:74,feel:'mäkký',type:'allround kombinačné drevo'}
+  ,{id:'dn-special',brand:'Dr. Neubauer',name:'Special',speed:63,control:89,spin:70,feel:'kombinovaný',type:'kombinačné drevo'}
+  ,{id:'dn-titan',brand:'Dr. Neubauer',name:'Titan',speed:68,control:91,spin:71,feel:'kombinovaný',type:'asymetrické kombinačné drevo'}
+  ,{id:'dn-world-champion',brand:'Dr. Neubauer',name:'World Champion',speed:74,control:83,spin:78,feel:'stredný',type:'allround/ofenzívne drevo'}
+  ,{id:'dn-world-champion-carbon',brand:'Dr. Neubauer',name:'World Champion Carbon',speed:84,control:72,spin:81,feel:'pevný',type:'carbon'}
   ,{id:'dms-blockbuster',brand:'Der Materialspezialist',name:'Blockbuster',speed:64,control:87,spin:71,feel:'pevný',type:'defenzívne drevo'}
   ,{id:'dms-cubixx-100',brand:'Der Materialspezialist',name:'Cubixx 100',speed:72,control:82,spin:76,feel:'stredný',type:'allround drevo'}
   ,{id:'dms-defensor',brand:'Der Materialspezialist',name:'Defensor',speed:55,control:91,spin:69,feel:'mäkký',type:'defenzívne drevo'}
