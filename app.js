@@ -1010,7 +1010,30 @@ const rubbers = [
   {id:'drn-viper-91',brand:'Dr. Neubauer',name:'Viper',speed:50,control:85,spin:82,hardness:25},
   {id:'drn-viper-soft-94',brand:'Dr. Neubauer',name:'Viper Soft',speed:48,control:85,spin:85,hardness:25},
   {id:'palio-ak47',brand:'Palio',name:'AK47 Blue · 2.0 mm',speed:70,control:78,spin:84,hardness:42},
-  {id:'loki-arthur',brand:'Loki',name:'Arthur China · 2.1 mm',speed:80,control:70,spin:92,hardness:50}
+  {id:'loki-arthur-asia',brand:'Loki',name:'Arthur Asia · 2.1 mm',speed:85,control:70,spin:93,hardness:52},
+  {id:'loki-arthur-china',brand:'Loki',name:'Arthur China · 2.1 mm',speed:82,control:72,spin:95,hardness:50},
+  {id:'loki-arthur-diamond',brand:'Loki',name:'Arthur Diamond · 2.1 mm',speed:87,control:68,spin:94,hardness:53},
+  {id:'loki-arthur-europe',brand:'Loki',name:'Arthur Europe · 2.1 mm',speed:84,control:71,spin:91,hardness:50},
+  {id:'loki-kirin-k1',brand:'Loki',name:'Kirin K1 · 2.1 mm',speed:68,control:84,spin:82,hardness:42},
+  {id:'loki-kirin-k3',brand:'Loki',name:'Kirin K3 · 2.1 mm',speed:73,control:80,spin:85,hardness:44},
+  {id:'loki-kirin-k5',brand:'Loki',name:'Kirin K5 · 2.1 mm',speed:78,control:76,spin:87,hardness:46},
+  {id:'loki-kirin-lp',brand:'Loki',name:'Kirin LP · OX',speed:43,control:86,spin:72,hardness:25},
+  {id:'loki-kirin-mp',brand:'Loki',name:'Kirin MP · 1.8 mm',speed:72,control:81,spin:69,hardness:38},
+  {id:'loki-kirin-sp',brand:'Loki',name:'Kirin SP · 2.0 mm',speed:77,control:78,spin:65,hardness:40},
+  {id:'loki-rxton-i',brand:'Loki',name:'Rxton I · 2.1 mm',speed:66,control:85,spin:86,hardness:40},
+  {id:'loki-rxton-i-gold',brand:'Loki',name:'Rxton I Gold · 2.1 mm',speed:68,control:84,spin:87,hardness:40},
+  {id:'loki-rxton-i-super-tacky',brand:'Loki',name:'Rxton I Super Tacky · 2.1 mm',speed:65,control:86,spin:90,hardness:41},
+  {id:'loki-rxton-iii-max',brand:'Loki',name:'Rxton III MAX · 2.1 mm',speed:74,control:80,spin:89,hardness:42},
+  {id:'loki-rxton-iii-pro',brand:'Loki',name:'Rxton III PRO · 2.1 mm',speed:77,control:77,spin:91,hardness:43},
+  {id:'loki-rxton-v-max',brand:'Loki',name:'Rxton V MAX · 2.1 mm',speed:80,control:75,spin:91,hardness:44},
+  {id:'loki-rxton-v-neo-blue-sponge',brand:'Loki',name:'Rxton V NEO Blue Sponge · 2.1 mm',speed:82,control:73,spin:92,hardness:45},
+  {id:'loki-rxton-vii',brand:'Loki',name:'Rxton VII · 2.1 mm',speed:84,control:71,spin:94,hardness:47},
+  {id:'loki-rxton-ix-national',brand:'Loki',name:'Rxton IX National · 2.1 mm',speed:88,control:67,spin:95,hardness:50},
+  {id:'loki-rxton-9-pro-player-edition',brand:'Loki',name:'Rxton 9 PRO Player Edition · 2.1 mm',speed:90,control:65,spin:95,hardness:51},
+  {id:'loki-telson-100',brand:'Loki',name:'Telson 100 · 2.1 mm',speed:86,control:70,spin:87,hardness:48},
+  {id:'loki-telson-china',brand:'Loki',name:'Telson China · 2.1 mm',speed:84,control:72,spin:92,hardness:50},
+  {id:'loki-telson-germany',brand:'Loki',name:'Telson Germany · 2.1 mm',speed:88,control:68,spin:89,hardness:47.5},
+  {id:'loki-telson-speed',brand:'Loki',name:'Telson Speed · 2.1 mm',speed:91,control:64,spin:86,hardness:49}
   ,{id:'bugler',brand:'Butterfly',name:'Bugler · 2.1 mm',speed:76,control:71,spin:86,hardness:42}
   ,{id:'glayzer',brand:'Butterfly',name:'Glayzer · 2.1 mm',speed:78,control:76,spin:89,hardness:38}
   ,{id:'glayzer09c',brand:'Butterfly',name:'Glayzer 09C · 2.1 mm',speed:75,control:78,spin:91,hardness:42}
