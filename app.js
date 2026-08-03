@@ -341,7 +341,6 @@ const blades = [
   ,{id:'dms-trouble',brand:'Der Materialspezialist',name:'Trouble',speed:69,control:84,spin:74,feel:'kombinovaný',type:'kombinačné drevo'}
   ,{id:'dms-wizard',brand:'Der Materialspezialist',name:'Wizard',speed:66,control:87,spin:74,feel:'mäkký',type:'defenzívne/allround drevo'}
   ,{id:'dms-wizard-fire',brand:'Der Materialspezialist',name:'Wizard Fire',speed:81,control:74,spin:81,feel:'pevný',type:'útočné drevo'}
-  ,{id:'fire',brand:'Gambler',name:'Fire',speed:73,control:76,spin:80,feel:'stredný',type:'5-vrstvové drevo'}
   ,{id:'combination',brand:'Hallmark',name:'Combination',speed:63,control:86,spin:70,feel:'mäkký',type:'kombinačné drevo'}
   ,{id:'barna-classic',brand:'Barna Original',name:'Classic Defensive',speed:57,control:90,spin:69,feel:'mäkký',type:'defenzívne drevo'}
   ,{id:'barna-champion',brand:'Barna Original',name:'Champion',speed:65,control:90,spin:78,feel:'mäkký',type:'defenzívne drevo'}
