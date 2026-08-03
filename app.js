@@ -1348,7 +1348,7 @@ function toggleLanguage(){
   languageToggle.innerHTML=`<span class="language-label">LANGUAGE</span><span class="language-flag" aria-hidden="true">${english?'🇸🇰':'🇬🇧'}</span>`;
   languageToggle.setAttribute('aria-label',english?'Prepnúť stránku do slovenčiny':'Switch page to English');
   languageToggle.title=english?'Slovenčina':'English';
-  document.title=english?'RACKET COMPARATOR — compare table tennis setups':'POROVNÁVAČ RAKIET — porovnanie stolnotenisových zostáv';
+  document.title=english?'TABLE TENNIS RACKET COMPARATOR — Compare Table Tennis Setups':'POROVNÁVAČ RAKIET — porovnanie stolnotenisových zostáv';
   document.querySelector('meta[name="description"]').content=english?'Compare two table tennis setups based on your playing style.':'Porovnajte dve stolnotenisové zostavy podľa vášho herného štýlu.';
   document.querySelector('.brand span:last-child').textContent=english?'RACKET COMPARATOR':'POROVNÁVAČ RAKIET';
   document.querySelector('.header-note').textContent=english?'Choose better. Buy less blindly.':'Lepšia voľba, menej nákupov naslepo.';
