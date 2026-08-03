@@ -751,7 +751,6 @@ const rubbers = [
   {id:'dhs-hurricane-8-mid-hard',brand:'DHS',name:'Hurricane 8 Mid-Hard',speed:78,control:76,spin:95,hardness:49},
   {id:'dhs-hurricane-8-80-37',brand:'DHS',name:'Hurricane 8-80 · 37°',speed:82,control:79,spin:94,hardness:45},
   {id:'dhs-pf4-50',brand:'DHS',name:'PF4-50',speed:65,control:84,spin:89,hardness:45},
-  {id:'dna-pro',brand:'Stiga',name:'DNA Platinum XH · 2.3 mm',speed:87,control:65,spin:91,hardness:52},
   {id:'rakza7',brand:'Yasaka',name:'Rakza 7 · 2.0 mm',speed:75,control:78,spin:86,hardness:45},
   {id:'vega-pro',brand:'Xiom',name:'Vega Pro · 2.0 mm',speed:76,control:76,spin:88,hardness:47},
   {id:'v15',brand:'Victas',name:'V > 15 Extra · 2.0 mm',speed:83,control:69,spin:90,hardness:47},
