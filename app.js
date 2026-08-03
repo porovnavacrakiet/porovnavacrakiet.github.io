@@ -1185,6 +1185,7 @@ const rubbers = [
   ,{id:'stiga-dna-platinum-m',brand:'STIGA',name:'DNA Platinum M · 2.1 mm',speed:82,control:76,spin:91,hardness:47.5}
   ,{id:'stiga-dna-platinum-s',brand:'STIGA',name:'DNA Platinum S · 2.1 mm',speed:77,control:80,spin:90,hardness:42.5}
   ,{id:'stiga-dna-platinum-xh',brand:'STIGA',name:'DNA Platinum XH · 2.1 mm',speed:89,control:68,spin:93,hardness:52.5}
+  ,{id:'stiga-eco-future-m',brand:'STIGA',name:'ECO Future M · 2.0 mm',speed:62,control:82,spin:78,hardness:47.5}
   ,{id:'stiga-helix-hybrid-55',brand:'STIGA',name:'Helix Hybrid 55 · 2.2 mm',speed:92,control:65,spin:96,hardness:55}
   ,{id:'stiga-helix-hybrid-h',brand:'STIGA',name:'Helix Hybrid H · 2.2 mm',speed:86,control:72,spin:95,hardness:50}
   ,{id:'stiga-helix-hybrid-m',brand:'STIGA',name:'Helix Hybrid M · 2.2 mm',speed:83,control:76,spin:94,hardness:47.5}
@@ -1193,12 +1194,16 @@ const rubbers = [
   ,{id:'stiga-helix-platinum-h',brand:'STIGA',name:'Helix Platinum H · 2.2 mm',speed:86,control:71,spin:94,hardness:50}
   ,{id:'stiga-helix-platinum-m',brand:'STIGA',name:'Helix Platinum M · 2.2 mm',speed:83,control:75,spin:93,hardness:47.5}
   ,{id:'stiga-helix-platinum-xh',brand:'STIGA',name:'Helix Platinum XH · 2.2 mm',speed:90,control:67,spin:94,hardness:52.5}
+  ,{id:'stiga-horizontal-20',brand:'STIGA',name:'Horizontal 20 · 1.0 mm',speed:42,control:91,spin:55,hardness:20}
   ,{id:'stiga-mantra-control',brand:'STIGA',name:'Mantra Control · 2.0 mm',speed:65,control:86,spin:84,hardness:45}
   ,{id:'stiga-mantra-pro-h',brand:'STIGA',name:'Mantra Pro H · 2.1 mm',speed:84,control:72,spin:91,hardness:50}
   ,{id:'stiga-mantra-pro-m',brand:'STIGA',name:'Mantra Pro M · 2.1 mm',speed:80,control:77,spin:90,hardness:47}
   ,{id:'stiga-mantra-pro-m-cybershape',brand:'STIGA',name:'Mantra Pro M Cybershape · 2.1 mm',speed:80,control:77,spin:90,hardness:47}
   ,{id:'stiga-mantra-pro-xh',brand:'STIGA',name:'Mantra Pro XH · 2.1 mm',speed:87,control:69,spin:92,hardness:53}
   ,{id:'stiga-mantra-sound',brand:'STIGA',name:'Mantra Sound · 2.1 mm',speed:72,control:82,spin:86,hardness:40}
+  ,{id:'stiga-star-future-s',brand:'STIGA',name:'Star Future S · 2.0 mm',speed:55,control:88,spin:72,hardness:45}
+  ,{id:'stiga-symmetry',brand:'STIGA',name:'Symmetry · 1.8 mm',speed:65,control:78,spin:76,hardness:47.5}
+  ,{id:'stiga-vertical-20',brand:'STIGA',name:'Vertical 20 · 1.0 mm',speed:40,control:89,spin:58,hardness:20}
   ,{id:'stiga-vertical-55',brand:'STIGA',name:'Vertical 55 · 1.0 mm',speed:45,control:85,spin:58,hardness:22}
 ];
 const defaults={current:{blade:'viscaria',fh:'d09c',bh:'d09c'},target:{blade:'fzd-alc',fh:'d09c',bh:'d09c'}};
