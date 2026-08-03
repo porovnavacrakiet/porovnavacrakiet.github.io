@@ -396,7 +396,46 @@ const blades = [
   ,{id:'xstar',brand:'Butterfly',name:'Xstar V',speed:65,control:83,spin:77,feel:'mäkký',type:'5-vrstvové drevo'}
   ,{id:'innershield',brand:'Butterfly',name:'Innershield Layer ZLF',speed:61,control:86,spin:78,feel:'mäkký',type:'inner ZLF'}
   ,{id:'diode-v',brand:'Butterfly',name:'Diode V',speed:60,control:87,spin:76,feel:'mäkký',type:'defenzívne drevo'}
-  ,{id:'yinhe-pro01',brand:'Yinhe',name:'Pro-01',speed:81,control:72,spin:86,feel:'pružný',type:'inner carbon'}
+  ,{id:'yinhe-437s',brand:'Yinhe',name:'437S Provincial',speed:82,control:76,spin:84,feel:'stredne tvrdý',type:'7-vrstvové OFF drevo'}
+  ,{id:'yinhe-896',brand:'Yinhe',name:'896',speed:70,control:86,spin:80,feel:'mäkký',type:'5-vrstvové ALL+ drevo'}
+  ,{id:'yinhe-970xx-k',brand:'Yinhe',name:'970XX-K',speed:88,control:70,spin:85,feel:'tvrdý',type:'K-carbon OFF+ drevo'}
+  ,{id:'yinhe-980',brand:'Yinhe',name:'980',speed:59,control:92,spin:75,feel:'mäkký',type:'defenzívne drevo'}
+  ,{id:'yinhe-980-d1',brand:'Yinhe',name:'980 D1',speed:52,control:95,spin:73,feel:'mäkký',type:'DEF drevo'}
+  ,{id:'yinhe-980-d2',brand:'Yinhe',name:'980 D2',speed:56,control:93,spin:75,feel:'mäkký',type:'DEF+ drevo'}
+  ,{id:'yinhe-980xx',brand:'Yinhe',name:'980XX',speed:63,control:91,spin:77,feel:'stredný',type:'kompozitné DEF+ drevo'}
+  ,{id:'yinhe-982',brand:'Yinhe',name:'982',speed:87,control:70,spin:83,feel:'tvrdý',type:'1-vrstvové kiso hinoki penhold drevo'}
+  ,{id:'yinhe-984',brand:'Yinhe',name:'984',speed:82,control:76,spin:83,feel:'stredne tvrdý',type:'carbon OFF drevo'}
+  ,{id:'yinhe-985',brand:'Yinhe',name:'985',speed:78,control:81,spin:83,feel:'stredný',type:'5-vrstvové celodrevené drevo'}
+  ,{id:'yinhe-988',brand:'Yinhe',name:'988',speed:83,control:75,spin:83,feel:'stredne tvrdý',type:'carbon OFF drevo'}
+  ,{id:'yinhe-cn5',brand:'Yinhe',name:'CN5 Junior',speed:61,control:90,spin:76,feel:'mäkký',type:'juniorské tréningové drevo'}
+  ,{id:'yinhe-e1',brand:'Yinhe',name:'Earth E-1',speed:77,control:82,spin:83,feel:'pružný',type:'5-vrstvové OFF- drevo'}
+  ,{id:'yinhe-e3',brand:'Yinhe',name:'Earth E-3',speed:81,control:78,spin:84,feel:'stredný',type:'7-vrstvové OFF drevo'}
+  ,{id:'yinhe-j1',brand:'Yinhe',name:'J-1',speed:82,control:76,spin:81,feel:'tvrdý',type:'1-vrstvové ayous penhold drevo'}
+  ,{id:'yinhe-mc2',brand:'Yinhe',name:'MC-2',speed:76,control:83,spin:83,feel:'pružný',type:'microcrystalline carbon OFF- drevo'}
+  ,{id:'yinhe-n10s',brand:'Yinhe',name:'N10s',speed:72,control:86,spin:80,feel:'mäkký',type:'5-vrstvové tréningové drevo'}
+  ,{id:'yinhe-n11s',brand:'Yinhe',name:'N11s',speed:75,control:83,spin:81,feel:'stredný',type:'5-vrstvové tréningové drevo'}
+  ,{id:'yinhe-n12',brand:'Yinhe',name:'N12',speed:78,control:81,spin:82,feel:'stredný',type:'5-vrstvové OFF- drevo'}
+  ,{id:'yinhe-n8s',brand:'Yinhe',name:'N8s',speed:70,control:87,spin:80,feel:'mäkký',type:'5-vrstvové ALL+ drevo'}
+  ,{id:'yinhe-n9s',brand:'Yinhe',name:'N9s',speed:73,control:85,spin:81,feel:'mäkký',type:'5-vrstvové ALL+/OFF- drevo'}
+  ,{id:'yinhe-ne70',brand:'Yinhe',name:'NE-70',speed:86,control:72,spin:85,feel:'stredne tvrdý',type:'prémiové kompozitné OFF drevo'}
+  ,{id:'yinhe-pro01',brand:'Yinhe',name:'PRO-01',speed:87,control:71,spin:87,feel:'stredne tvrdý',type:'outer ALC OFF drevo'}
+  ,{id:'yinhe-pro01g',brand:'Yinhe',name:'PRO-01G',speed:88,control:71,spin:87,feel:'stredne tvrdý',type:'5+2 outer Green ALC OFF drevo'}
+  ,{id:'yinhe-pro03',brand:'Yinhe',name:'PRO-03',speed:85,control:74,spin:87,feel:'stredný',type:'inner ALC OFF drevo'}
+  ,{id:'yinhe-purple-dragon-537s',brand:'Yinhe',name:'Purple Dragon 537S',speed:82,control:76,spin:84,feel:'stredne tvrdý',type:'provinčné 7-vrstvové OFF drevo'}
+  ,{id:'yinhe-t10s',brand:'Yinhe',name:'T-10S',speed:90,control:65,spin:84,feel:'tvrdý',type:'ľahké balsa carbon OFF+ drevo'}
+  ,{id:'yinhe-t11s',brand:'Yinhe',name:'T-11S',speed:88,control:69,spin:84,feel:'tvrdý',type:'ľahké balsa carbon OFF+ drevo'}
+  ,{id:'yinhe-t9',brand:'Yinhe',name:'T-9',speed:73,control:85,spin:78,feel:'kombinovaný',type:'drevo pre hru s dlhými zúbkami'}
+  ,{id:'yinhe-t9-pro',brand:'Yinhe',name:'T-9 PRO',speed:80,control:79,spin:82,feel:'stredne tvrdý',type:'rosewood kompozitné OFF- drevo'}
+  ,{id:'yinhe-t1s',brand:'Yinhe',name:'T1s',speed:84,control:73,spin:83,feel:'stredne tvrdý',type:'hinoki carbon OFF drevo'}
+  ,{id:'yinhe-t2s',brand:'Yinhe',name:'T2s',speed:85,control:72,spin:84,feel:'stredne tvrdý',type:'hinoki carbon OFF drevo'}
+  ,{id:'yinhe-t8s',brand:'Yinhe',name:'T8s',speed:86,control:71,spin:84,feel:'stredne tvrdý',type:'hinoki carbon OFF drevo'}
+  ,{id:'yinhe-u2',brand:'Yinhe',name:'U-2',speed:81,control:78,spin:83,feel:'stredne tvrdý',type:'7-vrstvové celodrevené OFF drevo'}
+  ,{id:'yinhe-u2s',brand:'Yinhe',name:'U-2S',speed:79,control:81,spin:84,feel:'pružný',type:'7-vrstvové spinové drevo'}
+  ,{id:'yinhe-u3',brand:'Yinhe',name:'U-3',speed:83,control:76,spin:83,feel:'stredne tvrdý',type:'7-vrstvové OFF drevo'}
+  ,{id:'yinhe-v14-pro',brand:'Yinhe',name:'V14 PRO',speed:88,control:69,spin:86,feel:'tvrdý',type:'5+2 outer ALC OFF+ drevo'}
+  ,{id:'yinhe-w6',brand:'Yinhe',name:'W-6 Loop King',speed:78,control:81,spin:86,feel:'pružný',type:'5-vrstvové loop OFF- drevo'}
+  ,{id:'yinhe-y13',brand:'Yinhe',name:'Y-13',speed:82,control:75,spin:84,feel:'stredne tvrdý',type:'fiber OFF drevo'}
+  ,{id:'yinhe-y4',brand:'Yinhe',name:'Y-4',speed:80,control:77,spin:82,feel:'stredný',type:'tenké carbon OFF- drevo'}
   ,{id:'sanwei-a9',brand:'Sanwei',name:'A9',speed:78,control:77,spin:80,feel:'stredný',type:'ofenzívne drevo'}
   ,{id:'sanwei-accumulator-c',brand:'Sanwei',name:'Accumulator C',speed:86,control:70,spin:84,feel:'tvrdý',type:'carbon OFF drevo'}
   ,{id:'sanwei-accumulator-j',brand:'Sanwei',name:'Accumulator J',speed:81,control:75,spin:83,feel:'stredný',type:'ofenzívne drevo'}
