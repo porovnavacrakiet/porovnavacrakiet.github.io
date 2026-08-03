@@ -186,7 +186,6 @@ const blades = [
   ,{id:'729-2080',brand:'Friendship 729',name:'729 2080',speed:72,control:77,spin:82,feel:'stredný',type:'5-vrstvové drevo'}
   ,{id:'matador',brand:'Dr. Neubauer',name:'Matador TEXA',speed:66,control:85,spin:71,feel:'pevný',type:'kombinačné drevo'}
   ,{id:'the-wall',brand:'Der Materialspezialist',name:'The Wall',speed:61,control:88,spin:70,feel:'pevný',type:'defenzívne drevo'}
-  ,{id:'speed90',brand:'Darker',name:'Speed 90',speed:88,control:65,spin:83,feel:'tvrdý',type:'1-vrstvové hinoki'}
   ,{id:'fire',brand:'Gambler',name:'Fire',speed:73,control:76,spin:80,feel:'stredný',type:'5-vrstvové drevo'}
   ,{id:'combination',brand:'Hallmark',name:'Combination',speed:63,control:86,spin:70,feel:'mäkký',type:'kombinačné drevo'}
   ,{id:'barna-classic',brand:'Barna Original',name:'Classic Defensive',speed:57,control:90,spin:69,feel:'mäkký',type:'defenzívne drevo'}
