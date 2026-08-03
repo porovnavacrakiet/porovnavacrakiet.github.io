@@ -185,7 +185,31 @@ const blades = [
   ,{id:'swat',brand:'TSP',name:'Swat',speed:70,control:80,spin:81,feel:'mäkký',type:'5-vrstvové drevo'}
   ,{id:'729-2080',brand:'Friendship 729',name:'729 2080',speed:72,control:77,spin:82,feel:'stredný',type:'5-vrstvové drevo'}
   ,{id:'matador',brand:'Dr. Neubauer',name:'Matador TEXA',speed:66,control:85,spin:71,feel:'pevný',type:'kombinačné drevo'}
-  ,{id:'the-wall',brand:'Der Materialspezialist',name:'The Wall',speed:61,control:88,spin:70,feel:'pevný',type:'defenzívne drevo'}
+  ,{id:'dms-blockbuster',brand:'Der Materialspezialist',name:'Blockbuster',speed:64,control:87,spin:71,feel:'pevný',type:'defenzívne drevo'}
+  ,{id:'dms-cubixx-100',brand:'Der Materialspezialist',name:'Cubixx 100',speed:72,control:82,spin:76,feel:'stredný',type:'allround drevo'}
+  ,{id:'dms-defensor',brand:'Der Materialspezialist',name:'Defensor',speed:55,control:91,spin:69,feel:'mäkký',type:'defenzívne drevo'}
+  ,{id:'dms-deluxe-carbon',brand:'Der Materialspezialist',name:'Deluxe Carbon',speed:82,control:74,spin:82,feel:'pevný',type:'carbon'}
+  ,{id:'dms-destroyer',brand:'Der Materialspezialist',name:'Destroyer',speed:90,control:62,spin:82,feel:'tvrdý',type:'útočné carbon drevo'}
+  ,{id:'dms-dr-jekyll-mr-hyde',brand:'Der Materialspezialist',name:'Dr. Jekyll & Mr. Hyde',speed:74,control:81,spin:75,feel:'kombinovaný',type:'kombinačné drevo'}
+  ,{id:'dms-excalibur',brand:'Der Materialspezialist',name:'Excalibur',speed:84,control:71,spin:83,feel:'pevný',type:'útočné drevo'}
+  ,{id:'dms-invictus',brand:'Der Materialspezialist',name:'Invictus',speed:79,control:75,spin:82,feel:'stredný',type:'allround/ofenzívne drevo'}
+  ,{id:'dms-magic-defence',brand:'Der Materialspezialist',name:'Magic Defence',speed:56,control:92,spin:71,feel:'mäkký',type:'defenzívne drevo'}
+  ,{id:'dms-olympea',brand:'Der Materialspezialist',name:'Olympea',speed:76,control:79,spin:81,feel:'pružný',type:'allround drevo'}
+  ,{id:'dms-power-control',brand:'Der Materialspezialist',name:'Power Control',speed:73,control:83,spin:80,feel:'stredný',type:'allround drevo'}
+  ,{id:'dms-protector',brand:'Der Materialspezialist',name:'Protector',speed:60,control:89,spin:70,feel:'mäkký',type:'defenzívne drevo'}
+  ,{id:'dms-revolution',brand:'Der Materialspezialist',name:'Revolution',speed:86,control:68,spin:84,feel:'pevný',type:'útočné drevo'}
+  ,{id:'dms-scooper-ar-plus',brand:'Der Materialspezialist',name:'Scooper AR+',speed:72,control:84,spin:78,feel:'stredný',type:'allround drevo'}
+  ,{id:'dms-scooper-combi',brand:'Der Materialspezialist',name:'Scooper Combi',speed:69,control:86,spin:74,feel:'kombinovaný',type:'kombinačné drevo'}
+  ,{id:'dms-scooper-defensive',brand:'Der Materialspezialist',name:'Scooper Defensive',speed:57,control:91,spin:70,feel:'mäkký',type:'defenzívne drevo'}
+  ,{id:'dms-scooper-offensive',brand:'Der Materialspezialist',name:'Scooper Offensive',speed:84,control:70,spin:81,feel:'pevný',type:'útočné drevo'}
+  ,{id:'dms-super-control',brand:'Der Materialspezialist',name:'Super Control',speed:62,control:90,spin:73,feel:'mäkký',type:'defenzívne/allround drevo'}
+  ,{id:'dms-terror',brand:'Der Materialspezialist',name:'Terror',speed:80,control:73,spin:78,feel:'tvrdý',type:'útočné drevo'}
+  ,{id:'dms-the-wall',brand:'Der Materialspezialist',name:'The Wall',speed:61,control:88,spin:70,feel:'pevný',type:'defenzívne drevo'}
+  ,{id:'dms-the-wall-carbon',brand:'Der Materialspezialist',name:'The Wall Carbon',speed:68,control:85,spin:73,feel:'pevný',type:'defenzívne carbon drevo'}
+  ,{id:'dms-tomahawk-next-generation',brand:'Der Materialspezialist',name:'Tomahawk Next Generation',speed:75,control:79,spin:79,feel:'stredný',type:'allround drevo'}
+  ,{id:'dms-trouble',brand:'Der Materialspezialist',name:'Trouble',speed:69,control:84,spin:74,feel:'kombinovaný',type:'kombinačné drevo'}
+  ,{id:'dms-wizard',brand:'Der Materialspezialist',name:'Wizard',speed:66,control:87,spin:74,feel:'mäkký',type:'defenzívne/allround drevo'}
+  ,{id:'dms-wizard-fire',brand:'Der Materialspezialist',name:'Wizard Fire',speed:81,control:74,spin:81,feel:'pevný',type:'útočné drevo'}
   ,{id:'fire',brand:'Gambler',name:'Fire',speed:73,control:76,spin:80,feel:'stredný',type:'5-vrstvové drevo'}
   ,{id:'combination',brand:'Hallmark',name:'Combination',speed:63,control:86,spin:70,feel:'mäkký',type:'kombinačné drevo'}
   ,{id:'barna-classic',brand:'Barna Original',name:'Classic Defensive',speed:57,control:90,spin:69,feel:'mäkký',type:'defenzívne drevo'}
