@@ -264,7 +264,31 @@ const blades = [
   ,{id:'aruna-carbon',brand:'Gewo',name:'Aruna Carbon',speed:82,control:69,spin:83,feel:'pevný',type:'carbon'}
   ,{id:'zx-gear',brand:'Victas',name:'ZX-Gear OUT',speed:85,control:67,spin:84,feel:'tvrdý',type:'Zexion carbon'}
   ,{id:'swat',brand:'TSP',name:'Swat',speed:70,control:80,spin:81,feel:'mäkký',type:'5-vrstvové drevo'}
-  ,{id:'729-2080',brand:'Friendship 729',name:'729 2080',speed:72,control:77,spin:82,feel:'stredný',type:'5-vrstvové drevo'}
+  ,{id:'729-black-carbon',brand:'Friendship 729',name:'Black Carbon',speed:85,control:69,spin:83,feel:'pevný',type:'carbon'}
+  ,{id:'729-blue-arylate-carbon',brand:'Friendship 729',name:'Blue Arylate Carbon',speed:83,control:72,spin:85,feel:'pružný',type:'arylate carbon'}
+  ,{id:'729-c3',brand:'Friendship 729',name:'C3',speed:72,control:79,spin:81,feel:'stredný',type:'5-vrstvové drevo'}
+  ,{id:'729-c5-max',brand:'Friendship 729',name:'C5 Max',speed:79,control:74,spin:82,feel:'pevný',type:'5-vrstvové drevo'}
+  ,{id:'729-enlight-1',brand:'Friendship 729',name:'Enlight 1',speed:65,control:86,spin:78,feel:'mäkký',type:'allround drevo'}
+  ,{id:'729-enlight-2',brand:'Friendship 729',name:'Enlight 2',speed:70,control:82,spin:80,feel:'stredný',type:'allround drevo'}
+  ,{id:'729-k300',brand:'Friendship 729',name:'K300',speed:70,control:82,spin:80,feel:'mäkký',type:'5-vrstvové drevo'}
+  ,{id:'729-k350',brand:'Friendship 729',name:'K350',speed:73,control:79,spin:81,feel:'stredný',type:'5-vrstvové drevo'}
+  ,{id:'729-k500',brand:'Friendship 729',name:'K500',speed:77,control:76,spin:82,feel:'stredný',type:'útočné drevo'}
+  ,{id:'729-k850',brand:'Friendship 729',name:'K850',speed:82,control:71,spin:83,feel:'pevný',type:'útočné drevo'}
+  ,{id:'729-k950',brand:'Friendship 729',name:'K950',speed:86,control:67,spin:83,feel:'tvrdý',type:'útočné drevo'}
+  ,{id:'729-precious-ebony',brand:'Friendship 729',name:'Precious Ebony Wood',speed:82,control:70,spin:83,feel:'tvrdý',type:'ebony drevo'}
+  ,{id:'729-precious-green-sandalwood',brand:'Friendship 729',name:'Precious Green Sandal Wood',speed:80,control:72,spin:84,feel:'pevný',type:'sandal wood'}
+  ,{id:'729-precious-red-sandalwood',brand:'Friendship 729',name:'Precious Red Sandal Wood',speed:81,control:71,spin:84,feel:'pevný',type:'sandal wood'}
+  ,{id:'729-precious-rosewood',brand:'Friendship 729',name:'Precious Rosewood',speed:80,control:73,spin:84,feel:'pevný',type:'rosewood drevo'}
+  ,{id:'729-rage-1',brand:'Friendship 729',name:'Rage 1',speed:78,control:75,spin:82,feel:'stredný',type:'útočné drevo'}
+  ,{id:'729-rage-2',brand:'Friendship 729',name:'Rage 2',speed:82,control:71,spin:83,feel:'pevný',type:'útočné drevo'}
+  ,{id:'729-rage-nb49',brand:'Friendship 729',name:'Rage NB49',speed:84,control:69,spin:83,feel:'pevný',type:'carbon'}
+  ,{id:'729-rage-nb50',brand:'Friendship 729',name:'Rage NB50',speed:86,control:67,spin:83,feel:'tvrdý',type:'carbon'}
+  ,{id:'729-rose-5',brand:'Friendship 729',name:'Rose 5',speed:73,control:79,spin:83,feel:'pružný',type:'5-vrstvové rosewood'}
+  ,{id:'729-rose-7',brand:'Friendship 729',name:'Rose 7',speed:80,control:73,spin:83,feel:'pevný',type:'7-vrstvové rosewood'}
+  ,{id:'729-v5',brand:'Friendship 729',name:'V-5',speed:76,control:77,spin:82,feel:'stredný',type:'5-vrstvové drevo'}
+  ,{id:'729-yellow-arylate-carbon',brand:'Friendship 729',name:'Yellow Arylate Carbon',speed:84,control:70,spin:85,feel:'pevný',type:'arylate carbon'}
+  ,{id:'729-z1',brand:'Friendship 729',name:'Z-1',speed:75,control:78,spin:82,feel:'stredný',type:'5-vrstvové drevo'}
+  ,{id:'729-z2',brand:'Friendship 729',name:'Z-2',speed:80,control:73,spin:83,feel:'pevný',type:'útočné drevo'}
   ,{id:'dn-barricade-def',brand:'Dr. Neubauer',name:'Barricade DEF',speed:52,control:93,spin:70,feel:'mäkký',type:'defenzívne drevo'}
   ,{id:'dn-bloodhound',brand:'Dr. Neubauer',name:'Bloodhound',speed:60,control:89,spin:70,feel:'pevný',type:'ALL- kombinačné drevo'}
   ,{id:'dn-bloodhound-all-plus',brand:'Dr. Neubauer',name:'Bloodhound ALL+',speed:72,control:83,spin:75,feel:'pevný',type:'kombinačné drevo'}
