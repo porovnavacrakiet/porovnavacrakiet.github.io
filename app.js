@@ -190,6 +190,13 @@ const blades = [
   ,{id:'fire',brand:'Gambler',name:'Fire',speed:73,control:76,spin:80,feel:'stredný',type:'5-vrstvové drevo'}
   ,{id:'combination',brand:'Hallmark',name:'Combination',speed:63,control:86,spin:70,feel:'mäkký',type:'kombinačné drevo'}
   ,{id:'barna-classic',brand:'Barna Original',name:'Classic Defensive',speed:57,control:90,spin:69,feel:'mäkký',type:'defenzívne drevo'}
+  ,{id:'barna-champion',brand:'Barna Original',name:'Champion',speed:65,control:90,spin:78,feel:'mäkký',type:'defenzívne drevo'}
+  ,{id:'barna-stability',brand:'Barna Original',name:'Stability',speed:69,control:84,spin:80,feel:'stredný',type:'allround drevo'}
+  ,{id:'barna-super-balsa',brand:'Barna Original',name:'Super Balsa',speed:71,control:83,spin:78,feel:'mäkký',type:'balsa drevo'}
+  ,{id:'barna-supercombi',brand:'Barna Original',name:'Supercombi',speed:74,control:82,spin:79,feel:'kombinovaný',type:'kombinačné OFF/DEF drevo'}
+  ,{id:'barna-triumph',brand:'Barna Original',name:'Triumph',speed:82,control:76,spin:84,feel:'pevný',type:'útočné drevo'}
+  ,{id:'barna-victory',brand:'Barna Original',name:'Victory',speed:79,control:78,spin:83,feel:'stredný',type:'útočné drevo'}
+  ,{id:'barna-winner',brand:'Barna Original',name:'Winner',speed:73,control:81,spin:81,feel:'pružný',type:'allround/ofenzívne drevo'}
 ];
 const rubbers = [
   {id:'zyre03',brand:'Butterfly',name:'Zyre 03 · 2.5 mm',speed:92,control:62,spin:96,hardness:52},
