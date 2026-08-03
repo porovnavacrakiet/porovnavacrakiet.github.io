@@ -1173,6 +1173,33 @@ const rubbers = [
   ,{id:'feintsoft',brand:'Butterfly',name:'Feint Soft · 1.5 mm',speed:45,control:82,spin:65,hardness:25}
   ,{id:'sriver',brand:'Butterfly',name:'Sriver · 2.1 mm',speed:63,control:83,spin:79,hardness:32}
   ,{id:'tackiness',brand:'Butterfly',name:'Tackiness Chop · 1.9 mm',speed:48,control:86,spin:86,hardness:32}
+  ,{id:'stiga-dna-dragon-grip-55',brand:'STIGA',name:'DNA Dragon Grip 55 · 2.1 mm',speed:84,control:80,spin:95,hardness:55}
+  ,{id:'stiga-dna-dragon-power-525',brand:'STIGA',name:'DNA Dragon Power 52.5 · 2.1 mm',speed:86,control:72,spin:94,hardness:52.5}
+  ,{id:'stiga-dna-dragon-power-55',brand:'STIGA',name:'DNA Dragon Power 55 · 2.1 mm',speed:89,control:69,spin:95,hardness:55}
+  ,{id:'stiga-dna-dragon-power-575',brand:'STIGA',name:'DNA Dragon Power 57.5 · 2.1 mm',speed:92,control:65,spin:95,hardness:57.5}
+  ,{id:'stiga-dna-hybrid-55',brand:'STIGA',name:'DNA Hybrid 55 · 2.1 mm',speed:90,control:67,spin:94,hardness:55}
+  ,{id:'stiga-dna-hybrid-h',brand:'STIGA',name:'DNA Hybrid H · 2.1 mm',speed:84,control:72,spin:93,hardness:50}
+  ,{id:'stiga-dna-hybrid-m',brand:'STIGA',name:'DNA Hybrid M · 2.1 mm',speed:80,control:76,spin:91,hardness:47.5}
+  ,{id:'stiga-dna-hybrid-xh',brand:'STIGA',name:'DNA Hybrid XH · 2.1 mm',speed:88,control:68,spin:94,hardness:52.5}
+  ,{id:'stiga-dna-platinum-h',brand:'STIGA',name:'DNA Platinum H · 2.1 mm',speed:86,control:72,spin:92,hardness:50}
+  ,{id:'stiga-dna-platinum-m',brand:'STIGA',name:'DNA Platinum M · 2.1 mm',speed:82,control:76,spin:91,hardness:47.5}
+  ,{id:'stiga-dna-platinum-s',brand:'STIGA',name:'DNA Platinum S · 2.1 mm',speed:77,control:80,spin:90,hardness:42.5}
+  ,{id:'stiga-dna-platinum-xh',brand:'STIGA',name:'DNA Platinum XH · 2.1 mm',speed:89,control:68,spin:93,hardness:52.5}
+  ,{id:'stiga-helix-hybrid-55',brand:'STIGA',name:'Helix Hybrid 55 · 2.2 mm',speed:92,control:65,spin:96,hardness:55}
+  ,{id:'stiga-helix-hybrid-h',brand:'STIGA',name:'Helix Hybrid H · 2.2 mm',speed:86,control:72,spin:95,hardness:50}
+  ,{id:'stiga-helix-hybrid-m',brand:'STIGA',name:'Helix Hybrid M · 2.2 mm',speed:83,control:76,spin:94,hardness:47.5}
+  ,{id:'stiga-helix-hybrid-xh',brand:'STIGA',name:'Helix Hybrid XH · 2.2 mm',speed:90,control:68,spin:95,hardness:52.5}
+  ,{id:'stiga-helix-platinum-55',brand:'STIGA',name:'Helix Platinum 55 · 2.2 mm',speed:91,control:66,spin:94,hardness:55}
+  ,{id:'stiga-helix-platinum-h',brand:'STIGA',name:'Helix Platinum H · 2.2 mm',speed:86,control:71,spin:94,hardness:50}
+  ,{id:'stiga-helix-platinum-m',brand:'STIGA',name:'Helix Platinum M · 2.2 mm',speed:83,control:75,spin:93,hardness:47.5}
+  ,{id:'stiga-helix-platinum-xh',brand:'STIGA',name:'Helix Platinum XH · 2.2 mm',speed:90,control:67,spin:94,hardness:52.5}
+  ,{id:'stiga-mantra-control',brand:'STIGA',name:'Mantra Control · 2.0 mm',speed:65,control:86,spin:84,hardness:45}
+  ,{id:'stiga-mantra-pro-h',brand:'STIGA',name:'Mantra Pro H · 2.1 mm',speed:84,control:72,spin:91,hardness:50}
+  ,{id:'stiga-mantra-pro-m',brand:'STIGA',name:'Mantra Pro M · 2.1 mm',speed:80,control:77,spin:90,hardness:47}
+  ,{id:'stiga-mantra-pro-m-cybershape',brand:'STIGA',name:'Mantra Pro M Cybershape · 2.1 mm',speed:80,control:77,spin:90,hardness:47}
+  ,{id:'stiga-mantra-pro-xh',brand:'STIGA',name:'Mantra Pro XH · 2.1 mm',speed:87,control:69,spin:92,hardness:53}
+  ,{id:'stiga-mantra-sound',brand:'STIGA',name:'Mantra Sound · 2.1 mm',speed:72,control:82,spin:86,hardness:40}
+  ,{id:'stiga-vertical-55',brand:'STIGA',name:'Vertical 55 · 1.0 mm',speed:45,control:85,spin:58,hardness:22}
 ];
 const defaults={current:{blade:'viscaria',fh:'d09c',bh:'d09c'},target:{blade:'fzd-alc',fh:'d09c',bh:'d09c'}};
 const values={level:{beginner:1,club:2,league:3,advanced:4},training:{1:1,2:2,4:3},'fh-skill':{basic:1,regular:2,advanced:3},'bh-skill':{basic:1,regular:2,advanced:3},footwork:{basic:1,average:2,good:3,excellent:4}};
