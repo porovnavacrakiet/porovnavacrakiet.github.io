@@ -1037,7 +1037,6 @@ const rubbers = [
   {id:'f729-presto-spin',brand:'Friendship 729',name:'Presto Spin',speed:87,control:87,spin:73,hardness:42},
   {id:'f729-ritc',brand:'Friendship 729',name:'RITC',speed:74,control:80,spin:91,hardness:45},
   {id:'f729-sky-wing',brand:'Friendship 729',name:'Sky Wing',speed:67,control:87,spin:73,hardness:40},
-  {id:'curl-p1v',brand:'TSP',name:'Curl P1V · 1.0 mm',speed:48,control:80,spin:67,hardness:30},
   {id:'drn-a-b-s-62',brand:'Dr. Neubauer',name:'A-B-S',speed:54,control:85,spin:22,hardness:28},
   {id:'drn-a-b-s-2-129',brand:'Dr. Neubauer',name:'A-B-S 2',speed:46,control:92,spin:22,hardness:28},
   {id:'drn-a-b-s-2-evo-145',brand:'Dr. Neubauer',name:'A-B-S 2 EVO',speed:45,control:94,spin:22,hardness:28},
