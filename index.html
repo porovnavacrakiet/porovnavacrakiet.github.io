@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260803-clean-gloss" />
+    <link rel="stylesheet" href="styles.css?v=20260803-blade-years-wide" />
   </head>
   <body>
     <header class="site-header">
@@ -42,6 +42,7 @@
             <div class="form-row">
               <label for="current-blade"><b class="localized" data-sk="Drevo" data-en="Blade">Drevo</b> <span class="localized-secondary" data-sk="Blade" data-en="Blade">Blade</span></label>
               <div class="product-picker"><select id="current-blade-brand" data-setup="current" data-part="blade" data-picker="brand"></select><select id="current-blade" data-setup="current" data-part="blade" data-picker="model"></select></div><div class="other-product hidden" id="current-blade-other"><input id="current-blade-other-brand" placeholder="Iná značka dreva" /><input id="current-blade-other-model" placeholder="Model dreva" /><small data-sk="Neoverená značka — odošle sa na kontrolu." data-en="Unverified brand — it will be submitted for review.">Neoverená značka — odošle sa na kontrolu.</small></div>
+              <div class="blade-year-picker"><label for="current-blade-year"><span data-sk="Rok dreva" data-en="Blade year">Rok dreva</span><select id="current-blade-year" aria-label="Rok dreva" data-aria-sk="Rok dreva" data-aria-en="Blade year"></select></label><small data-sk="Ak rok nezmeníš, porovnávame aktuálnu verziu 2026." data-en="If unchanged, the current 2026 version is compared.">Ak rok nezmeníš, porovnávame aktuálnu verziu 2026.</small></div>
             </div>
             <div class="form-row">
               <label for="current-fh"><b class="localized" data-sk="Forehand poťah" data-en="Forehand rubber">Forehand poťah</b> <span class="localized-secondary" data-sk="FH rubber" data-en="FH rubber">FH rubber</span></label>
@@ -64,6 +65,7 @@
             <div class="form-row">
               <label for="target-blade"><b class="localized" data-sk="Drevo" data-en="Blade">Drevo</b> <span class="localized-secondary" data-sk="Blade" data-en="Blade">Blade</span></label>
               <div class="product-picker"><select id="target-blade-brand" data-setup="target" data-part="blade" data-picker="brand"></select><select id="target-blade" data-setup="target" data-part="blade" data-picker="model"></select></div><div class="other-product hidden" id="target-blade-other"><input id="target-blade-other-brand" placeholder="Iná značka dreva" /><input id="target-blade-other-model" placeholder="Model dreva" /><small data-sk="Neoverená značka — odošle sa na kontrolu." data-en="Unverified brand — it will be submitted for review.">Neoverená značka — odošle sa na kontrolu.</small></div>
+              <div class="blade-year-picker"><label for="target-blade-year"><span data-sk="Rok dreva" data-en="Blade year">Rok dreva</span><select id="target-blade-year" aria-label="Rok dreva" data-aria-sk="Rok dreva" data-aria-en="Blade year"></select></label><small data-sk="Ak rok nezmeníš, porovnávame aktuálnu verziu 2026." data-en="If unchanged, the current 2026 version is compared.">Ak rok nezmeníš, porovnávame aktuálnu verziu 2026.</small></div>
             </div>
             <div class="form-row">
               <label for="target-fh"><b class="localized" data-sk="Forehand poťah" data-en="Forehand rubber">Forehand poťah</b> <span class="localized-secondary" data-sk="FH rubber" data-en="FH rubber">FH rubber</span></label>
@@ -201,6 +203,6 @@
     </main>
 
     <footer data-sk="POROVNAVAC RAKIET • Údaje v katalógu overujeme podľa oficiálnych stránok výrobcov, databáz ITTF a porovnávacích dát Revspin. • 2026" data-en="RACKET COMPARATOR • Catalogue data is verified against official manufacturer websites, ITTF databases and Revspin comparison data. • 2026">POROVNAVAC RAKIET <span>•</span> Údaje v katalógu overujeme podľa oficiálnych stránok výrobcov, databáz ITTF a porovnávacích dát Revspin. <span>•</span> 2026</footer>
-    <script src="app.js?v=20260803-full-english"></script>
+    <script src="app.js?v=20260803-blade-years-wide"></script>
   </body>
 </html>
