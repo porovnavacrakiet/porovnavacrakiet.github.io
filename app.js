@@ -293,7 +293,11 @@ function initialize(){
   ['current','target'].forEach(setup=>['blade','fh','bh'].forEach(part=>{
     const chosen=collection(part).find(item=>item.id===defaults[setup][part]);
     const brand=$( `${setup}-${part}-brand` );
-    const brands=[...new Set(collection(part).map(item=>item.brand))].sort((first,second)=>first.localeCompare(second,'en',{sensitivity:'base'}));
+    const brands=[...new Set(collection(part).map(item=>item.brand))].sort((first,second)=>{
+      if(first==='Butterfly')return -1;
+      if(second==='Butterfly')return 1;
+      return first.localeCompare(second,'en',{sensitivity:'base'});
+    });
     brand.innerHTML=option('','')+brands.map(item=>option(item,item,item===chosen.brand)).join('')+option('__other__','INÉ / OTHER');
     renderModels(setup,part,chosen.id);
     brand.addEventListener('change',()=>{renderModels(setup,part);updateStats();});
