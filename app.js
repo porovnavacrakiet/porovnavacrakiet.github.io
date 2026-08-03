@@ -285,7 +285,82 @@ const blades = [
   ,{id:'innershield',brand:'Butterfly',name:'Innershield Layer ZLF',speed:61,control:86,spin:78,feel:'mäkký',type:'inner ZLF'}
   ,{id:'diode-v',brand:'Butterfly',name:'Diode V',speed:60,control:87,spin:76,feel:'mäkký',type:'defenzívne drevo'}
   ,{id:'yinhe-pro01',brand:'Yinhe',name:'Pro-01',speed:81,control:72,spin:86,feel:'pružný',type:'inner carbon'}
-  ,{id:'fextra7',brand:'Sanwei',name:'Fextra 7',speed:75,control:75,spin:80,feel:'pevný',type:'7-vrstvové drevo'}
+  ,{id:'sanwei-a9',brand:'Sanwei',name:'A9',speed:78,control:77,spin:80,feel:'stredný',type:'ofenzívne drevo'}
+  ,{id:'sanwei-accumulator-c',brand:'Sanwei',name:'Accumulator C',speed:86,control:70,spin:84,feel:'tvrdý',type:'carbon OFF drevo'}
+  ,{id:'sanwei-accumulator-j',brand:'Sanwei',name:'Accumulator J',speed:81,control:75,spin:83,feel:'stredný',type:'ofenzívne drevo'}
+  ,{id:'sanwei-accumulator-s',brand:'Sanwei',name:'Accumulator S',speed:83,control:73,spin:83,feel:'stredne tvrdý',type:'ofenzívne drevo'}
+  ,{id:'sanwei-b1-spotless-white',brand:'Sanwei',name:'B1 Spotless White',speed:76,control:80,spin:79,feel:'stredný',type:'celodrevené OFF- drevo'}
+  ,{id:'sanwei-breeze',brand:'Sanwei',name:'Breeze',speed:82,control:77,spin:83,feel:'mäkký',type:'5+2 basaltové OFF drevo'}
+  ,{id:'sanwei-by1091-even',brand:'Sanwei',name:'BY1091 even',speed:84,control:72,spin:82,feel:'stredne tvrdý',type:'viacvrstvové kompozitné drevo'}
+  ,{id:'sanwei-c-c',brand:'Sanwei',name:'C&C',speed:77,control:82,spin:80,feel:'stredný',type:'5+2 LD-carbon tréningové drevo'}
+  ,{id:'sanwei-c2',brand:'Sanwei',name:'C2',speed:86,control:69,spin:82,feel:'tvrdý',type:'5+2 LD-carbon OFF+ drevo'}
+  ,{id:'sanwei-c5',brand:'Sanwei',name:'C5',speed:83,control:72,spin:82,feel:'stredne tvrdý',type:'carbon OFF drevo'}
+  ,{id:'sanwei-c6-ld',brand:'Sanwei',name:'C6 LD',speed:85,control:70,spin:82,feel:'tvrdý',type:'LD-carbon OFF+ drevo'}
+  ,{id:'sanwei-ca-ld',brand:'Sanwei',name:'CA LD',speed:84,control:71,spin:83,feel:'stredne tvrdý',type:'LD-carbon OFF drevo'}
+  ,{id:'sanwei-cannon-carbon',brand:'Sanwei',name:'Cannon Carbon',speed:89,control:65,spin:82,feel:'tvrdý',type:'carbon OFF+ drevo'}
+  ,{id:'sanwei-cc',brand:'Sanwei',name:'CC',speed:78,control:80,spin:81,feel:'stredný',type:'tréningové kompozitné drevo'}
+  ,{id:'sanwei-cs',brand:'Sanwei',name:'CS',speed:74,control:83,spin:80,feel:'mäkký',type:'kontrolné tréningové drevo'}
+  ,{id:'sanwei-defense-alpha',brand:'Sanwei',name:'Defense Alpha',speed:59,control:92,spin:75,feel:'mäkký',type:'defenzívne drevo'}
+  ,{id:'sanwei-dynamo',brand:'Sanwei',name:'Dynamo',speed:83,control:73,spin:82,feel:'stredne tvrdý',type:'ofenzívne drevo'}
+  ,{id:'sanwei-echo',brand:'Sanwei',name:'Echo',speed:78,control:80,spin:82,feel:'stredný',type:'celodrevené ALL+/OFF- drevo'}
+  ,{id:'sanwei-even-981',brand:'Sanwei',name:'Even 981',speed:87,control:73,spin:84,feel:'stredne tvrdý',type:'9+8 soft-carbon OFF drevo'}
+  ,{id:'sanwei-even7',brand:'Sanwei',name:'even7',speed:81,control:76,spin:82,feel:'stredne tvrdý',type:'7-vrstvové celodrevené drevo'}
+  ,{id:'sanwei-f1-classic',brand:'Sanwei',name:'F1 Classic',speed:85,control:70,spin:84,feel:'stredne tvrdý',type:'AL-carbon OFF drevo'}
+  ,{id:'sanwei-f3-bulldozer',brand:'Sanwei',name:'F3 Bulldozer',speed:88,control:66,spin:86,feel:'tvrdý',type:'carbon OFF+ drevo'}
+  ,{id:'sanwei-f3-classic',brand:'Sanwei',name:'F3 Classic',speed:84,control:71,spin:85,feel:'stredne tvrdý',type:'carbon OFF drevo'}
+  ,{id:'sanwei-f3-pro',brand:'Sanwei',name:'F3 PRO',speed:87,control:68,spin:86,feel:'tvrdý',type:'carbon OFF+ drevo'}
+  ,{id:'sanwei-feather-carbon',brand:'Sanwei',name:'Feather Carbon',speed:79,control:79,spin:81,feel:'mäkký',type:'ľahké carbon drevo'}
+  ,{id:'sanwei-fextra',brand:'Sanwei',name:'FEXTRA',speed:80,control:77,spin:83,feel:'stredne tvrdý',type:'7-vrstvové celodrevené OFF drevo'}
+  ,{id:'sanwei-fextra-allround',brand:'Sanwei',name:'FEXTRA Allround',speed:70,control:87,spin:80,feel:'mäkký',type:'celodrevené ALL drevo'}
+  ,{id:'sanwei-fextra-one',brand:'Sanwei',name:'Fextra One',speed:83,control:74,spin:84,feel:'stredne tvrdý',type:'ofenzívne drevo'}
+  ,{id:'sanwei-froster',brand:'Sanwei',name:'Froster',speed:86,control:70,spin:86,feel:'stredne tvrdý',type:'arylate-carbon OFF drevo'}
+  ,{id:'sanwei-froster-pbo',brand:'Sanwei',name:'Froster PBO',speed:90,control:64,spin:87,feel:'tvrdý',type:'PBO-carbon OFF+ drevo'}
+  ,{id:'sanwei-froster-pro',brand:'Sanwei',name:'Froster Pro',speed:91,control:64,spin:87,feel:'tvrdý',type:'5+2 outer PLC OFF+ drevo'}
+  ,{id:'sanwei-froster-pro-pingsunday',brand:'Sanwei',name:'Froster Pro Pingsunday Edition',speed:92,control:62,spin:87,feel:'tvrdý',type:'5+2 outer PLC OFF+ drevo'}
+  ,{id:'sanwei-h1',brand:'Sanwei',name:'H1',speed:76,control:80,spin:82,feel:'stredný',type:'hinoki drevo'}
+  ,{id:'sanwei-h10-hinoki',brand:'Sanwei',name:'H10 Hinoki',speed:85,control:72,spin:83,feel:'mäkký',type:'10-vrstvové hinoki drevo'}
+  ,{id:'sanwei-h3',brand:'Sanwei',name:'H3',speed:79,control:77,spin:82,feel:'mäkký',type:'hinoki drevo'}
+  ,{id:'sanwei-h5',brand:'Sanwei',name:'H5',speed:81,control:75,spin:83,feel:'mäkký',type:'hinoki drevo'}
+  ,{id:'sanwei-hc-speed-light',brand:'Sanwei',name:'HC Speed Light',speed:82,control:77,spin:82,feel:'mäkký',type:'ľahké hinoki-carbon drevo'}
+  ,{id:'sanwei-hc-1s',brand:'Sanwei',name:'HC-1S',speed:80,control:78,spin:82,feel:'mäkký',type:'hinoki-carbon drevo'}
+  ,{id:'sanwei-hc-3s',brand:'Sanwei',name:'HC-3S',speed:83,control:74,spin:83,feel:'stredný',type:'hinoki-carbon drevo'}
+  ,{id:'sanwei-hc-5s',brand:'Sanwei',name:'HC-5S',speed:85,control:71,spin:83,feel:'stredne tvrdý',type:'hinoki-carbon drevo'}
+  ,{id:'sanwei-hc-6s',brand:'Sanwei',name:'HC-6S',speed:87,control:68,spin:83,feel:'tvrdý',type:'hinoki-carbon OFF+ drevo'}
+  ,{id:'sanwei-hynover',brand:'Sanwei',name:'Hynover',speed:85,control:71,spin:85,feel:'stredne tvrdý',type:'kompozitné OFF drevo'}
+  ,{id:'sanwei-king-carbon-t1091a',brand:'Sanwei',name:'King of Carbon – T1091A',speed:91,control:62,spin:84,feel:'tvrdý',type:'carbon OFF+ drevo'}
+  ,{id:'sanwei-king-hinoki-t1091aa',brand:'Sanwei',name:'King of Hinoki Carbon – T1091AA',speed:89,control:65,spin:85,feel:'tvrdý',type:'hinoki-carbon OFF+ drevo'}
+  ,{id:'sanwei-l1',brand:'Sanwei',name:'L1',speed:72,control:84,spin:79,feel:'mäkký',type:'kontrolné drevo'}
+  ,{id:'sanwei-ld-light',brand:'Sanwei',name:'LD Light',speed:76,control:82,spin:80,feel:'mäkký',type:'ľahké LD-carbon drevo'}
+  ,{id:'sanwei-ly1091-even',brand:'Sanwei',name:'LY1091 even',speed:84,control:72,spin:83,feel:'stredne tvrdý',type:'viacvrstvové kompozitné drevo'}
+  ,{id:'sanwei-m1',brand:'Sanwei',name:'M1',speed:77,control:80,spin:80,feel:'stredný',type:'celodrevené drevo'}
+  ,{id:'sanwei-multilayer-1',brand:'Sanwei',name:'Multilayer 1',speed:82,control:75,spin:82,feel:'stredne tvrdý',type:'viacvrstvové drevo'}
+  ,{id:'sanwei-multilayer-c',brand:'Sanwei',name:'Multilayer C',speed:91,control:63,spin:86,feel:'tvrdý',type:'9+8 soft-carbon OFF+ drevo'}
+  ,{id:'sanwei-multilayer-w',brand:'Sanwei',name:'Multilayer W',speed:84,control:72,spin:84,feel:'stredne tvrdý',type:'viacvrstvové celodrevené drevo'}
+  ,{id:'sanwei-multilayer-z',brand:'Sanwei',name:'Multilayer Z',speed:90,control:64,spin:85,feel:'stredný',type:'10+9 LD-carbon drevo'}
+  ,{id:'sanwei-nitro',brand:'Sanwei',name:'Nitro',speed:86,control:71,spin:85,feel:'stredne tvrdý',type:'5+2 outer ALC OFF drevo'}
+  ,{id:'sanwei-nova-carbon',brand:'Sanwei',name:'NOVA Carbon',speed:86,control:71,spin:84,feel:'stredný',type:'hinoki-carbon OFF drevo'}
+  ,{id:'sanwei-paramid',brand:'Sanwei',name:'Paramid',speed:85,control:72,spin:85,feel:'stredne tvrdý',type:'kompozitné OFF drevo'}
+  ,{id:'sanwei-parla',brand:'Sanwei',name:'Parla',speed:80,control:78,spin:83,feel:'stredný',type:'celodrevené OFF- drevo'}
+  ,{id:'sanwei-prism',brand:'Sanwei',name:'Prism',speed:83,control:76,spin:87,feel:'mäkký',type:'5+2 inner ALC OFF- drevo'}
+  ,{id:'sanwei-r1-kongno-hinoki',brand:'Sanwei',name:'R1 KONGNO HINOKI',speed:83,control:74,spin:83,feel:'mäkký',type:'kiso hinoki drevo'}
+  ,{id:'sanwei-r2-america-hinoki',brand:'Sanwei',name:'R2 – America HINOKI',speed:81,control:76,spin:82,feel:'mäkký',type:'hinoki drevo'}
+  ,{id:'sanwei-r3-storm-cloud',brand:'Sanwei',name:'R3 – STORM CLOUD',speed:84,control:72,spin:83,feel:'stredne tvrdý',type:'ofenzívne drevo'}
+  ,{id:'sanwei-reson',brand:'Sanwei',name:'Reson',speed:76,control:84,spin:84,feel:'stredný',type:'7-vrstvové celodrevené ALL+/OFF- drevo'}
+  ,{id:'sanwei-s1-kiso-hinoki',brand:'Sanwei',name:'S1 – Kiso Hinoki',speed:82,control:75,spin:83,feel:'mäkký',type:'kiso hinoki drevo'}
+  ,{id:'sanwei-s5-4',brand:'Sanwei',name:'S5.4',speed:84,control:72,spin:83,feel:'stredne tvrdý',type:'viacvrstvové carbon drevo'}
+  ,{id:'sanwei-s6-5',brand:'Sanwei',name:'S6.5',speed:88,control:67,spin:84,feel:'stredný',type:'6+5 soft-carbon OFF+ drevo'}
+  ,{id:'sanwei-s7-6',brand:'Sanwei',name:'S7.6',speed:90,control:64,spin:84,feel:'tvrdý',type:'7+6 carbon OFF+ drevo'}
+  ,{id:'sanwei-shrafton',brand:'Sanwei',name:'Shrafton',speed:84,control:72,spin:84,feel:'stredne tvrdý',type:'ofenzívne kompozitné drevo'}
+  ,{id:'sanwei-two-face',brand:'Sanwei',name:'TWO FACE',speed:70,control:86,spin:78,feel:'kombinovaný',type:'asymetrické DEF/OFF drevo'}
+  ,{id:'sanwei-two-face-alc',brand:'Sanwei',name:'Two Face ALC',speed:75,control:84,spin:82,feel:'kombinovaný',type:'asymetrické DEF/ALC OFF drevo'}
+  ,{id:'sanwei-two-face-soft-punch',brand:'Sanwei',name:'Two Face-Soft Punch',speed:57,control:93,spin:73,feel:'mäkký',type:'asymetrické 4-vrstvové balsa DEF- drevo'}
+  ,{id:'sanwei-v1',brand:'Sanwei',name:'V1',speed:76,control:80,spin:81,feel:'stredný',type:'celodrevené drevo'}
+  ,{id:'sanwei-v2',brand:'Sanwei',name:'V2',speed:79,control:77,spin:82,feel:'stredný',type:'ofenzívne drevo'}
+  ,{id:'sanwei-v5-pro',brand:'Sanwei',name:'V5 PRO',speed:85,control:71,spin:84,feel:'stredne tvrdý',type:'kompozitné OFF drevo'}
+  ,{id:'sanwei-v9-pro',brand:'Sanwei',name:'V9 PRO',speed:88,control:66,spin:84,feel:'tvrdý',type:'kompozitné OFF+ drevo'}
+  ,{id:'sanwei-verdi',brand:'Sanwei',name:'Verdi',speed:89,control:67,spin:86,feel:'tvrdý',type:'outer VerdiX carbon OFF+ drevo'}
+  ,{id:'sanwei-verdi-inner',brand:'Sanwei',name:'Verdi Inner',speed:85,control:72,spin:88,feel:'stredný',type:'inner VerdiX carbon OFF drevo'}
+  ,{id:'sanwei-yj-constellation',brand:'Sanwei',name:'YJ Constellation Series Table Tennis Blade',speed:78,control:80,spin:81,feel:'stredný',type:'celodrevené drevo'}
   ,{id:'gewo-allround-basic',brand:'Gewo',name:'ALLround Basic',speed:65,control:87,spin:78,feel:'mäkký',type:'5-vrstvové drevo'}
   ,{id:'gewo-allround-classic',brand:'Gewo',name:'Allround Classic',speed:68,control:86,spin:80,feel:'mäkký',type:'5-vrstvové drevo'}
   ,{id:'gewo-an-jaehyun-carbon-basic',brand:'Gewo',name:'An Jaehyun Carbon Basic',speed:88,control:72,spin:85,feel:'kombinovaný',type:'asymetrické ARC carbon'}
