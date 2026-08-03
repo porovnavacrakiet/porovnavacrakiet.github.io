@@ -94,7 +94,7 @@
             <select id="experience"><option value="under1">menej ako 1 rok</option><option value="1-3">1–3 roky</option><option value="4-7">4–7 rokov</option><option value="8-15">8–15 rokov</option><option value="15plus">15+ rokov</option></select>
           </label>
           <label>Typ hráča
-            <select id="player-status"><option value="unregistered" selected>Neregistrovaný hráč</option><option value="registered">Registrovaný hráč</option></select>
+            <select id="player-status" onchange="toggleLeague()"><option value="unregistered" selected>Neregistrovaný hráč</option><option value="registered">Registrovaný hráč</option></select>
           </label>
           <label id="league-wrap" class="hidden">Slovenská liga
             <select id="league-level"><option>Extra liga</option><option>1. liga</option><option>2. liga</option><option>3. liga</option><option>4. liga</option><option>5. liga</option><option>6. liga</option><option>7. liga</option><option>8. liga</option><option>9. liga</option><option>10. liga</option></select>
@@ -201,6 +201,6 @@
     </main>
 
     <footer>POROVNAVAC RAKIET <span>•</span> Údaje v katalógu overujeme podľa oficiálnych stránok výrobcov a databáz ITTF. <span>•</span> 2026</footer>
-    <script src="app.js?v=20260803-registered-player-profile"></script>
+    <script src="app.js?v=20260803-hide-registered-equivalent-level"></script>
   </body>
 </html>
