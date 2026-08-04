@@ -1382,7 +1382,7 @@ const rubbers = [
   ,{id:'stiga-helix-hybrid-m',brand:'STIGA',name:'Helix Hybrid M · 2.2 mm',speed:83,control:76,spin:94,hardness:47.5}
   ,{id:'stiga-helix-hybrid-xh',brand:'STIGA',name:'Helix Hybrid XH · 2.2 mm',speed:90,control:68,spin:95,hardness:52.5}
   ,{id:'stiga-helix-platinum-55',brand:'STIGA',name:'Helix Platinum 55 · 2.2 mm',speed:91,control:66,spin:94,hardness:55}
-  {id:'stiga-helix-platinum-h',brand:'STIGA',name:'Helix Platinum H · 2.2 mm',speed:86,control:71,spin:94,hardness:50}
+  ,{id:'stiga-helix-platinum-h',brand:'STIGA',name:'Helix Platinum H · 2.2 mm',speed:86,control:71,spin:94,hardness:50}
   ,{id:'stiga-helix-platinum-m',brand:'STIGA',name:'Helix Platinum M · 2.2 mm',speed:83,control:75,spin:93,hardness:47.5}
   ,{id:'stiga-helix-platinum-xh',brand:'STIGA',name:'Helix Platinum XH · 2.2 mm',speed:90,control:67,spin:94,hardness:52.5}
   ,{id:'stiga-horizontal-20',brand:'STIGA',name:'Horizontal 20 · 1.0 mm',speed:42,control:91,spin:55,hardness:20}
