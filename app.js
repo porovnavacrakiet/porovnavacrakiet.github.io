@@ -1382,7 +1382,7 @@ const rubbers = [
   ,{id:'stiga-helix-hybrid-m',brand:'STIGA',name:'Helix Hybrid M · 2.2 mm',speed:83,control:76,spin:94,hardness:47.5}
   ,{id:'stiga-helix-hybrid-xh',brand:'STIGA',name:'Helix Hybrid XH · 2.2 mm',speed:90,control:68,spin:95,hardness:52.5}
   ,{id:'stiga-helix-platinum-55',brand:'STIGA',name:'Helix Platinum 55 · 2.2 mm',speed:91,control:66,spin:94,hardness:55}
-  ,{id:'stiga-helix-platinum-h',brand:'STIGA',name:'Helix Platinum H · 2.2 mm',speed:86,control:71,spin:94,hardness:50}
+  {id:'stiga-helix-platinum-h',brand:'STIGA',name:'Helix Platinum H · 2.2 mm',speed:86,control:71,spin:94,hardness:50}
   ,{id:'stiga-helix-platinum-m',brand:'STIGA',name:'Helix Platinum M · 2.2 mm',speed:83,control:75,spin:93,hardness:47.5}
   ,{id:'stiga-helix-platinum-xh',brand:'STIGA',name:'Helix Platinum XH · 2.2 mm',speed:90,control:67,spin:94,hardness:52.5}
   ,{id:'stiga-horizontal-20',brand:'STIGA',name:'Horizontal 20 · 1.0 mm',speed:42,control:91,spin:55,hardness:20}
@@ -1409,7 +1409,7 @@ const thicknessNumber=value=>value==='OX'?0:value==='MAX'?2.4:parseFloat(value)|
 const clamp=value=>Math.max(1,Math.min(99,Math.round(value)));
 
 const czechText={
-  '(nepovinné)':'(volitelné)','02 / TVOJ PROFIL':'02 / TVŮJ PROFIL','03 / VÝSLEDOK POROVNANIA':'03 / VÝSLEDEK POROVNÁNÍ','Ak rok nezmeníš, porovnávame aktuálnu verziu 2026.':'Pokud rok nezměníš, porovnáváme aktuální verzi 2026.','Ako dlho hráš stolný tenis?':'Jak dlouho hraješ stolní tenis?','Ako reálne hráš?':'Jak skutečně hraješ?','Backhand poťah':'Potah na backhand','Chyba v údajoch':'Chyba v údajích','Chýba ti značka, model alebo funkcia?':'Chybí ti značka, model nebo funkce?','Chýbajúce drevo alebo poťah':'Chybějící dřevo nebo potah','Dobrá':'Dobrá','Drevo':'Dřevo','Extra liga':'Extraliga','Forehand poťah':'Potah na forehand','Iné':'Jiné','KOMPATIBILITA ZMENY':'KOMPATIBILITA ZMĚNY','Klubový hráč':'Klubový hráč','Ligový hráč':'Ligový hráč','Moja aktuálna zostava':'Moje současná sestava','Naše odporúčanie':'Naše doporučení','Neoverená značka — odošle sa na kontrolu.':'Neověřená značka — bude odeslána ke kontrole.','Neregistrovaný hráč':'Neregistrovaný hráč','Návrh funkcie':'Návrh funkce','Odoslať návrh':'Odeslat návrh','POMÔŽ NÁM ZLEPŠIŤ POROVNÁVAČ':'POMOZ NÁM ZLEPŠIT POROVNÁVAČ','Pod úrovňou 10. ligy':'Pod úrovní 10. ligy','Pokročilý':'Pokročilý','Porovnať moje zostavy':'Porovnat moje sestavy','Porovnávaná zostava':'Porovnávaná sestava','Pošli nám svoj návrh. Každú žiadosť o produkt overíme podľa dôveryhodných zdrojov pred zaradením do katalógu.':'Pošli nám svůj návrh. Každou žádost o produkt ověříme podle důvěryhodných zdrojů před zařazením do katalogu.','Pravidelný':'Pravidelný','Predikcia vychádza z modelových vlastností vybavenia a zadaného profilu. Osobný pocit z rakety sa môže líšiť.':'Predikce vychází z modelových vlastností vybavení a zadaného profilu. Osobní pocit z pálky se může lišit.','Pri stole':'U stolu','Približne 1. liga':'Přibližně 1. liga','Približne 10.–7. liga':'Přibližně 10.–7. liga','Približne 3.–2. liga':'Přibližně 3.–2. liga','Približne 6.–4. liga':'Přibližně 6.–4. liga','Približne Extra liga':'Přibližně Extraliga','Približná úroveň voči registrovaným':'Přibližná úroveň vůči registrovaným','Priemerná':'Průměrná','Práca nôh':'Práce nohou','Registrovaný hráč':'Registrovaný hráč','Rok výroby dreva':'Rok výroby dřeva','Slovenská liga':'Česká liga','Stredná vzdialenosť':'Střední vzdálenost','Tréningy za týždeň':'Tréninky týdně','Tvoj návrh':'Tvůj návrh','Tvoja analýza':'Tvoje analýza','Typ hráča':'Typ hráče','Téma':'Téma','VLASTNÍM':'VLASTNÍM','Vek':'Věk','Veľmi dobrá':'Velmi dobrá','Vzdialenosť od stola':'Vzdálenost od stolu','Výkonnostný hráč':'Výkonnostní hráč','ZVAŽUJEM':'ZVAŽUJI','Začiatočník':'Začátečník','Základná':'Základní','Základný':'Základní','do 12 rokov':'do 12 let','menej ako 1 rok':'méně než 1 rok','Úroveň hry':'Herní úroveň','Čo sa zmení v hre':'Co se změní ve hře','Čím presnejší profil, tým užitočnejšie odporúčanie.':'Čím přesnější profil, tím užitečnější doporučení.','Ďalej od stola':'Dále od stolu','Porovnávač rakiet domov':'Porovnávač pálek – domů','Značka poťahu':'Značka potahu','Model poťahu':'Model potahu','Hrúbka poťahu':'Tloušťka potahu','Iná značka dreva':'Jiná značka dřeva','Model dreva':'Model dřeva','Iná značka poťahu':'Jiná značka potahu','tvoj@email.sk':'tvuj@email.cz','Napíš nám značku, presný model alebo nápad na zlepšenie…':'Napiš nám značku, přesný model nebo nápad na zlepšení…','POROVNAVAC RAKIET • Údaje v katalógu overujeme podľa oficiálnych stránok výrobcov, databáz ITTF a porovnávacích dát Revspin. • 2026':'POROVNÁVAČ PALEK • Údaje v katalogu ověřujeme podle oficiálních stránek výrobců, databází ITTF a srovnávacích dat Revspin. • 2026'
+  '(nepovinné)':'(volitelné)','02 / TVOJ PROFIL':'02 / TVŮJ PROFIL','03 / VÝSLEDOK POROVNANIA':'03 / VÝSLEDEK POROVNÁNÍ','Ak rok nezmeníš, porovnávame aktuálnu verziu 2026.':'Pokud rok nezměníš, porovnáváme aktuální verzi 2026.','Ako dlho hráš stolný tenis?':'Jak dlouho hraješ stolní tenis?','Ako reálne hráš?':'Jak skutečně hraješ?','Backhand poťah':'Potah na backhand','BACKHAND POŤAH':'POTAH NA BACKHAND','Chyba v údajoch':'Chyba v údajích','Chýba ti značka, model alebo funkcia?':'Chybí ti značka, model nebo funkce?','Chýbajúce drevo alebo poťah':'Chybějící dřevo nebo potah','Dobrá':'Dobrá','Drevo':'Dřevo','DREVO':'DŘEVO','Extra liga':'Extraliga','Forehand poťah':'Potah na forehand','FOREHAND POŤAH':'POTAH NA FOREHAND','Iné':'Jiné','KOMPATIBILITA ZMENY':'KOMPATIBILITA ZMĚNY','Klubový hráč':'Klubový hráč','Ligový hráč':'Ligový hráč','Moja aktuálna zostava':'Moje současná sestava','Naše odporúčanie':'Naše doporučení','Neoverená značka — odošle sa na kontrolu.':'Neověřená značka — bude odeslána ke kontrole.','Neregistrovaný hráč':'Neregistrovaný hráč','Návrh funkcie':'Návrh funkce','Odoslať návrh':'Odeslat návrh','POMÔŽ NÁM ZLEPŠIŤ POROVNÁVAČ':'POMOZ NÁM ZLEPŠIT POROVNÁVAČ','Pod úrovňou 10. ligy':'Pod úrovní 10. ligy','Pokročilý':'Pokročilý','Porovnať moje zostavy':'Porovnat moje sestavy','Porovnávaná zostava':'Porovnávaná sestava','Pošli nám svoj návrh. Každú žiadosť o produkt overíme podľa dôveryhodných zdrojov pred zaradením do katalógu.':'Pošli nám svůj návrh. Každou žádost o produkt ověříme podle důvěryhodných zdrojů před zařazením do katalogu.','Pravidelný':'Pravidelný','Predikcia vychádza z modelových vlastností vybavenia a zadaného profilu. Osobný pocit z rakety sa môže líšiť.':'Predikce vychází z modelových vlastností vybavení a zadaného profilu. Osobní pocit z pálky se může lišit.','Pri stole':'U stolu','Približne 1. liga':'Přibližně 1. liga','Približne 10.–7. liga':'Přibližně 10.–7. liga','Približne 3.–2. liga':'Přibližně 3.–2. liga','Približne 6.–4. liga':'Přibližně 6.–4. liga','Približne Extra liga':'Přibližně Extraliga','Približná úroveň voči registrovaným':'Přibližná úroveň vůči registrovaným','Priemerná':'Průměrná','Práca nôh':'Práce nohou','Registrovaný hráč':'Registrovaný hráč','Rok výroby dreva':'Rok výroby dřeva','Slovenská liga':'Česká liga','Stredná vzdialenosť':'Střední vzdálenost','Tréningy za týždeň':'Tréninky týdně','Tvoj návrh':'Tvůj návrh','Tvoja analýza':'Tvoje analýza','Typ hráča':'Typ hráče','Téma':'Téma','VLASTNÍM':'VLASTNÍM','Vek':'Věk','Veľmi dobrá':'Velmi dobrá','Vzdialenosť od stola':'Vzdálenost od stolu','Výkonnostný hráč':'Výkonnostní hráč','ZVAŽUJEM':'ZVAŽUJI','Začiatočník':'Začátečník','Základná':'Základní','Základný':'Základní','do 12 rokov':'do 12 let','menej ako 1 rok':'méně než 1 rok','Úroveň hry':'Herní úroveň','Čo sa zmení v hre':'Co se změní ve hře','Čím presnejší profil, tým užitočnejšie odporúčanie.':'Čím přesnější profil, tím užitečnější doporučení.','Ďalej od stola':'Dále od stolu','Porovnávač rakiet domov':'Porovnávač pálek – domů','Značka poťahu':'Značka potahu','Model poťahu':'Model potahu','Hrúbka poťahu':'Tloušťka potahu','Iná značka dreva':'Jiná značka dřeva','Model dreva':'Model dřeva','Iná značka poťahu':'Jiná značka potahu','tvoj@email.sk':'tvuj@email.cz','Napíš nám značku, presný model alebo nápad na zlepšenie…':'Napiš nám značku, přesný model nebo nápad na zlepšení…','POROVNAVAC RAKIET • Údaje v katalógu overujeme podľa oficiálnych stránok výrobcov, databáz ITTF a porovnávacích dát Revspin. • 2026':'POROVNÁVAČ PALEK • Údaje v katalogu ověřujeme podle oficiálních stránek výrobců, databází ITTF a srovnávacích dat Revspin. • 2026'
 };
 Object.assign(czechText,{'Používame anonymizované analytické cookies, aby sme vedeli zlepšovať porovnávač.':'Používáme anonymizované analytické cookies, abychom mohli zlepšovat porovnávač.','Nie, ďakujem':'Ne, děkuji','Súhlasím':'Souhlasím'});
 const czech=value=>czechText[value]||value;
@@ -1438,9 +1438,9 @@ function renderModels(setup,part,modelId){
   const model=$( `${setup}-${part}` );
   const other=$( `${setup}-${part}-other` );
   if(!brand){
-    model.innerHTML=option('','',true); model.disabled=true;
+    model.innerHTML=option('',isEnglish()?'-- Select model --':isCzech()?'-- Vyber model --':'-- Vyber model --',true); model.disabled=true;
     if(part!=='blade')$( `${setup}-${part}-thickness` ).innerHTML=option('','',true);
-    other.classList.remove('hidden'); return;
+    other.classList.add('hidden'); return;
   }
   if(brand==='__other__'){
     model.innerHTML=option('__custom__',isEnglish()?'Custom model':isCzech()?'Vlastní model':'Vlastný model / Custom model',true); model.disabled=true;
@@ -1448,7 +1448,7 @@ function renderModels(setup,part,modelId){
   }
   model.disabled=false; other.classList.add('hidden');
   model.innerHTML=allowed.map(item=>option(item.id,part==='blade'?item.name:modelLabel(item),item.id===modelId)).join('');
-  if(!model.value) model.value=allowed[0].id;
+  if(!model.value && allowed.length > 0) model.value=allowed[0].id;
   if(part!=='blade')renderThickness(setup,part,model.value);
 }
 function initialize(){
@@ -1466,20 +1466,30 @@ function initialize(){
       if(second==='Butterfly')return 1;
       return first.localeCompare(second,'en',{sensitivity:'base'});
     });
-    brand.innerHTML=option('','')+brands.map(item=>option(item,item,item===chosen.brand)).join('')+option('__other__','INÉ / OTHER');
+    brand.innerHTML=option('',isEnglish()?'-- Select brand --':isCzech()?'-- Vyber značku --':'-- Vyber značku --')+brands.map(item=>option(item,item,item===chosen.brand)).join('')+option('__other__',isEnglish()?'OTHER':isCzech()?'JINÉ':'INÉ / OTHER');
     renderModels(setup,part,chosen.id);
-    brand.addEventListener('change',()=>{renderModels(setup,part);updateStats();});
+    brand.addEventListener('change',()=>{
+      if(brand.value==='__other__'){
+        $( `${setup}-${part}-other` ).classList.remove('hidden');
+      } else {
+        $( `${setup}-${part}-other-brand` ).value='';
+        $( `${setup}-${part}-other-model` ).value='';
+        if(part==='blade')$( `${setup}-${part}-other-year` ).value='';
+        $( `${setup}-${part}-other` ).classList.add('hidden');
+      }
+      renderModels(setup,part);
+      updateStats();
+    });
     $( `${setup}-${part}` ).addEventListener('change',()=>{if(part!=='blade')renderThickness(setup,part);updateStats();});
-    const clearCatalogChoice=()=>{
-      brand.selectedIndex=0;
-      $( `${setup}-${part}` ).selectedIndex=-1;
-      if(part!=='blade')$( `${setup}-${part}-thickness` ).selectedIndex=-1;
-    };
-    [$( `${setup}-${part}-other-brand` ),$( `${setup}-${part}-other-model` )].forEach(input=>{
-      input.addEventListener('pointerdown',clearCatalogChoice);
-      input.addEventListener('focus',clearCatalogChoice);
-      input.addEventListener('keydown',clearCatalogChoice);
-      input.addEventListener('input',()=>{clearCatalogChoice();updateStats();});
+    const otherInputs=part==='blade'?[$( `${setup}-${part}-other-brand` ),$( `${setup}-${part}-other-model` ),$( `${setup}-${part}-other-year` )]:[$( `${setup}-${part}-other-brand` ),$( `${setup}-${part}-other-model` )];
+    otherInputs.forEach(input=>{
+      input.addEventListener('input',()=>{
+        if(brand.value!=='__other__'){
+          brand.value='__other__';
+          renderModels(setup,part);
+        }
+        updateStats();
+      });
     });
   }));
   $('player-status').addEventListener('change',toggleLeague);
@@ -1489,9 +1499,23 @@ function initialize(){
 }
 function selected(setup,part){
   const isRubber=part!=='blade';
-  const selectedBrand=$( `${setup}-${part}-brand` ).value,otherBrand=$( `${setup}-${part}-other-brand` ).value.trim(),otherModel=$( `${setup}-${part}-other-model` ).value.trim();
+  const brandSelect=$( `${setup}-${part}-brand` );
+  const selectedBrand=brandSelect.value;
+  const otherBrand=$( `${setup}-${part}-other-brand` ).value.trim();
+  const otherModel=$( `${setup}-${part}-other-model` ).value.trim();
   const custom=selectedBrand==='__other__'||(!selectedBrand&&Boolean(otherBrand||otherModel));
-  const customName=isEnglish()?'Custom model':isCzech()?'Vlastní model':'Vlastný model';const item=custom?{brand:otherBrand||(isEnglish()?'OTHER':isCzech()?'JINÉ':'INÉ'),name:otherModel||customName,speed:70,control:70,spin:70,hardness:45}:collection(part).find(item=>item.id===$( `${setup}-${part}` ).value)||{brand:'',name:customName,speed:70,control:70,spin:70,hardness:45};
+  const customName=isEnglish()?'Custom model':isCzech()?'Vlastní model':'Vlastný model';
+  
+  let item;
+  if(custom){
+    item={brand:otherBrand||(isEnglish()?'OTHER':isCzech()?'JINÉ':'INÉ'),name:otherModel||customName,speed:70,control:70,spin:70,hardness:45};
+  } else {
+    item=collection(part).find(product=>product.id===$( `${setup}-${part}` ).value)||{brand:'',name:customName,speed:70,control:70,spin:70,hardness:45};
+    if(item.brand && brandSelect.value!==item.brand){
+      brandSelect.value=item.brand;
+    }
+  }
+  
   if(!isRubber)return item;
   const thicknessField=$( `${setup}-${part}-thickness` ),customThickness=thicknessField.dataset.customThickness==='true',rawThickness=thicknessField.value||(customThickness?'2.0':'2.0 mm'),thickness=customThickness?`${rawThickness} mm`:rawThickness,displayThickness=thickness==='INÉ'?thicknessFrom(item):thickness,difference=thicknessNumber(displayThickness)-thicknessNumber(custom?'2.0 mm':thicknessFrom(item));
   return {...item,name:`${modelLabel(item)} · ${displayThickness}`,speed:clamp(item.speed+difference*13),control:clamp(item.control-difference*9),spin:clamp(item.spin+difference*5),thickness};
@@ -1514,9 +1538,10 @@ function setLanguage(language){
   document.querySelectorAll('[data-aria-sk][data-aria-en]').forEach(element=>element.setAttribute('aria-label',english?element.dataset.ariaEn:czechLanguage?czech(element.dataset.ariaSk):element.dataset.ariaSk));
   document.querySelectorAll('option[value="__other__"]').forEach(optionElement=>optionElement.textContent=english?'OTHER':czechLanguage?'JINÉ':'INÉ / OTHER');
   document.querySelectorAll('option[value="__custom__"]').forEach(optionElement=>optionElement.textContent=english?'Custom model':czechLanguage?'Vlastní model':'Vlastný model / Custom model');
-  ['current','target'].forEach(setup=>['blade','fh','bh'].forEach(part=>{
+['current','target'].forEach(setup=>['blade','fh','bh'].forEach(part=>{
     $( `${setup}-${part}-other-brand` ).placeholder=english?(part==='blade'?'Other blade brand':'Other rubber brand'):czechLanguage?(part==='blade'?'Jiná značka dřeva':'Jiná značka potahu'):(part==='blade'?'Iná značka dreva':'Iná značka poťahu');
-    $( `${setup}-${part}-other-model` ).placeholder=english?(part==='blade'?'Blade model':'Rubber model'):czechLanguage?(part==='blade'?'Model dřeva':'Model potahu'):(part==='blade'?'Model dreva':'Model poťahu');
+    $( `${setup}-${part}-other-model` ).placeholder=english?(part==='blade'?'Blade model':'Rubber model'):czechLanguage?(part==='blade'?'Model dřeva':'Model potahu'):(part==='blade'?'Model dreva':'Model potahu');
+    if(part==='blade')$( `${setup}-${part}-other-year` ).placeholder=english?'YEAR':czechLanguage?'ROK':'ROK';
   }));
   ['current','target'].forEach(setup=>['fh','bh'].forEach(part=>renderThickness(setup,part)));
   $('feedback-status').textContent='';
@@ -1537,7 +1562,7 @@ function initializeAnalyticsConsent(){
 function trackComparison(){
   if(localStorage.getItem('racket-comparator-analytics-consent')==='granted'&&typeof window.gtag==='function')window.gtag('event','racket_comparison',{event_category:'engagement',event_label:'Compare my setups'});
 }
-function setupData(setup){const blade=selected(setup,'blade'),fh=selected(setup,'fh'),bh=selected(setup,'bh'),year=Number($( `${setup}-blade-year` ).value)||2026;return{blade,fh,bh,year,speed:Math.round(blade.speed*.48+fh.speed*.30+bh.speed*.22),control:Math.round(blade.control*.48+fh.control*.30+bh.control*.22),spin:Math.round(blade.spin*.38+fh.spin*.37+bh.spin*.25)};}
+function setupData(setup){const blade=selected(setup,'blade'),fh=selected(setup,'fh'),bh=selected(setup,'bh'),otherYear=Number($( `${setup}-blade-other-year` ).value),yearSelectValue=Number($( `${setup}-blade-year` ).value)||2026,year=$( `${setup}-blade-brand` ).value==='__other__'&&otherYear>=1950?otherYear:yearSelectValue;return{blade,fh,bh,year,speed:Math.round(blade.speed*.48+fh.speed*.30+bh.speed*.22),control:Math.round(blade.control*.48+fh.control*.30+bh.control*.22),spin:Math.round(blade.spin*.38+fh.spin*.37+bh.spin*.25)};}
 function updateStats(){const labels=isEnglish()?['SPEED','CONTROL','SPIN']:isCzech()?['RYCHLOST','KONTROLA','SPIN']:['RÝCHLOSŤ','KONTROLA','SPIN'];['current','target'].forEach(setup=>{const d=setupData(setup);$( `${setup}-stats` ).innerHTML=labels.map((name,index)=>`<span class="mini-stat">${name}<b>${[d.speed,d.control,d.spin][index]}</b></span>`).join('');});}
 function profile(){return Object.fromEntries(Object.keys(values).map(key=>[key,values[key][$(key).value]]));}
 function wordDelta(value){const abs=Math.abs(value);return abs<3?'takmer bez zmeny':abs<9?'mierne':abs<18?'citeľne':'výrazne';}
