@@ -56,7 +56,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260804-fh-bh-colors-v3" />
+    <link rel="stylesheet" href="styles.css?v=20260804-blade-other-year" />
   </head>
   <body>
     <aside class="analytics-consent" id="analytics-consent" role="dialog" aria-live="polite" aria-label="Analytics consent">
@@ -93,10 +93,10 @@
               <span class="tag localized" data-sk="VLASTNÍM" data-en="CURRENT">VLASTNÍM</span>
               <h3 class="localized" data-sk="Moja aktuálna zostava" data-en="My current setup">Moja aktuálna zostava</h3>
             </div>
-            <div class="form-row">
+            <div class="form-row blade-frame">
               <label for="current-blade"><b class="localized" data-sk="DREVO" data-en="BLADE" data-cs="DŘEVO">DREVO</b> <span class="localized-secondary" data-sk="BLADE" data-en="DREVO" data-cs="BLADE">BLADE</span></label>
-              <div class="product-picker"><select id="current-blade-brand" data-setup="current" data-part="blade" data-picker="brand"></select><select id="current-blade" data-setup="current" data-part="blade" data-picker="model"></select></div><div class="other-product hidden" id="current-blade-other"><input id="current-blade-other-brand" placeholder="INÁ ZNAČKA DREVA" /><input id="current-blade-other-model" placeholder="MODEL DREVA" /><small data-sk="Neoverená značka — odošle sa na kontrolu." data-en="Unverified brand — it will be submitted for review.">Neoverená značka — odošle sa na kontrolu.</small></div>
-              <div class="blade-year-picker"><label for="current-blade-year"><span data-sk="Rok výroby dreva" data-en="Blade production year">Rok výroby dreva</span><select id="current-blade-year" aria-label="Rok výroby dreva" data-aria-sk="Rok výroby dreva" data-aria-en="Blade production year"></select></label><small data-sk="Ak rok nezmeníš, porovnávame aktuálnu verziu 2026." data-en="If unchanged, the current 2026 version is compared.">Ak rok nezmeníš, porovnávame aktuálnu verziu 2026.</small></div>
+              <div class="product-picker blade-picker"><select id="current-blade-brand" data-setup="current" data-part="blade" data-picker="brand"></select><select id="current-blade" data-setup="current" data-part="blade" data-picker="model"></select><select id="current-blade-year" class="blade-year-select" aria-label="Rok výroby dreva" data-aria-sk="Rok výroby dreva" data-aria-en="Blade production year" title="Rok výroby dreva"></select></div><div class="other-product other-product-blade hidden" id="current-blade-other"><input id="current-blade-other-brand" placeholder="INÁ ZNAČKA DREVA" /><input id="current-blade-other-model" placeholder="MODEL DREVA" /><input id="current-blade-other-year" type="number" min="1950" max="2026" placeholder="ROK" /><small data-sk="Neoverená značka — odošle sa na kontrolu." data-en="Unverified brand — it will be submitted for review.">Neoverená značka — odošle sa na kontrolu.</small></div>
+              <small class="blade-year-hint localized" data-sk="Ak rok nezmeníš, porovnávame aktuálnu verziu 2026." data-en="If unchanged, the current 2026 version is compared.">Ak rok nezmeníš, porovnávame aktuálnu verziu 2026.</small>
             </div>
             <div class="form-row rubber-fh">
               <label for="current-fh"><b class="localized" data-sk="FOREHAND POŤAH" data-en="FOREHAND RUBBER" data-cs="FOREHAND POTAH">FOREHAND POŤAH</b> <span class="localized-secondary" data-sk="FH RUBBER" data-en="FH RUBBER" data-cs="FH RUBBER">FH RUBBER</span></label>
@@ -116,10 +116,10 @@
               <span class="tag orange localized" data-sk="ZVAŽUJEM" data-en="COMPARING">ZVAŽUJEM</span>
               <h3 class="localized" data-sk="Porovnávaná zostava" data-en="Compared setup">Porovnávaná zostava</h3>
             </div>
-            <div class="form-row">
+            <div class="form-row blade-frame">
               <label for="target-blade"><b class="localized" data-sk="DREVO" data-en="BLADE" data-cs="DŘEVO">DREVO</b> <span class="localized-secondary" data-sk="BLADE" data-en="DREVO" data-cs="BLADE">BLADE</span></label>
-              <div class="product-picker"><select id="target-blade-brand" data-setup="target" data-part="blade" data-picker="brand"></select><select id="target-blade" data-setup="target" data-part="blade" data-picker="model"></select></div><div class="other-product hidden" id="target-blade-other"><input id="target-blade-other-brand" placeholder="INÁ ZNAČKA DREVA" /><input id="target-blade-other-model" placeholder="MODEL DREVA" /><small data-sk="Neoverená značka — odošle sa na kontrolu." data-en="Unverified brand — it will be submitted for review.">Neoverená značka — odošle sa na kontrolu.</small></div>
-              <div class="blade-year-picker"><label for="target-blade-year"><span data-sk="Rok výroby dreva" data-en="Blade production year">Rok výroby dreva</span><select id="target-blade-year" aria-label="Rok výroby dreva" data-aria-sk="Rok výroby dreva" data-aria-en="Blade production year"></select></label><small data-sk="Ak rok nezmeníš, porovnávame aktuálnu verziu 2026." data-en="If unchanged, the current 2026 version is compared.">Ak rok nezmeníš, porovnávame aktuálnu verziu 2026.</small></div>
+              <div class="product-picker blade-picker"><select id="target-blade-brand" data-setup="target" data-part="blade" data-picker="brand"></select><select id="target-blade" data-setup="target" data-part="blade" data-picker="model"></select><select id="target-blade-year" class="blade-year-select" aria-label="Rok výroby dreva" data-aria-sk="Rok výroby dreva" data-aria-en="Blade production year" title="Rok výroby dreva"></select></div><div class="other-product other-product-blade hidden" id="target-blade-other"><input id="target-blade-other-brand" placeholder="INÁ ZNAČKA DREVA" /><input id="target-blade-other-model" placeholder="MODEL DREVA" /><input id="target-blade-other-year" type="number" min="1950" max="2026" placeholder="ROK" /><small data-sk="Neoverená značka — odošle sa na kontrolu." data-en="Unverified brand — it will be submitted for review.">Neoverená značka — odošle sa na kontrolu.</small></div>
+              <small class="blade-year-hint localized" data-sk="Ak rok nezmeníš, porovnávame aktuálnu verziu 2026." data-en="If unchanged, the current 2026 version is compared.">Ak rok nezmeníš, porovnávame aktuálnu verziu 2026.</small>
             </div>
             <div class="form-row rubber-fh">
               <label for="target-fh"><b class="localized" data-sk="FOREHAND POŤAH" data-en="FOREHAND RUBBER" data-cs="FOREHAND POTAH">FOREHAND POŤAH</b> <span class="localized-secondary" data-sk="FH RUBBER" data-en="FH RUBBER" data-cs="FH RUBBER">FH RUBBER</span></label>
@@ -262,6 +262,6 @@
     </main>
 
     <footer><span class="footer-copy" data-sk="POROVNAVAC RAKIET • Údaje v katalógu overujeme podľa oficiálnych stránok výrobcov, databáz ITTF a porovnávacích dát Revspin. • 2026" data-en="RACKET COMPARATOR • Catalogue data is verified against official manufacturer websites, ITTF databases and Revspin comparison data. • 2026">POROVNAVAC RAKIET • Údaje v katalógu overujeme podľa oficiálnych stránok výrobcov, databáz ITTF a porovnávacích dát Revspin. • 2026</span><a class="footer-blog-link" href="blog/diy-table-tennis-ball-stand/" data-sk="Príbehy a návody" data-cs="Příběhy a návody" data-en="Stories &amp; Guides">Príbehy a návody</a></footer>
-    <script src="app.js?v=20260804-blog-footer-link"></script>
+    <script src="app.js?v=20260804-blade-other-year"></script>
   </body>
 </html>
