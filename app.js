@@ -1509,7 +1509,7 @@ function setLanguage(language){
   document.querySelector('.hero .eyebrow').textContent=english?'EQUIPMENT THAT FITS YOUR GAME':czechLanguage?'VYBAVENÍ, KTERÉ SEDÍ TVÉ HŘE':'VÝBAVA, KTORÁ SEDÍ TVOJEJ HRE';
   document.querySelector('.hero-copy').textContent=english?'See how a blade and rubber change can affect your real game — not just a catalog rating.':czechLanguage?'Zjisti, jak se změna dřeva a potahů projeví v tvé hře — nejen v katalogu.':'Zisti, ako sa zmena dreva a poťahov prejaví v tvojej hre — nie iba v katalógu.';
   document.querySelector('.scroll-cta').innerHTML=english?'Start comparing <span>↓</span>':czechLanguage?'Začít porovnání <span>↓</span>':'Začať porovnanie <span>↓</span>';
-  document.querySelectorAll('[data-sk][data-en]').forEach(element=>element.textContent=english?element.dataset.en:czechLanguage?czech(element.dataset.sk):element.dataset.sk);
+  document.querySelectorAll('[data-sk][data-en]').forEach(element=>element.textContent=english?element.dataset.en:czechLanguage?(element.dataset.cs||czech(element.dataset.sk)):element.dataset.sk);
   document.querySelectorAll('[data-placeholder-sk][data-placeholder-en]').forEach(element=>element.placeholder=english?element.dataset.placeholderEn:czechLanguage?czech(element.dataset.placeholderSk):element.dataset.placeholderSk);
   document.querySelectorAll('[data-aria-sk][data-aria-en]').forEach(element=>element.setAttribute('aria-label',english?element.dataset.ariaEn:czechLanguage?czech(element.dataset.ariaSk):element.dataset.ariaSk));
   document.querySelectorAll('option[value="__other__"]').forEach(optionElement=>optionElement.textContent=english?'OTHER':czechLanguage?'JINÉ':'INÉ / OTHER');
