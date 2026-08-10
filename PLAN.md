@@ -210,6 +210,7 @@ Spracovanie: návrhy sa ukladajú iba do `localStorage` prehliadača (kľúč `r
 - Stabilné anglické SEO porovnávacie stránky majú vlastné kanonické URL, Article a Breadcrumb structured data, praktické odporúčanie, metodiku a odkaz do porovnávača. Každá obsahuje aj jednotný blok „Data that changes the choice“ s normalizovanými dátami katalógu, stručným vysvetlením ich hraníc a konkrétnym dopadom na hru. Aktuálne pokrývajú `viscaria-vs-timo-boll-alc`, `viscaria-vs-fan-zhendong-alc`, `viscaria-vs-innerforce-layer-alc`, `tenergy-05-vs-dignics-05` a `dignics-05-vs-dignics-09c`; všetky sú v sitemape s prioritou 0.8.
 - Schema.org `WebSite` a `WebApplication` (bez vymyslených recenzií/ceny).
 - OG / Twitter card `assets/table-tennis-rackets-hero.png`.
+- Favicon `assets/racket-comparator-favicon.png`: čierny štvorcový monogram s bielym `RA` nad `CO`, pripojený na domovskej stránke, v porovnaniach aj na blogu.
 - Vlastníctvo v Google Search Console: `sc-domain:racketcomparator.com`, overené cez WebSupport TXT `google-site-verification=cpCLBeuiJvN7lSlAwnOKGzU786x7YtuTAhN66rm4Yiw` (neodstraňovať).
 
 ## 13. Čo tento web zámerne nemá
