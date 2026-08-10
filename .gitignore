@@ -1,0 +1,15 @@
+# Mac and editor files
+.DS_Store
+
+# Local helper binaries and private tool state
+.tools/
+.impeccable/config.local.json
+.impeccable/hook.cache.json
+.impeccable/hook.pending.json
+.impeccable/*.png
+
+# Never store private keys, tokens, or local credentials
+*.pem
+*.key
+.env
+.env.*
