@@ -1524,8 +1524,8 @@ function submitFeedback(event){event.preventDefault();const message=$('feedback-
 function setLanguage(language){
   const english=language==='en',czechLanguage=language==='cs';document.documentElement.lang=language;
   document.querySelectorAll('[data-language]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.language===language)));
-  document.title=english?'TABLE TENNIS RACKET COMPARATOR — Compare Table Tennis Setups':czechLanguage?'POROVNÁVAČ PALEK NA STOLNÍ TENIS — Porovnejte herní sestavy':'POROVNÁVAČ RAKIET — porovnanie stolnotenisových zostáv';
-  document.querySelector('meta[name="description"]').content=english?'Compare two table tennis setups based on your playing style.':czechLanguage?'Porovnejte dvě stolnětenisové sestavy podle svého herního stylu.':'Porovnajte dve stolnotenisové zostavy podľa vášho herného štýlu.';
+  document.title=english?'SPORT RACKET COMPARATOR — Compare Table Tennis Setups':czechLanguage?'SPORT RACKET COMPARATOR — Porovnejte herní sestavy': 'SPORT RACKET COMPARATOR — Porovnajte stolnotenisové zostavy';
+  document.querySelector('meta[name="description"]').content=english?'SPORT RACKET COMPARATOR — compare table tennis blades, rubbers and complete setups for your playing style.':czechLanguage?'SPORT RACKET COMPARATOR — porovnejte stolnětenisová dřeva, potahy a kompletní sestavy podle svého herního stylu.':'SPORT RACKET COMPARATOR — porovnajte stolnotenisové drevá, poťahy a kompletné zostavy podľa svojho herného štýlu.';
   document.querySelector('.brand span:last-child').textContent=english?'RACKET COMPARATOR':czechLanguage?'POROVNÁVAČ PALEK':'POROVNÁVAČ RAKIET';
   document.querySelector('.header-note').textContent=english?'Choose better. Buy less blindly.':czechLanguage?'Lepší volba, méně nákupů naslepo.':'Lepšia voľba, menej nákupov naslepo.';
   document.querySelector('.hero-title').innerHTML=english?'RACKET<br>COMPARATOR':czechLanguage?'POROVNÁVAČ<br>PALEK':'POROVNÁVAČ<br>RAKIET';
