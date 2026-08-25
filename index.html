@@ -57,7 +57,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260825-padel-launch" />
+    <link rel="stylesheet" href="styles.css?v=20260825-mobile-sport-cards" />
   </head>
   <body>
     <aside class="analytics-consent" id="analytics-consent" role="dialog" aria-live="polite" aria-label="Analytics consent">
@@ -76,6 +76,11 @@
       <section class="sport-launcher" aria-labelledby="sport-launcher-title">
         <h1 class="visually-hidden" id="sport-launcher-title">Sport Racket Comparator</h1>
         <img src="assets/sport-racket-comparator-launcher-v3.png" alt="Three sport cards: padel, tennis and table tennis." />
+        <div class="sport-launcher-mobile" aria-label="Choose a sport">
+          <a class="sport-launcher-mobile-card padel" href="padel/" aria-label="Open the Padel Racket Comparator"><img src="assets/sport-racket-comparator-launcher-v3.png" alt="" /></a>
+          <span class="sport-launcher-mobile-card tennis" aria-label="Tennis comparator — coming soon"><img src="assets/sport-racket-comparator-launcher-v3.png" alt="" /></span>
+          <a class="sport-launcher-mobile-card table-tennis sport-launcher-table-tennis" href="#table-tennis-comparator" aria-label="Open the Table Tennis Racket Comparator"><img src="assets/sport-racket-comparator-launcher-v3.png" alt="" /></a>
+        </div>
         <div class="sport-launcher-actions">
           <a class="sport-launcher-padel" href="padel/" aria-label="Open the Padel Racket Comparator"><span class="visually-hidden">Open the Padel Racket Comparator</span></a>
           <span class="sport-launcher-coming-soon sport-launcher-tennis" aria-label="Tennis comparator — coming soon"></span>
@@ -289,11 +294,11 @@
           document.body.classList.add('table-tennis-open');
           if (shouldScroll) requestAnimationFrame(() => module.scrollIntoView({ behavior: 'smooth', block: 'start' }));
         };
-        document.querySelector('.sport-launcher-table-tennis').addEventListener('click', (event) => {
+        document.querySelectorAll('.sport-launcher-table-tennis').forEach((trigger) => trigger.addEventListener('click', (event) => {
           event.preventDefault();
           history.pushState(null, '', '#table-tennis-comparator');
           openModule(true);
-        });
+        }));
         if (location.hash === '#table-tennis-comparator') openModule(false);
         window.addEventListener('hashchange', () => {
           if (location.hash === '#table-tennis-comparator') openModule(true);
