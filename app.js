@@ -1525,7 +1525,7 @@ function setLanguage(language){
   const english=language==='en',czechLanguage=language==='cs';document.documentElement.lang=language;
   document.querySelectorAll('[data-language]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.language===language)));
   document.title=english?'SPORT RACKET COMPARATOR — Compare Table Tennis Setups':czechLanguage?'SPORT RACKET COMPARATOR — Porovnejte herní sestavy': 'SPORT RACKET COMPARATOR — Porovnajte stolnotenisové zostavy';
-  document.querySelector('meta[name="description"]').content=english?'SPORT RACKET COMPARATOR — compare table tennis blades, rubbers and complete setups for your playing style.':czechLanguage?'SPORT RACKET COMPARATOR — porovnejte stolnětenisová dřeva, potahy a kompletní sestavy podle svého herního stylu.':'SPORT RACKET COMPARATOR — porovnajte stolnotenisové drevá, poťahy a kompletné zostavy podľa svojho herného štýlu.';
+  document.querySelector('meta[name="description"]').content=english?'Compare padel, tennis, and table tennis blades and complete setups.':czechLanguage?'Porovnejte pálky a kompletní sestavy pro padel, tenis a stolní tenis.':'Porovnajte rakety a kompletné zostavy pre padel, tenis a stolný tenis.';
   document.querySelector('.brand span:last-child').textContent=english?'RACKET COMPARATOR':czechLanguage?'POROVNÁVAČ PALEK':'POROVNÁVAČ RAKIET';
   document.querySelector('.header-note').textContent=english?'Choose better. Buy less blindly.':czechLanguage?'Lepší volba, méně nákupů naslepo.':'Lepšia voľba, menej nákupov naslepo.';
   document.querySelector('.hero-title').innerHTML=english?'RACKET<br>COMPARATOR':czechLanguage?'POROVNÁVAČ<br>PALEK':'POROVNÁVAČ<br>RAKIET';
