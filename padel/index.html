@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../assets/racket-comparator-favicon.png" />
+    <meta name="description" content="Compare padel rackets by shape, balance, weight, control, power and spin." />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="https://racketcomparator.com/padel/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://racketcomparator.com/padel/" />
+    <meta property="og:title" content="PADEL RACKET COMPARATOR" />
+    <meta property="og:description" content="Compare padel rackets by shape, balance, weight, control, power and spin." />
+    <meta property="og:image" content="https://racketcomparator.com/assets/padel-rackets-hero-comparator-v4.png" />
+    <meta property="og:image:alt" content="Two padel rackets for the Padel Racket Comparator" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PADEL RACKET COMPARATOR" />
+    <meta name="twitter:description" content="Compare padel rackets by shape, balance, weight, control, power and spin." />
+    <meta name="twitter:image" content="https://racketcomparator.com/assets/padel-rackets-hero-comparator-v4.png" />
+    <title>PADEL RACKET COMPARATOR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css?v=20260825-padel-launch" />
+    <link rel="stylesheet" href="padel.css?v=20260825-padel-preview" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../" aria-label="Racket Comparator home"><span class="brand-mark"><i></i><i></i><i></i></span><span>RACKET COMPARATOR</span></a>
+      <p class="header-note">PADEL RACKET COMPARATOR</p>
+    </header>
+    <main>
+      <section class="hero padel-hero">
+        <h1 class="hero-title">PADEL<br />COMPARATOR</h1>
+        <div class="hero-arrow" aria-hidden="true"><i class="arrow-left"></i><i class="arrow-right"></i></div>
+        <p class="hero-sport">PADEL</p>
+        <p class="hero-proof"><span>◉ <b>55</b> CATALOGUE MODELS</span><i>·</i><span>FIP RULES CHECK</span></p>
+        <div class="hero-content"><p class="eyebrow">FIND THE PALA THAT FITS YOUR GAME</p><p class="hero-copy">Compare your current pala with the one you are considering — without mixing in table-tennis logic.</p><a class="scroll-cta" href="#comparator">Start comparing <span>↓</span></a></div>
+      </section>
+
+      <section class="comparator-section" id="comparator">
+        <div class="section-heading compact"><div><p class="eyebrow">01 / YOUR PALAS</p><h2>What are you changing?</h2></div><p>One complete padel racket per side. No rubbers, blades or separate parts.</p></div>
+        <div class="setup-grid">
+          <article class="setup-card current"><div class="card-title"><span class="tag">I PLAY WITH</span><h3>My current pala</h3></div><div class="form-row"><label for="current-racket-brand"><b>PADEL RACKET</b><span> BRAND + MODEL</span></label><div class="product-picker"><select id="current-racket-brand" data-side="current" aria-label="Current racket brand"></select><select id="current-racket" data-side="current" aria-label="Current racket model"></select></div><div class="other-product hidden" id="current-other"><input id="current-other-brand" placeholder="OTHER BRAND" /><input id="current-other-model" placeholder="MODEL" /><input id="current-other-year" type="number" min="1950" max="2026" placeholder="YEAR" /><small>Can't find your pala? Enter its brand, model and production year.</small></div></div><div class="setup-stats" id="current-stats"></div></article>
+          <div class="vs-divider" aria-hidden="true"><span>VS</span></div>
+          <article class="setup-card target"><div class="card-title"><span class="tag orange">I'M CONSIDERING</span><h3>Compared pala</h3></div><div class="form-row"><label for="target-racket-brand"><b>PADEL RACKET</b><span> BRAND + MODEL</span></label><div class="product-picker"><select id="target-racket-brand" data-side="target" aria-label="Compared racket brand"></select><select id="target-racket" data-side="target" aria-label="Compared racket model"></select></div><div class="other-product hidden" id="target-other"><input id="target-other-brand" placeholder="OTHER BRAND" /><input id="target-other-model" placeholder="MODEL" /><input id="target-other-year" type="number" min="1950" max="2026" placeholder="YEAR" /><small>Can't find your pala? Enter its brand, model and production year.</small></div></div><div class="setup-stats" id="target-stats"></div></article>
+        </div>
+      </section>
+
+      <section class="profile-section">
+        <div class="section-heading compact"><div><p class="eyebrow">02 / YOUR PADEL</p><h2>How do you play?</h2></div><p>Your answers adapt the recommendation to a padel court — not a league table.</p></div>
+        <div class="profile-form">
+          <label><span>Playing experience</span><select id="experience"><option value="new">Less than 1 year</option><option value="developing" selected>1–3 years</option><option value="regular">3–6 years</option><option value="advanced">6+ years</option></select></label>
+          <label><span>Playing frequency</span><select id="frequency"><option value="casual">A few times a month</option><option value="weekly" selected>1–2× per week</option><option value="often">3–4× per week</option><option value="competitive">5×+ per week</option></select></label>
+          <label><span>Where do you mostly play?</span><select id="competition"><option value="social" selected>Social matches</option><option value="club">Club ladder / league</option><option value="tournaments">Tournaments</option></select></label>
+          <label><span>Preferred side</span><select id="side"><option value="right" selected>Right side — build the point</option><option value="left">Left side — finish the point</option><option value="both">Both sides equally</option></select></label>
+          <label><span>What do you value most?</span><select id="priority"><option value="control" selected>Control and consistency</option><option value="balance">Balanced all-round play</option><option value="power">Power and overheads</option></select></label>
+          <label><span>Arm comfort</span><select id="comfort"><option value="normal" selected>No particular issue</option><option value="important">Important — I prefer a forgiving feel</option></select></label>
+        </div>
+        <button class="primary-button" id="compare-button" type="button">Compare my padel rackets <span>→</span></button>
+      </section>
+
+      <section class="results hidden" id="results" aria-live="polite"></section>
+      <section class="padel-rules-note"><p class="eyebrow">EQUIPMENT NOTE</p><h2>Designed around official padel rules.</h2><p>FIP Rules of Padel require rackets made in accordance with its racket-homologation annex, including limits for total length, width and thickness, a perforated hitting surface and a wrist cord. FIP's public certification page lists approved balls, not an individual public list of approved rackets; catalogue values here are practical comparison estimates, not a claim of FIP product approval.</p></section>
+    </main>
+    <footer><span class="footer-copy">RACKET COMPARATOR • PADEL • Catalogue specifications are indicative; verified manufacturer data is added continuously. • 2026</span><a class="footer-blog-link" href="../">All sports</a></footer>
+    <script src="padel.js?v=20260825-babolat-2026"></script>
+  </body>
+</html>
