@@ -39,6 +39,13 @@ function loadCatalogue() {
   return { blades, rubbers };
 }
 
+function loadPadelCatalogue() {
+  const source = read(padelJsPath);
+  const racketsLiteral = extractArrayLiteral(source, 'rackets');
+  // eslint-disable-next-line no-new-func
+  return Function(`"use strict"; return (${racketsLiteral});`)();
+}
+
 const here = dirname(fileURLToPath(import.meta.url));
 const root = resolve(here, '..');
 
@@ -47,6 +54,8 @@ function check(name, fn) { checks.push({ name, fn }); }
 
 const appJsPath = resolve(root, 'app.js');
 const indexHtmlPath = resolve(root, 'index.html');
+const padelJsPath = resolve(root, 'padel', 'padel.js');
+const padelHtmlPath = resolve(root, 'padel', 'index.html');
 
 const read = (p) => readFileSync(p, 'utf8');
 
@@ -58,6 +67,47 @@ check('app.js parses as JavaScript', () => {
   } catch (err) {
     return { ok: false, detail: `Parse error: ${err.message}` };
   }
+});
+
+check('padel/padel.js parses as JavaScript', () => {
+  const source = read(padelJsPath);
+  try {
+    new vm.Script(source, { filename: padelJsPath });
+    return { ok: true };
+  } catch (err) {
+    return { ok: false, detail: `Parse error: ${err.message}` };
+  }
+});
+
+check('padel catalogue includes the verified Adidas, Babolat, Bullpadel, HEAD, KUIKMA, NOX and OXDOG 2026 collections', () => {
+  let rackets;
+  try { rackets = loadPadelCatalogue(); }
+  catch (err) { return { ok: false, detail: `Could not parse padel rackets: ${err.message}` }; }
+  const adidas2026 = rackets.filter((r) => r.brand === 'Adidas' && r.name.includes('2026'));
+  const babolat2026 = rackets.filter((r) => r.brand === 'Babolat' && r.id.endsWith('-2026'));
+  const bullpadel2026 = rackets.filter((r) => r.brand === 'Bullpadel' && r.id.endsWith('-2026'));
+  const head2026 = rackets.filter((r) => r.brand === 'Head' && r.id.endsWith('-2026'));
+  const kuikma2026 = rackets.filter((r) => r.brand === 'Kuikma' && r.id.endsWith('-2026'));
+  const nox2026 = rackets.filter((r) => r.brand === 'Nox' && r.id.endsWith('-2026'));
+  const oxdog2026 = rackets.filter((r) => r.brand === 'Oxdog' && r.id.endsWith('-2026'));
+  const ids = new Set(rackets.map((r) => r.id));
+  if (rackets.length < 139) return { ok: false, detail: `Expected at least 139 rackets, found ${rackets.length}` };
+  if (adidas2026.length !== 28) return { ok: false, detail: `Expected 28 Adidas 2026 core models, found ${adidas2026.length}` };
+  if (babolat2026.length !== 16) return { ok: false, detail: `Expected 16 Babolat 2026 catalogue models, found ${babolat2026.length}` };
+  if (bullpadel2026.length !== 24) return { ok: false, detail: `Expected 24 Bullpadel 2026 commercial models, found ${bullpadel2026.length}` };
+  if (head2026.length !== 11) return { ok: false, detail: `Expected 11 HEAD 2026 current-season models, found ${head2026.length}` };
+  if (kuikma2026.length !== 25) return { ok: false, detail: `Expected 25 KUIKMA currently sold product types, found ${kuikma2026.length}` };
+  if (nox2026.length !== 16) return { ok: false, detail: `Expected 16 NOX 2026 current product types, found ${nox2026.length}` };
+  if (oxdog2026.length !== 16) return { ok: false, detail: `Expected 16 OXDOG 2026 current product types, found ${oxdog2026.length}` };
+  if (ids.size !== rackets.length) return { ok: false, detail: 'Padel racket ids are not unique' };
+  return { ok: true, detail: `${rackets.length} rackets, including 28 Adidas, 16 Babolat, 24 Bullpadel, 11 HEAD, 25 KUIKMA, 16 NOX and 16 OXDOG 2026 models` };
+});
+
+check('padel custom-racket fields include brand, model and year', () => {
+  const html = read(padelHtmlPath);
+  const required = ['current-other-brand', 'current-other-model', 'current-other-year', 'target-other-brand', 'target-other-model', 'target-other-year'];
+  const missing = required.filter((id) => !html.includes(`id="${id}"`));
+  return missing.length ? { ok: false, detail: `Missing ${missing.join(', ')}` } : { ok: true };
 });
 
 check('app.js exposes the expected catalogues', () => {
