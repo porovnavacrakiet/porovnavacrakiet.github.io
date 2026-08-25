@@ -1,8 +1,12 @@
-# Table Tennis Setup Comparator — plán produktu
+# Sport Racket Comparator — plán produktu
 
 Tento `PLAN.md` je autoritatívny zdroj pravdy o tom, čo web má/má robiť. Akákoľvek funkčná zmena webu (nový katalóg, nová funkcia, zmena UI, zmena algoritmu, nový jazyk, nová sekcia) musí byť najprv zapísaná sem a potom implementovaná v rovnakom commite. Žiadna funkcia mimo `PLAN.md` by sa nemala dostať do produkcie bez toho, aby tam bola najprv zapísaná.
 
 ## 1. Cieľ projektu
+
+Vytvoriť **globálny Sport Racket Comparator**: jeden dôveryhodný web na porovnávanie vybavenia pre tri raketové športy — **stolný tenis, padel a tenis**. Značka, názov, SEO, zdieľacie metadáta a budúce informačné architektúry majú tento širší účel komunikovať konzistentne.
+
+Aktuálne sú verejne funkčné moduly **stolný tenis** a **padel**. Padelový katalóg sa priebežne rozširuje o zdrojovo overené modely; interné porovnávacie metriky sú orientačné a web to musí jasne uvádzať. Tenis zostáva plánovaným rozšírením a nesmie byť prezentovaný ako dostupná funkcia.
 
 Vytvoriť webovú aplikáciu, ktorá hráčovi pomôže **porovnať dve kompletné stolnotenisové zostavy**:
 
@@ -156,6 +160,14 @@ Použijú sa neutrálne hodnoty `speed:70, control:70, spin:70, hardness:45`, n�
 - Farebné/redakčné varianty sa v LARC nespájajú; ak majú zásadne odlišné vlastnosti, sú samostatné položky (napr. Mantra Pro M Cybershape, Quantum X Pro farebné edície — každá uvádzaná raz a s internými parametrami).
 - Viacero záznamov rovnakej položky (napr. duplicitný zápis DNA Platinum XH pod druhým názvom značky) sa odstráni, aby katalóg nerobil duplicity.
 
+### 6.4 Plánované športové moduly
+
+- **Stolný tenis** je prvý aktívny modul: porovnáva drevá, FH/BH poťahy a kompletné zostavy.
+- **Padel** je verejne dostupná podstránka `/padel/`: porovnáva výhradne dve kompletné padelové paly (bez stolnotenisových poťahov a driev) cez značku → model. Ak model nie je v katalógu, `INÉ / NOT LISTED` otvorí tri prázdne polia: značka, model a rok výroby (`1950`–`2026`). Jej profil používa padelové vstupy: skúsenosť, frekvenciu, typ súťaženia, hernú stranu, prioritu hry a komfort ruky. Katalóg má 139 modelov: kompletnú základnú 28-modelovú kolekciu Adidas Padel 2026 z oficiálneho obchodu All For Padel, 16 aktuálnych modelov Babolat 2026 z oficiálneho katalógu, 24 komerčných modelov Bullpadel 2026 z oficiálnych stránok Bullpadel a overeného oficiálneho predajcu, 11 aktuálnych sezónnych modelov HEAD 2026 z oficiálneho obchodu HEAD (Coello, Radical, Bolt a Vibe), 25 aktuálne predávaných odlišných typov KUIKMA podľa Decathlonu (bez farebných verzií, setov a použitých kusov), 16 aktuálne predávaných odlišných typov NOX 2026 z oficiálnej kolekcie (bez duplicitných farebných verzií X-Hero a X-Zero), 16 nových typov OXDOG 2026 z oficiálnej kolekcie (Ultimate, Hyper 2.0, Pure a Woman Air) a 3 reprezentatívne modely ďalších značiek. Po prvom otvorení je ľavá strana predvolene nastavená na Babolat Technical Viper 3.0, najvýkonnejší Babolat v internom profile katalógu. Modelové názvy a fyzické špecifikácie sú overené na oficiálnom zdroji; interné metriky sú orientačné. FIP pravidlá požadujú palu vyrobenú podľa homologizačnej prílohy, ale verejný FIP zoznam certifikácií uvádza lopty, nie samostatný zoznam schválených pal; web preto nesmie pri individuálnom modeli tvrdiť „FIP approved“. Stránka je indexovateľná, má canonical URL a je v sitemape. Hero používa samostatný obrázok dvoch okrúhlych padelových pal: ľavá má čiernu karbónovú plochu s veľkým diagonálnym bielym ťahom štetcom, pravá čierno-biely striekaný vzor na úderovej ploche, a text zdôrazňuje padelové metriky power, control a spin. Na podstránke nie sú stolnotenisové články ani DIY článok o stojane na loptičky.
+- **Tenis** bude samostatný modul s overeným katalógom tenisových rakiet; neskôr môže zahŕňať aj výplet, ak bude mať vlastné dáta a zrozumiteľnú metodiku.
+- Každý nový šport sa do verejného porovnávača pridá až spolu s vlastným katalógom, vysvetlením vlastností, metodikou, SEO stránkami a rozšírením kontrol v `tools/check.mjs`.
+- Domovská stránka je spoločným vstupom značky: pri prvom otvorení zobrazuje iba vizuálny výber **Padel / Tennis / Table Tennis** cez `assets/sport-racket-comparator-launcher-v3.png`. Padelová pala leží na hladkom modrom kurte, má pravidelné dierky a biele striekance. Tenisová raketa je zelená, leží na antuke s pravidelným výpletom a žltou omotávkou. Stolnotenisová karta má čistý čierny stôl bez sieťky a červeného okraja. Kliknutie na aktívny šport otvorí jeho modul; budúce moduly sú zreteľne označené ako `Coming soon` a nie sú vydávané za hotový porovnávač.
+
 ## 7. Jazyk
 
 Verejná stránka používa výlučne **angličtinu** (`<html lang="en">`) vrátane SEO metadát, formulára, výsledkov porovnania a blogu. Prepínač jazykov nie je súčasťou rozhrania. Úroveň registrovaného hráča je uvádzaná všeobecne ako liga/divízia, nie ako slovenská liga.
@@ -182,7 +194,7 @@ Spracovanie: návrhy sa ukladajú iba do `localStorage` prehliadača (kľúč `r
 ## 9. Blog
 
 - Článok `DIY Table Tennis Ball Stand: A Recycled €2 Training Upgrade` je na `blog/diy-table-tennis-ball-stand/`. Vlastný priečinok s vlastným `index.html`, `blog.js`, lokálnym prepínačom 🇬🇧 🇸🇰 🇨🇿, 5 vlastnými fotografiami v `assets/blog/`.
-- Web zobrazuje veľký tmavý náhľad pod tlačidlom **Porovnať moje zostavy** + nenápadný blog odkaz v pätičke.
+- Web zobrazuje pod tlačidlom **Porovnať moje zostavy** dva veľké tmavé náhľady: najprv porovnanie Viscaria vs Timo Boll ALC, pod ním článok o DIY stojane na loptičky. Nenápadný blog odkaz zostáva aj v pätičke.
 
 ## 10. Dizajnový smer (Impeccable)
 
@@ -206,6 +218,8 @@ Spracovanie: návrhy sa ukladajú iba do `localStorage` prehliadača (kľúč `r
 ## 12. SEO základ
 
 - `canonical`: `https://racketcomparator.com/`.
+- Hlavný názov značky pre vyhľadávače, zdieľanie a structured data je `SPORT RACKET COMPARATOR`; anglický opis domovskej stránky je `Compare padel, tennis, and table tennis blades and complete setups.`.
+- SEO sa buduje oddelene pre šport a zámer používateľa: relevantné viditeľné texty, presné titulky, opisy a samostatné indexovateľné porovnávacie stránky. Nepoužíva skrytý text, nesúvisiace kľúčové slová ani tvrdenia o dostupnosti modulov, ktoré ešte neexistujú.
 - `robots.txt` a `sitemap.xml` sú pripravené pre Google Search Console; sitemap uvádza kanonickú domovskú stránku aj každú indexovateľnú stránku blogu alebo porovnania.
 - Stabilné anglické SEO porovnávacie stránky majú vlastné kanonické URL, Article a Breadcrumb structured data, praktické odporúčanie, metodiku a odkaz do porovnávača. Každá obsahuje aj jednotný blok „Data that changes the choice“ s normalizovanými dátami katalógu, stručným vysvetlením ich hraníc a konkrétnym dopadom na hru. Aktuálne pokrývajú `viscaria-vs-timo-boll-alc`, `viscaria-vs-fan-zhendong-alc`, `viscaria-vs-innerforce-layer-alc`, `tenergy-05-vs-dignics-05` a `dignics-05-vs-dignics-09c`; všetky sú v sitemape s prioritou 0.8.
 - Schema.org `WebSite` a `WebApplication` (bez vymyslených recenzií/ceny).
