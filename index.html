@@ -11,14 +11,14 @@
     <meta property="og:url" content="https://racketcomparator.com/" />
     <meta property="og:title" content="SPORT RACKET COMPARATOR — Compare Table Tennis Setups" />
     <meta property="og:description" content="Compare padel, tennis and table tennis rackets and setups." />
-    <meta property="og:image" content="https://racketcomparator.com/assets/table-tennis-rackets-hero.png" />
+    <meta property="og:image" content="https://racketcomparator.com/assets/sport-racket-comparator-launcher.png" />
     <meta property="og:image:width" content="1672" />
     <meta property="og:image:height" content="941" />
-    <meta property="og:image:alt" content="Blue and red table tennis rackets for Racket Comparator" />
+    <meta property="og:image:alt" content="Padel, tennis and table tennis racket cards for Sport Racket Comparator" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="SPORT RACKET COMPARATOR — Compare Table Tennis Setups" />
     <meta name="twitter:description" content="Compare padel, tennis and table tennis rackets and setups." />
-    <meta name="twitter:image" content="https://racketcomparator.com/assets/table-tennis-rackets-hero.png" />
+    <meta name="twitter:image" content="https://racketcomparator.com/assets/sport-racket-comparator-launcher.png" />
     <title>SPORT RACKET COMPARATOR — Compare Table Tennis Setups</title>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1HD6YG4XCX"></script>
     <script>
@@ -57,7 +57,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260810-comparison-guides" />
+    <link rel="stylesheet" href="styles.css?v=20260825-sport-launcher-gate" />
   </head>
   <body>
     <aside class="analytics-consent" id="analytics-consent" role="dialog" aria-live="polite" aria-label="Analytics consent">
@@ -73,6 +73,18 @@
     </header>
 
     <main id="top">
+      <section class="sport-launcher" aria-labelledby="sport-launcher-title">
+        <h1 class="visually-hidden" id="sport-launcher-title">Sport Racket Comparator</h1>
+        <img src="assets/sport-racket-comparator-launcher.png" alt="Three sport cards: padel, tennis and table tennis." />
+        <div class="sport-launcher-actions">
+          <span class="sport-launcher-coming-soon sport-launcher-padel" aria-label="Padel comparator — coming soon"></span>
+          <span class="sport-launcher-coming-soon sport-launcher-tennis" aria-label="Tennis comparator — coming soon"></span>
+          <a class="sport-launcher-table-tennis" href="#table-tennis-comparator" aria-label="Open the Table Tennis Racket Comparator"><span class="visually-hidden">Open Table Tennis Racket Comparator</span></a>
+        </div>
+        <p class="sport-launcher-note">TABLE TENNIS IS AVAILABLE NOW <span>•</span> PADEL &amp; TENNIS ARE COMING SOON</p>
+      </section>
+
+      <div class="table-tennis-module" id="table-tennis-comparator" hidden tabindex="-1">
       <section class="hero">
         <h1 class="hero-title">RACKET<br />COMPARATOR</h1>
         <div class="hero-arrow" aria-hidden="true"><i class="arrow-left"></i><i class="arrow-right"></i></div>
@@ -264,9 +276,29 @@
           <p class="feedback-status" id="feedback-status" aria-live="polite"></p>
         </form>
       </section>
+      </div>
     </main>
 
     <footer><span class="footer-copy" data-sk="POROVNAVAC RAKIET • Údaje v katalógu overujeme podľa oficiálnych stránok výrobcov, databáz ITTF a porovnávacích dát Revspin. • 2026" data-en="RACKET COMPARATOR • Catalogue data is verified against official manufacturer websites, ITTF databases and Revspin comparison data. • 2026">POROVNAVAC RAKIET • Údaje v katalógu overujeme podľa oficiálnych stránok výrobcov, databáz ITTF a porovnávacích dát Revspin. • 2026</span><a class="footer-blog-link" href="blog/diy-table-tennis-ball-stand/" data-sk="Príbehy a návody" data-cs="Příběhy a návody" data-en="Stories &amp; Guides">Príbehy a návody</a></footer>
     <script src="app.js?v=20260825-rackets-description"></script>
+    <script>
+      (() => {
+        const module = document.getElementById('table-tennis-comparator');
+        const openModule = (shouldScroll) => {
+          module.hidden = false;
+          document.body.classList.add('table-tennis-open');
+          if (shouldScroll) requestAnimationFrame(() => module.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+        };
+        document.querySelector('.sport-launcher-table-tennis').addEventListener('click', (event) => {
+          event.preventDefault();
+          history.pushState(null, '', '#table-tennis-comparator');
+          openModule(true);
+        });
+        if (location.hash === '#table-tennis-comparator') openModule(false);
+        window.addEventListener('hashchange', () => {
+          if (location.hash === '#table-tennis-comparator') openModule(true);
+        });
+      })();
+    </script>
   </body>
 </html>
