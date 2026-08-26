@@ -147,7 +147,11 @@ check('tennis catalogue has unique, complete tournament-rule entries', () => {
   const currentBabolat2026 = rackets.filter((r) => r.brand === 'Babolat' && r.year === 2026);
   if (currentBabolat2026.length !== 18) return { ok: false, detail: `Expected 18 current Babolat 2026 types, found ${currentBabolat2026.length}` };
   const currentDiadem2026 = rackets.filter((r) => r.brand === 'Diadem' && r.year === 2026);
+  const currentDunlop2026 = rackets.filter((r) => r.brand === 'Dunlop' && r.year === 2026);
+  const currentHead2026 = rackets.filter((r) => r.brand === 'Head' && r.year === 2026);
   if (currentDiadem2026.length !== 7) return { ok: false, detail: `Expected 7 current Diadem 2026 types, found ${currentDiadem2026.length}` };
+  if (currentDunlop2026.length !== 6) return { ok: false, detail: `Expected 6 current Dunlop 2026 types, found ${currentDunlop2026.length}` };
+  if (currentHead2026.length !== 20) return { ok: false, detail: `Expected 20 current HEAD 2026 types, found ${currentHead2026.length}` };
   if (!rackets.some((r) => r.id === 'babolat-pure-aero-98-gen9-2026')) return { ok: false, detail: 'Babolat Pure Aero 98 Gen9 is missing' };
   if (incomplete) return { ok: false, detail: `Incomplete tennis entry: ${incomplete.id}` };
   if (ids.size !== rackets.length) return { ok: false, detail: 'Tennis racket ids are not unique' };
