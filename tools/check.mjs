@@ -46,6 +46,13 @@ function loadPadelCatalogue() {
   return Function(`"use strict"; return (${racketsLiteral});`)();
 }
 
+function loadTennisCatalogue() {
+  const source = read(tennisJsPath);
+  const racketsLiteral = extractArrayLiteral(source, 'rackets');
+  // eslint-disable-next-line no-new-func
+  return Function(`"use strict"; return (${racketsLiteral});`)();
+}
+
 const here = dirname(fileURLToPath(import.meta.url));
 const root = resolve(here, '..');
 
@@ -56,6 +63,8 @@ const appJsPath = resolve(root, 'app.js');
 const indexHtmlPath = resolve(root, 'index.html');
 const padelJsPath = resolve(root, 'padel', 'padel.js');
 const padelHtmlPath = resolve(root, 'padel', 'index.html');
+const tennisJsPath = resolve(root, 'tennis', 'tennis.js');
+const tennisHtmlPath = resolve(root, 'tennis', 'index.html');
 
 const read = (p) => readFileSync(p, 'utf8');
 
@@ -115,6 +124,38 @@ check('padel custom-racket fields include brand, model and year', () => {
   const html = read(padelHtmlPath);
   const required = ['current-other-brand', 'current-other-model', 'current-other-year', 'target-other-brand', 'target-other-model', 'target-other-year'];
   const missing = required.filter((id) => !html.includes(`id="${id}"`));
+  return missing.length ? { ok: false, detail: `Missing ${missing.join(', ')}` } : { ok: true };
+});
+
+check('tennis/tennis.js parses as JavaScript', () => {
+  try { new vm.Script(read(tennisJsPath), { filename: tennisJsPath }); return { ok: true }; }
+  catch (err) { return { ok: false, detail: `Parse error: ${err.message}` }; }
+});
+
+check('tennis catalogue has unique, complete tournament-rule entries', () => {
+  let rackets;
+  try { rackets = loadTennisCatalogue(); }
+  catch (err) { return { ok: false, detail: `Could not parse tennis rackets: ${err.message}` }; }
+  const required = ['id', 'brand', 'name', 'year', 'head', 'weight', 'pattern', 'balance', 'power', 'control', 'spin', 'feel'];
+  const incomplete = rackets.find((r) => required.some((field) => r[field] === undefined || r[field] === ''));
+  const ids = new Set(rackets.map((r) => r.id));
+  const brands = new Set(rackets.map((r) => r.brand));
+  if (rackets.length < 30) return { ok: false, detail: `Expected at least 30 tennis rackets, found ${rackets.length}` };
+  if (brands.size < 10) return { ok: false, detail: `Expected at least 10 tennis brands, found ${brands.size}` };
+  const currentArtengo2026 = rackets.filter((r) => r.brand === 'Artengo' && r.year === 2026);
+  if (currentArtengo2026.length !== 8) return { ok: false, detail: `Expected 8 current Artengo 2026 types, found ${currentArtengo2026.length}` };
+  const currentBabolat2026 = rackets.filter((r) => r.brand === 'Babolat' && r.year === 2026);
+  if (currentBabolat2026.length !== 18) return { ok: false, detail: `Expected 18 current Babolat 2026 types, found ${currentBabolat2026.length}` };
+  if (!rackets.some((r) => r.id === 'babolat-pure-aero-98-gen9-2026')) return { ok: false, detail: 'Babolat Pure Aero 98 Gen9 is missing' };
+  if (incomplete) return { ok: false, detail: `Incomplete tennis entry: ${incomplete.id}` };
+  if (ids.size !== rackets.length) return { ok: false, detail: 'Tennis racket ids are not unique' };
+  return { ok: true, detail: `${rackets.length} rackets from ${brands.size} brands` };
+});
+
+check('tennis page has its catalogue inputs and official-rules note', () => {
+  const html = read(tennisHtmlPath);
+  const required = ['current-racket-brand', 'current-racket', 'target-racket-brand', 'target-racket', 'World Tennis (formerly the ITF)', 'Appendix II'];
+  const missing = required.filter((item) => !html.includes(item));
   return missing.length ? { ok: false, detail: `Missing ${missing.join(', ')}` } : { ok: true };
 });
 
