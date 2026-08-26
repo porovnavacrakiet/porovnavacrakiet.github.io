@@ -150,8 +150,19 @@ const rackets = [
   {id:'siux-fenix-pro-5-2025',brand:'Siux',name:'Fenix Pro 5 2025 – Álex Chozas',year:2025,shape:'Diamond',balance:'High',weight:365,power:94,control:76,spin:87,feel:'Hard'},
   {id:'siux-pegasus-3-2025',brand:'Siux',name:'Pegasus 3 2025',year:2025,shape:'Hybrid',balance:'Medium',weight:365,power:85,control:85,spin:84,feel:'Medium'},
   {id:'siux-electra-stupa-pro-st3-2024',brand:'Siux',name:'Electra Stupa Pro ST3 2024 – Franco Stupaczuk',year:2024,shape:'Hybrid',balance:'Medium',weight:365,power:88,control:84,spin:87,feel:'Medium'},
-  {id:'wilson-bela-pro',brand:'Wilson',name:'Bela Pro V3',shape:'Diamond',balance:'High',weight:370,power:92,control:73,spin:87,feel:'Hard'},
-  {id:'wilson-blade-pro',brand:'Wilson',name:'Blade Pro V3',shape:'Teardrop',balance:'Medium',weight:365,power:86,control:83,spin:86,feel:'Medium'}
+  // Wilson Padel 2026: 12 distinct current product types verified against Wilson's official padel shop and franchise pages (Bela, Defy, Endure, Blade and Carbon Force). Colour-only and Special Edition variants are intentionally not duplicated. Wilson/FIP do not provide a public per-racket approval register; manufacturer specifications inform shape, balance and weight, while comparator metrics remain indicative estimates.
+  {id:'wilson-bela-pro-v3-2026',brand:'Wilson',name:'Bela Pro V3',shape:'Hybrid',balance:'Medium',weight:365,power:91,control:84,spin:89,feel:'Hard'},
+  {id:'wilson-bela-v3-2026',brand:'Wilson',name:'Bela V3',shape:'Hybrid',balance:'Medium',weight:365,power:86,control:88,spin:88,feel:'Medium'},
+  {id:'wilson-bela-ls-v3-2026',brand:'Wilson',name:'Bela LS V3',shape:'Hybrid',balance:'Medium',weight:355,power:79,control:91,spin:84,feel:'Soft'},
+  {id:'wilson-defy-pro-v1-2026',brand:'Wilson',name:'Defy Pro V1',shape:'Diamond',balance:'High',weight:370,power:95,control:76,spin:91,feel:'Hard'},
+  {id:'wilson-defy-v1-2026',brand:'Wilson',name:'Defy V1',shape:'Diamond',balance:'High',weight:365,power:90,control:80,spin:89,feel:'Hard'},
+  {id:'wilson-defy-ls-v1-2026',brand:'Wilson',name:'Defy LS V1',shape:'Diamond',balance:'Medium',weight:355,power:83,control:85,spin:85,feel:'Soft'},
+  {id:'wilson-endure-pro-v1-2026',brand:'Wilson',name:'Endure Pro V1',shape:'Round',balance:'Medium',weight:365,power:76,control:95,spin:88,feel:'Hard'},
+  {id:'wilson-endure-v1-2026',brand:'Wilson',name:'Endure V1',shape:'Round',balance:'Low',weight:365,power:73,control:94,spin:86,feel:'Medium'},
+  {id:'wilson-endure-ls-v1-2026',brand:'Wilson',name:'Endure LS V1',shape:'Round',balance:'Low',weight:355,power:68,control:94,spin:81,feel:'Soft'},
+  {id:'wilson-blade-v4-2026',brand:'Wilson',name:'Blade V4',shape:'Teardrop',balance:'Medium',weight:365,power:84,control:86,spin:85,feel:'Medium'},
+  {id:'wilson-blade-ls-v4-2026',brand:'Wilson',name:'Blade LS V4',shape:'Teardrop',balance:'Medium',weight:355,power:75,control:90,spin:81,feel:'Soft'},
+  {id:'wilson-carbon-force-c-2026',brand:'Wilson',name:'Carbon Force C',shape:'Teardrop',balance:'Low',weight:365,power:78,control:89,spin:83,feel:'Soft'}
 ];
 const $=id=>document.getElementById(id); const brands=[...new Set(rackets.map(r=>r.brand))].sort();
 function option(value,text){const el=document.createElement('option');el.value=value;el.textContent=text;return el}
