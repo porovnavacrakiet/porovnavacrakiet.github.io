@@ -142,7 +142,10 @@ const rackets = [
   {id:'oxdog-pure-pro-plus-2026',brand:'Oxdog',name:'Pure Pro+ 2026',shape:'Hybrid',balance:'High',weight:370,power:91,control:84,spin:90,feel:'Hard'},
   {id:'oxdog-pure-tour-x-2026',brand:'Oxdog',name:'Pure Tour X 2026',shape:'Hybrid',balance:'Medium',weight:365,power:84,control:89,spin:85,feel:'Medium'},
   {id:'oxdog-pure-court-2026',brand:'Oxdog',name:'Pure Court 2026',shape:'Hybrid',balance:'Medium',weight:365,power:76,control:89,spin:83,feel:'Soft'},
-  {id:'siux-electra',brand:'Siux',name:'Electra ST5 Pro',shape:'Hybrid',balance:'Medium',weight:360,power:86,control:82,spin:88,feel:'Medium'},
+  // Siux Padel 2026: the three currently sold distinct 2026 racket types confirmed in Siux's official store. Shape, balance, face and feel follow Siux product specifications; the comparator's weight point and power/control/spin values are indicative estimates. FIP does not publish a public per-racket approval register, so no model is labelled "FIP approved".
+  {id:'siux-electra-pro-2026',brand:'Siux',name:'Electra Pro 2026 – Franco Stupaczuk',shape:'Teardrop',balance:'Medium',weight:365,power:86,control:88,spin:85,feel:'Hard'},
+  {id:'siux-trilogy-pro-2026',brand:'Siux',name:'Trilogy Pro 2026 Ash Green',shape:'Round',balance:'Low',weight:363,power:76,control:95,spin:87,feel:'Medium'},
+  {id:'siux-trilogy-elite-2026',brand:'Siux',name:'Trilogy Elite 2026',shape:'Round',balance:'Low',weight:365,power:70,control:94,spin:82,feel:'Soft'},
   {id:'wilson-bela-pro',brand:'Wilson',name:'Bela Pro V3',shape:'Diamond',balance:'High',weight:370,power:92,control:73,spin:87,feel:'Hard'},
   {id:'wilson-blade-pro',brand:'Wilson',name:'Blade Pro V3',shape:'Teardrop',balance:'Medium',weight:365,power:86,control:83,spin:86,feel:'Medium'}
 ];
