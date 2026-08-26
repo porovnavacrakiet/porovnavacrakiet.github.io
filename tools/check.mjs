@@ -79,7 +79,7 @@ check('padel/padel.js parses as JavaScript', () => {
   }
 });
 
-check('padel catalogue includes the verified Adidas, Babolat, Bullpadel, HEAD, KUIKMA, NOX and OXDOG 2026 collections', () => {
+check('padel catalogue includes the verified Adidas, Babolat, Bullpadel, HEAD, KUIKMA, NOX, OXDOG and Siux 2026 collections', () => {
   let rackets;
   try { rackets = loadPadelCatalogue(); }
   catch (err) { return { ok: false, detail: `Could not parse padel rackets: ${err.message}` }; }
@@ -90,8 +90,9 @@ check('padel catalogue includes the verified Adidas, Babolat, Bullpadel, HEAD, K
   const kuikma2026 = rackets.filter((r) => r.brand === 'Kuikma' && r.id.endsWith('-2026'));
   const nox2026 = rackets.filter((r) => r.brand === 'Nox' && r.id.endsWith('-2026'));
   const oxdog2026 = rackets.filter((r) => r.brand === 'Oxdog' && r.id.endsWith('-2026'));
+  const siux2026 = rackets.filter((r) => r.brand === 'Siux' && r.id.endsWith('-2026'));
   const ids = new Set(rackets.map((r) => r.id));
-  if (rackets.length < 139) return { ok: false, detail: `Expected at least 139 rackets, found ${rackets.length}` };
+  if (rackets.length < 141) return { ok: false, detail: `Expected at least 141 rackets, found ${rackets.length}` };
   if (adidas2026.length !== 28) return { ok: false, detail: `Expected 28 Adidas 2026 core models, found ${adidas2026.length}` };
   if (babolat2026.length !== 16) return { ok: false, detail: `Expected 16 Babolat 2026 catalogue models, found ${babolat2026.length}` };
   if (bullpadel2026.length !== 24) return { ok: false, detail: `Expected 24 Bullpadel 2026 commercial models, found ${bullpadel2026.length}` };
@@ -99,8 +100,9 @@ check('padel catalogue includes the verified Adidas, Babolat, Bullpadel, HEAD, K
   if (kuikma2026.length !== 25) return { ok: false, detail: `Expected 25 KUIKMA currently sold product types, found ${kuikma2026.length}` };
   if (nox2026.length !== 16) return { ok: false, detail: `Expected 16 NOX 2026 current product types, found ${nox2026.length}` };
   if (oxdog2026.length !== 16) return { ok: false, detail: `Expected 16 OXDOG 2026 current product types, found ${oxdog2026.length}` };
+  if (siux2026.length !== 3) return { ok: false, detail: `Expected 3 currently sold Siux 2026 racket types, found ${siux2026.length}` };
   if (ids.size !== rackets.length) return { ok: false, detail: 'Padel racket ids are not unique' };
-  return { ok: true, detail: `${rackets.length} rackets, including 28 Adidas, 16 Babolat, 24 Bullpadel, 11 HEAD, 25 KUIKMA, 16 NOX and 16 OXDOG 2026 models` };
+  return { ok: true, detail: `${rackets.length} rackets, including 28 Adidas, 16 Babolat, 24 Bullpadel, 11 HEAD, 25 KUIKMA, 16 NOX, 16 OXDOG and 3 Siux 2026 models` };
 });
 
 check('padel custom-racket fields include brand, model and year', () => {
