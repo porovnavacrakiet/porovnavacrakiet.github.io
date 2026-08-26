@@ -1,8 +1,15 @@
 // Catalogue entries represent standard, unmodified stringed tennis rackets. Power, control and spin are comparator estimates, not manufacturer ratings or World Tennis approvals.
 const rackets = [
-  {id:'artengo-tr-990-power-pro-2025',brand:'Artengo',name:'TR 990 Power Pro',year:2025,head:645,weight:300,pattern:'16×19',balance:'Neutral',power:88,control:79,spin:88,feel:'Medium'},
+  // Current commercial ARTENGO range verified in Decathlon's 2026 catalogue. These are conventional, unmodified frames; metrics below are comparator estimates.
+  {id:'artengo-tr-190-lite-v2-2026',brand:'Artengo',name:'TR 190 Lite V2',year:2026,head:660,weight:260,pattern:'16×19',balance:'Head heavy',power:74,control:76,spin:77,feel:'Soft'},
+  {id:'artengo-tr-500-2026',brand:'Artengo',name:'TR 500',year:2026,head:660,weight:280,pattern:'16×19',balance:'Neutral',power:81,control:81,spin:82,feel:'Soft'},
+  {id:'artengo-tr-500-lite-2026',brand:'Artengo',name:'TR 500 Lite',year:2026,head:660,weight:265,pattern:'16×19',balance:'Neutral',power:77,control:80,spin:80,feel:'Soft'},
+  {id:'artengo-tr-930-spin-285-2026',brand:'Artengo',name:'TR 930 Spin 285',year:2026,head:645,weight:285,pattern:'16×19',balance:'Neutral',power:84,control:82,spin:91,feel:'Medium'},
+  {id:'artengo-tr-930-spin-pro-300-2026',brand:'Artengo',name:'TR 930 Spin Pro',year:2026,head:645,weight:300,pattern:'16×19',balance:'Head light',power:87,control:83,spin:93,feel:'Medium'},
+  {id:'artengo-tr-990-power-lite-2026',brand:'Artengo',name:'TR 990 Power Lite',year:2026,head:645,weight:270,pattern:'16×19',balance:'Neutral',power:84,control:80,spin:87,feel:'Crisp'},
+  {id:'artengo-tr-990-power-285-2026',brand:'Artengo',name:'TR 990 Power',year:2026,head:645,weight:285,pattern:'16×19',balance:'Neutral',power:87,control:80,spin:88,feel:'Crisp'},
+  {id:'artengo-tr-990-power-pro-2026',brand:'Artengo',name:'TR 990 Power Pro',year:2026,head:645,weight:300,pattern:'16×19',balance:'Neutral',power:89,control:80,spin:89,feel:'Crisp'},
   {id:'artengo-tr-960-control-tour-2025',brand:'Artengo',name:'TR 960 Control Tour 18×20',year:2025,head:630,weight:305,pattern:'18×20',balance:'Head light',power:77,control:91,spin:75,feel:'Medium'},
-  {id:'artengo-tr-930-spin-pro-2025',brand:'Artengo',name:'TR 930 Spin Pro',year:2025,head:645,weight:285,pattern:'16×19',balance:'Neutral',power:83,control:83,spin:90,feel:'Medium'},
   {id:'babolat-pure-aero-2023',brand:'Babolat',name:'Pure Aero',year:2023,head:645,weight:300,pattern:'16×19',balance:'Neutral',power:88,control:80,spin:94,feel:'Medium'},
   // Official Babolat 2026 specification; listed by Babolat as the Pure Aero 98 Gen9 used by Carlos Alcaraz. Comparator metrics are indicative.
   {id:'babolat-pure-aero-98-gen9-alcaraz-2026',brand:'Babolat',name:'Pure Aero 98 Gen9 – Carlos Alcaraz',year:2026,head:630,weight:305,pattern:'16×20',balance:'Head light',power:85,control:90,spin:93,feel:'Crisp'},
