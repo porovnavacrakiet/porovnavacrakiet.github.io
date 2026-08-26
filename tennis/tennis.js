@@ -44,9 +44,27 @@ const rackets = [
   {id:'dunlop-fx-500-lite-2026',brand:'Dunlop',name:'FX 500 Lite',year:2026,head:645,weight:270,pattern:'16×18',balance:'Head light',power:82,control:80,spin:88,feel:'Medium'},
   {id:'dunlop-fx-500-super-lite-2026',brand:'Dunlop',name:'FX 500 Super Lite',year:2026,head:645,weight:255,pattern:'16×18',balance:'Head light',power:78,control:79,spin:86,feel:'Soft'},
   {id:'dunlop-fx-team-100-2026',brand:'Dunlop',name:'FX Team 100',year:2026,head:645,weight:285,pattern:'16×19',balance:'Head light',power:84,control:80,spin:83,feel:'Medium'},
-  {id:'head-boom-mp-2024',brand:'Head',name:'Boom MP',year:2024,head:645,weight:295,pattern:'16×19',balance:'Neutral',power:89,control:80,spin:87,feel:'Soft'},
-  {id:'head-radical-mp-2025',brand:'Head',name:'Radical MP',year:2025,head:630,weight:300,pattern:'16×19',balance:'Head light',power:80,control:89,spin:84,feel:'Medium'},
-  {id:'head-speed-mp-2024',brand:'Head',name:'Speed MP',year:2024,head:645,weight:300,pattern:'16×19',balance:'Neutral',power:85,control:86,spin:84,feel:'Medium'},
+  // Current adult HEAD 2026 types verified in HEAD's official store and series lineups. Junior frames, colour-only Legend/Neon editions and products marked "coming soon" are excluded; power, control and spin are comparator estimates.
+  {id:'head-boom-pro-2026',brand:'Head',name:'Boom Pro',year:2026,head:630,weight:310,pattern:'16×19',balance:'Head light',power:90,control:85,spin:90,feel:'Medium'},
+  {id:'head-boom-mp-2026',brand:'Head',name:'Boom MP',year:2026,head:645,weight:295,pattern:'16×19',balance:'Neutral',power:89,control:82,spin:88,feel:'Soft'},
+  {id:'head-boom-mp-l-2026',brand:'Head',name:'Boom MP L',year:2026,head:645,weight:275,pattern:'16×19',balance:'Neutral',power:85,control:80,spin:86,feel:'Soft'},
+  {id:'head-boom-mp-ul-2026',brand:'Head',name:'Boom MP UL',year:2026,head:645,weight:255,pattern:'16×19',balance:'Head heavy',power:79,control:78,spin:83,feel:'Soft'},
+  {id:'head-boom-team-2026',brand:'Head',name:'Boom Team',year:2026,head:690,weight:260,pattern:'16×19',balance:'Head heavy',power:82,control:79,spin:84,feel:'Soft'},
+  {id:'head-extreme-pro-2026',brand:'Head',name:'Extreme Pro',year:2026,head:630,weight:305,pattern:'16×19',balance:'Head light',power:90,control:87,spin:95,feel:'Crisp'},
+  {id:'head-extreme-mp-2026',brand:'Head',name:'Extreme MP',year:2026,head:645,weight:300,pattern:'16×19',balance:'Neutral',power:91,control:81,spin:96,feel:'Crisp'},
+  {id:'head-extreme-mp-xl-2026',brand:'Head',name:'Extreme MP XL',year:2026,head:645,weight:300,pattern:'16×19',balance:'Neutral',power:94,control:78,spin:96,feel:'Crisp'},
+  {id:'head-extreme-mp-l-2026',brand:'Head',name:'Extreme MP L',year:2026,head:645,weight:280,pattern:'16×19',balance:'Neutral',power:86,control:81,spin:94,feel:'Crisp'},
+  {id:'head-extreme-mp-ul-2026',brand:'Head',name:'Extreme MP UL',year:2026,head:645,weight:260,pattern:'16×19',balance:'Head heavy',power:82,control:79,spin:92,feel:'Crisp'},
+  {id:'head-extreme-team-2026',brand:'Head',name:'Extreme Team',year:2026,head:680,weight:265,pattern:'16×19',balance:'Head heavy',power:84,control:79,spin:90,feel:'Crisp'},
+  {id:'head-extreme-elite-2026',brand:'Head',name:'Extreme Elite',year:2026,head:645,weight:260,pattern:'16×19',balance:'Head heavy',power:79,control:80,spin:88,feel:'Soft'},
+  {id:'head-speed-pro-2026',brand:'Head',name:'Speed Pro',year:2026,head:645,weight:310,pattern:'18×20',balance:'Head light',power:84,control:91,spin:80,feel:'Medium'},
+  {id:'head-speed-tour-2026',brand:'Head',name:'Speed Tour',year:2026,head:626,weight:305,pattern:'16×19',balance:'Head light',power:83,control:92,spin:84,feel:'Medium'},
+  {id:'head-speed-mp-2026',brand:'Head',name:'Speed MP',year:2026,head:645,weight:300,pattern:'16×19',balance:'Neutral',power:86,control:86,spin:85,feel:'Medium'},
+  {id:'head-speed-mp-l-2026',brand:'Head',name:'Speed MP L',year:2026,head:645,weight:285,pattern:'16×19',balance:'Neutral',power:84,control:84,spin:84,feel:'Medium'},
+  {id:'head-speed-mp-ul-2026',brand:'Head',name:'Speed MP UL',year:2026,head:645,weight:265,pattern:'16×19',balance:'Head heavy',power:80,control:81,spin:81,feel:'Soft'},
+  {id:'head-speed-team-2026',brand:'Head',name:'Speed Team',year:2026,head:677,weight:270,pattern:'16×19',balance:'Neutral',power:83,control:81,spin:83,feel:'Medium'},
+  {id:'head-speed-elite-2026',brand:'Head',name:'Speed Elite',year:2026,head:645,weight:275,pattern:'16×19',balance:'Head heavy',power:82,control:80,spin:82,feel:'Soft'},
+  {id:'head-squared-2026',brand:'Head',name:'Squared',year:2026,head:645,weight:295,pattern:'16×18',balance:'Head light',power:88,control:85,spin:89,feel:'Soft'},
   {id:'prince-phantom-100x-305-2024',brand:'Prince',name:'Phantom 100X 305',year:2024,head:645,weight:305,pattern:'16×18',balance:'Head light',power:78,control:91,spin:87,feel:'Flexible'},
   {id:'prince-ripstick-100-300-2024',brand:'Prince',name:'Ripstick 100 300',year:2024,head:645,weight:300,pattern:'16×18',balance:'Neutral',power:90,control:78,spin:93,feel:'Medium'},
   {id:'prince-textreme-tour-100-310-2024',brand:'Prince',name:'ATS Textreme Tour 100 310',year:2024,head:645,weight:310,pattern:'16×18',balance:'Head light',power:80,control:90,spin:87,feel:'Flexible'},
@@ -73,7 +91,7 @@ const rackets = [
 const $ = (id) => document.getElementById(id);
 const brands = [...new Set(rackets.map((r) => r.brand))].sort();
 function option(value, text) { const el = document.createElement('option'); el.value = value; el.textContent = text; return el; }
-function populateBrand(side) { const select = $(`${side}-racket-brand`); select.replaceChildren(); brands.forEach((brand) => select.add(option(brand, brand))); select.add(option('other', 'OTHER / NOT LISTED')); select.value = side === 'current' ? 'Babolat' : 'Head'; populateModels(side); $(`${side}-racket`).value = side === 'current' ? 'babolat-pure-aero-98-gen9-2026' : 'head-speed-mp-2024'; }
+function populateBrand(side) { const select = $(`${side}-racket-brand`); select.replaceChildren(); brands.forEach((brand) => select.add(option(brand, brand))); select.add(option('other', 'OTHER / NOT LISTED')); select.value = side === 'current' ? 'Babolat' : 'Head'; populateModels(side); $(`${side}-racket`).value = side === 'current' ? 'babolat-pure-aero-98-gen9-2026' : 'head-speed-mp-2026'; }
 function populateModels(side) { const brand = $(`${side}-racket-brand`).value, model = $(`${side}-racket`), custom = $(`${side}-other`); custom.classList.toggle('hidden', brand !== 'other'); model.disabled = brand === 'other'; model.replaceChildren(); if (brand === 'other') { model.add(option('other', 'Enter your racket below')); return; } rackets.filter((r) => r.brand === brand).forEach((r) => model.add(option(r.id, r.name))); }
 function getRacket(side) { const brand = $(`${side}-racket-brand`).value; if (brand === 'other') return { brand: $(`${side}-other-brand`).value.trim() || 'Unlisted', name: $(`${side}-other-model`).value.trim() || 'tennis racket', year: Number($(`${side}-other-year`).value) || 2026, head: 645, weight: 300, pattern: '16×19', balance: 'Unknown', power: 80, control: 80, spin: 80, feel: 'Unknown' }; return rackets.find((r) => r.id === $(`${side}-racket`).value); }
 function drawStats(side) { const r = getRacket(side); $(`${side}-stats`).innerHTML = `<span class="mini-stat">POWER<b>${r.power}</b></span><span class="mini-stat">CONTROL<b>${r.control}</b></span><span class="mini-stat">SPIN<b>${r.spin}</b></span><span class="mini-stat">${r.weight}G<b>${r.head} cm²</b></span><span class="mini-stat">YEAR<b>${r.year}</b></span>`; }
