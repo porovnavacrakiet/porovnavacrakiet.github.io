@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com 'sha256-LGXcC2w/4hWCQeEHNupfVR2fGxEdP08iNsHvJnNycjw='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'none'" />
     <link rel="icon" type="image/png" href="assets/racket-comparator-favicon.png" />
     <meta name="description" content="Compare padel rackets, tennis racquets and table tennis blades, bats and complete setups." />
     <meta name="robots" content="index,follow,max-image-preview:large" />
@@ -21,13 +22,6 @@
     <meta name="twitter:image" content="https://racketcomparator.com/assets/sport-racket-comparator-launcher-v5.png" />
     <title>SPORT RACKET COMPARATOR | Find Your Racket</title>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1HD6YG4XCX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('consent', 'default', { analytics_storage: 'denied' });
-      gtag('js', new Date());
-      gtag('config', 'G-1HD6YG4XCX', { anonymize_ip: true });
-    </script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -57,7 +51,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260829-table-tennis-frame" />
+    <link rel="stylesheet" href="styles.css?v=20260831-security-hardening" />
   </head>
   <body>
     <aside class="analytics-consent" id="analytics-consent" role="dialog" aria-live="polite" aria-label="Analytics consent">
@@ -273,13 +267,12 @@
           <label for="feedback-type"><span data-sk="Téma" data-en="Topic">Téma</span>
             <select id="feedback-type"><option data-sk="Chýbajúce drevo alebo poťah" data-en="Missing blade or rubber">Chýbajúce drevo alebo poťah</option><option data-sk="Návrh funkcie" data-en="Feature suggestion">Návrh funkcie</option><option data-sk="Chyba v údajoch" data-en="Data error">Chyba v údajoch</option><option data-sk="Iné" data-en="Other">Iné</option></select>
           </label>
-          <label for="feedback-email">E-mail <span data-sk="(nepovinné)" data-en="(optional)">(nepovinné)</span>
-            <input id="feedback-email" type="email" placeholder="tvoj@email.sk" data-placeholder-sk="tvoj@email.sk" data-placeholder-en="you@example.com" />
-          </label>
           <label for="feedback-message"><span data-sk="Tvoj návrh" data-en="Your suggestion">Tvoj návrh</span>
             <textarea id="feedback-message" required maxlength="1000" placeholder="Napíš nám značku, presný model alebo nápad na zlepšenie…" data-placeholder-sk="Napíš nám značku, presný model alebo nápad na zlepšenie…" data-placeholder-en="Tell us the brand, exact model or your improvement idea…"></textarea>
           </label>
+          <p class="feedback-privacy" data-sk="Návrh sa uloží iba v tomto prehliadači na 30 dní. Neukladáme e-mail ani ho nikam neodosielame." data-en="Your suggestion is stored only in this browser for 30 days. We do not store an email address or send it anywhere.">Návrh sa uloží iba v tomto prehliadači na 30 dní. Neukladáme e-mail ani ho nikam neodosielame.</p>
           <button class="feedback-button" type="submit"><span data-sk="Odoslať návrh" data-en="Send suggestion">Odoslať návrh</span> <span>→</span></button>
+          <button class="feedback-clear" id="feedback-clear" type="button" data-sk="Vymazať uložené návrhy" data-en="Delete saved suggestions">Vymazať uložené návrhy</button>
           <p class="feedback-status" id="feedback-status" aria-live="polite"></p>
         </form>
       </section>
@@ -287,7 +280,7 @@
     </main>
 
     <footer><span class="footer-copy" data-sk="POROVNAVAC RAKIET • Údaje v katalógu overujeme podľa oficiálnych stránok výrobcov, databáz ITTF a porovnávacích dát Revspin. • 2026" data-en="RACKET COMPARATOR • Catalogue data is verified against official manufacturer websites, ITTF databases and Revspin comparison data. • 2026">POROVNAVAC RAKIET • Údaje v katalógu overujeme podľa oficiálnych stránok výrobcov, databáz ITTF a porovnávacích dát Revspin. • 2026</span><a class="footer-blog-link" href="blog/diy-table-tennis-ball-stand/" data-sk="Príbehy a návody" data-cs="Příběhy a návody" data-en="Stories &amp; Guides">Príbehy a návody</a></footer>
-    <script src="app.js?v=20260826-compare-two-rackets"></script>
+    <script src="app.js?v=20260831-security-hardening"></script>
     <script>
       (() => {
         const module = document.getElementById('table-tennis-comparator');
